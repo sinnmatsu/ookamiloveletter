@@ -33,6 +33,9 @@
         <%= f.password_field :password_confirmation, class: 'form-control-confirmation' %>
       </div>
       
+      <%= f.hidden_field :loginshow_id, :value => @userlogin.id %>
+
+      
       
       <!--userloginのidを渡す-->
       
@@ -44,4 +47,9 @@
 </div>
 
 
+<div class="login">
+  <%= link_to loginsession_path(@userlogin) ,class: 'loginbutton' do %>
+    <%= image_tag "/images/alreadycreate@3x.png",:size =>"193x53" %>
+  <% end %>
+</div>
 

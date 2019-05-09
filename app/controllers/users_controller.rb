@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @user=User.new
     #userモデルのインスタンスを組み立てる
     
-   
+   @userlogin=User.find(params[:id])
      #idが0の場合はトップページへと移動させる
   end
 
@@ -26,8 +26,15 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       #登録完了と同時にユーザーをsessionの中に代入して、ログイン状態を維持する
-      redirect_to root_url
       
+      if @user.loginshow_id == 1
+        #0だった場合はトップページへ
+        redirect_to root_url
+      else
+        #0以外の場合はその人のページへと飛ぶ
+        redirect_to user_path(@user.loginshow_id)
+      end
+
 
     else
       render :new
