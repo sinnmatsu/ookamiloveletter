@@ -1,4 +1,5 @@
 <% if model.errors.any? %>
+<!-- errorが発生した時に反応する-->
   <div class="alert alert-warning">
     <ul>
       <% model.errors.full_messages.each do |message| %>

@@ -1,2 +1,71 @@
-<h1>Toppages#index</h1>
-<p>Find me in app/views/toppages/index.html.erb</p>
+
+
+<% if logged_in? %>
+
+<div class="toppage">
+  <div class="log-title">
+    <img src="images/desktop.png" alt="オオカミloveletter" width="60%">
+  </div>
+  <div class="ookamilogo">
+    <img src="images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
+  </div>
+  
+  <div class="black-box">
+    <div class="text-alines">
+      <p><%= @myuser.name %></p>       
+    </div>
+  </div>
+  
+  <div class="URLcreate">
+    <input class="myid" id="copyTarget" type="text" value=<%= user_url(@myuser) %> readonly >
+    <button class="text-center" onclick="copyToClipboard()">
+      <img src="images/URLbutton@3x.png" alt="URLボタン" width="145px" height="35px">
+    </button>
+    <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+    </script>
+  </div>
+  
+            
+
+  
+  <div class="nextto">
+    <div class="takeletter">
+      <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+        <%= image_tag "/images/takeletter@3x.png",:size =>"89x90" %>
+      <% end %>
+    </div>
+    <div class="gaidebutton">
+      <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
+        <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+  
+  
+<% else %>
+
+  <!--openingletterのページに飛ぶ-->
+  <div class="openingletter">
+    <!--letterのbackgorungを差し込む-->
+  </div>
+  
+  <%= link_to signup_path(id: 1) ,class: 'nameloginbutton' do %>
+    <%= image_tag "/images/nameloginbutton@3x.png",:size =>"210x65" %>
+  <% end %>
+  
+  
+<% end %>
+
+
+

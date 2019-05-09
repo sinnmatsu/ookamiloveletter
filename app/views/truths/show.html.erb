@@ -1,0 +1,36 @@
+
+  <div class="logo">
+    <img src="/images/trueloveletter@3x.png" alt="真実のloveletter" width="186px" height="20px">
+  </div>
+
+<!-- @postletterのリンク先のみを生成する-->
+<%= form_for(@postletter) do |f| %>
+<% if @postletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @postletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<div class="letterarea">
+  <div class="form-group">
+    <%= f.text_area :text, class: 'form-control', rows: 5 %>
+    <!--パラメーター名がtextでパラメータ値が記入した文章になる-->
+    <div class="instagram">
+      <img src="/images/insta@3x.png" alt="インスタのアカウント名" width="297px" height="11px">
+    </div>
+    <%= f.text_area :account, class: 'form-account' %>
+    <!--アカウント名がパラメーターに渡される-->
+    <%= f.hidden_field :which, :value => "truths" %>
+    <%= f.hidden_field :user_id, :value => @user2.id %>
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+</div>
+
+  <%= image_submit_tag("sendtruthletter@3x.png", class: 'sendtruth')%>
+  <!--javascriptで画面遷移を設定する-->
+<% end %>
+<!--textという名称のパラメータ値がpostletterのインスタンスに送られる-->

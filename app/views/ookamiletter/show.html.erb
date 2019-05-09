@@ -1,0 +1,34 @@
+<% if @answerletter.timercheck =="true" %>
+
+  <div class="ookami-title">
+    <img src="/images/ookamianser@3x.png" alt="オオカミloveletter" width="240px" height="65px">
+  </div>
+
+ <%= form_for(@answerletter) do |f| %>
+ 
+      <% if @answerletter.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% @answerletter.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+  
+      <div class="letterarea">
+        <div class="form-group">
+          
+          <%= f.text_area :text, class: 'form-control-ookmai', rows: 5 , readonly: true %>
+      
+        </div>
+      </div>
+
+      <%= link_to root_path ,class: 'ookamitoppagebutton' do %>
+        <%= image_tag "/images/ookamitoppagebutton@3x.png",:size =>"243x197" %>
+      <% end %>
+      
+<% end %>
+   
+<% end %>
+  

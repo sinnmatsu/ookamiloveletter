@@ -1,0 +1,37 @@
+<% if @answerletter.timercheck =="true" %>
+
+  <div class="truth-title">
+    <img src="/images/trueanser@3x.png" alt="真実のloveletter" width="240px" height="65px">
+  </div>
+
+<%= form_for(@answerletter) do |f| %>
+      <% if @answerletter.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% @answerletter.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+         </ul>
+       </div>
+      <% end %>
+  
+      <div class="letterarea">
+        <div class="form-group">
+          
+          <%= f.text_area :text, class: 'form-control-true', rows: 5 , readonly: true %>
+          
+          <%= link_to root_path ,class: 'truetoppagebutton' do %>
+            <%= image_tag "/images/truetoppagebutton@3x.png",:size =>"429x65" %>
+          <% end %>
+          <!--toppageのボタン-->
+          
+          <%= f.text_area :account, class: 'form-account', readonly: true %>
+          <!--インスタグラムのアカウント-->
+        </div>
+      </div>
+
+      
+      
+<% end %>
+
+<% end %>

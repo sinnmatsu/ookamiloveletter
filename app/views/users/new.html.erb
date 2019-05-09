@@ -1,2 +1,51 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+
+<div class="usercreate-title">
+  <img src="/images/accountcreate@3x.png" alt="簡単アカウント作成" width="211px" height="55px">
+</div>
+
+<div class="usercreate">
+  <!--全体にfontのcssをかけておく-->
+  
+    <%= form_for(@user) do |f| %>
+      <%= render 'layouts/error_messages', model: f.object %>
+      <!--バリデーションに引っ掛かった時にメッセージが反応する-->
+    
+    <div class="report">
+      <img src="/images/report@2x.png" alt="注意書き" width="351px" height="13px">
+    </div>
+    
+    
+      <div class="form-group">
+        <%= f.label :name, 'ニックネーム' %>
+        <%= f.text_field :name, class: 'form-control-name' %>
+      </div>
+      
+      <!--emailでのログインは廃止する-->
+      
+      <div class="form-group">
+        <%= f.label :password, 'パスワード' %>
+        <%= f.password_field :password, class: 'form-control-password' %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.label :password_confirmation, 'パスワード確認' %>
+        <%= f.password_field :password_confirmation, class: 'form-control-confirmation' %>
+      </div>
+      
+      <%= f.hidden_field :loginshow_id, :value => @userlogin.id %>
+      <!--userloginのidを渡す-->
+      
+      <%= image_submit_tag("/images/usercreate@3x.png", class: 'createbutton')%>
+      
+    <% end %>
+    
+
+</div>
+
+<div class="login">
+  <%= link_to login_path(id: @userlogin) ,class: 'loginbutton' do %>
+    <%= image_tag "/images/alreadycreate@3x.png",:size =>"193x53" %>
+  <% end %>
+</div>
+

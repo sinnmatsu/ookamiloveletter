@@ -1,0 +1,27 @@
+<div class="takeedbutton">
+  <img src="/images/takeedletter@3x.png" alt="letterを受け取りました" width="238px" height="159px">
+</div>
+
+
+<div class="timerarea">
+  <div class="timeimage">
+    <img src="/images/timeimage@3x.png" alt="letterを受け取りました" width="180px" height="119px">
+  </div>
+  <div class="countdowns">
+    
+  </div>
+</div>
+
+
+<div class="checkbutton">
+  <%= link_to edit_postletter_path(@receiveletter) ,class: 'check' do%>
+    <%= image_tag "/images/checkbutton@3x.png",:size =>"156x156" %>
+  <% end %>
+  <!--postletterのeditに飛ぶ-->
+</div>
+
+<div class="image">
+  <img src="/images/truth_or_lie@3x.png" alt="letterを受け取りました" width="926px" height="454px">
+</div>
+
+<input type="hidden" class="flag_input">

@@ -21,5 +21,8 @@ module Ookami
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    
+    config.time_zone = 'Tokyo'
+    #rails上の時間が日本時刻に設定される
   end
 end

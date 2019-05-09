@@ -1,0 +1,62 @@
+<div class="letter-log">
+  <img src="images/takeletter2@3x.png" alt="オオカミloveletter" width="202px" height="221px" class="takeletterimage">
+</div>
+
+<div class="whitebox col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+  <ul class="media-list">
+    <% @receiveletters.each do |reciveletter| %>
+      <% if reciveletter.check? %>
+        <% if reciveletter.timercheck? %>
+          <!-- check,timercheck共にそこに値が入っていた場合answerページへと飛ぶ-->
+          <% if reciveletter.which == "truths" %>
+          <!--真実のloveletterを受け取っていた場合-->
+            <li class="notification">
+              <div class="media-main">
+                <div>
+                  <%= link_to ' ', trueletter_path(reciveletter) ,class: 'truthnotification' %>
+                </div>
+              </div>
+            </li>
+          <% elsif reciveletter.which == "lies" %>   <!-- if文の時は「==」になるので注意する-->
+            <!--オオカミのloveletterを受け取っていた場合-->
+            <li class="notification">
+              <div class="media-main">
+                <div>
+                  <%= link_to ' ', ookamiletter_path(reciveletter) ,class: 'lienotification' %>
+                </div>
+              </div>
+            </li>
+          <% end %>
+        
+        <% else %>
+        
+        <!-- checkがtrueでtimercheckがnilの場合-->
+        <!-- checkが入っている場合はdisclosureに値を代入する-->
+          <li class="notification">
+            <div class="media-main">
+              <div>
+                <%= link_to ' ', edit_postletter_path(reciveletter) ,class: 'alreadyread' %>
+                <!--checkが入っているのでタイマー画面が表示される-->
+              </div>
+            </div>
+          </li>
+        
+        <% end %>
+        
+      <% else %>
+      
+      <!--まだ受け取っていない新しく届いた手紙-->
+      <li class="notification">
+        <div class="media-main">
+          <div>
+            <%= link_to ' ', edit_postletter_path(reciveletter) ,class: 'newnotification' %>
+            <!-- checkが入っていないので、letter画面が表示される-->
+          </div>
+        </div>
+      </li>
+      
+      <% end %>
+      
+    <% end %>
+  </ul>
+</div>

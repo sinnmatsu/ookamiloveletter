@@ -1,0 +1,2 @@
+module GaidesHelper
+end

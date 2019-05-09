@@ -1,0 +1,96 @@
+
+<% if @updataletter.check =="true" %>
+<!--checkにtrueが入っていた場合-->
+  <div class="takeedbutton">
+    <img src="/images/takeedletter@3x.png" alt="letterを受け取りました" width="238px" height="159px">
+  </div>
+
+
+<!--scriptをここで実行する-->
+<script>
+  $(document).ready(function(){
+  
+  //この画面にくると必ずtimerstartbuttonが表示される
+  reset();
+  
+  $(".timerstartbutton").click(function(){
+    //timerstartbuttonを押すと必ず10秒timerが発動する
+    reset2();
+    countdown();
+  });
+  //timestartbutton
+  
+});
+</script>
+<!--scriptの実行終了-->
+
+  <div class="timerstartback">
+    <img src="/images/questionimage@3x.png"width="328" height="170" />
+  </div>
+  <button class="timerstartbutton">
+    <img src="/images/believebutton@3x.png"width="120" height="70" />
+  </button>
+
+  <div class="timerarea" >
+    <div class="timeimage">
+      <img src="/images/timeimage@3x.png" alt="letterを受け取りました" width="180px" height="119px">
+    </div>
+    <div class="countdowns">
+    
+    </div>
+  </div>
+
+  <!--updataアクションに処理を飛ばす-->
+  <%= form_for(@updataletter) do |f| %>
+    
+    <%= f.hidden_field :text %>
+    <%= f.hidden_field :which %>
+    <%= f.hidden_field :user_id %>
+    <%= f.hidden_field :check %>
+    <%= f.hidden_field :timecheck, :value => "true" %>
+    <%= image_submit_tag("/images/checkbutton@3x.png", class: 'checkbutton')%>
+  <% end %>
+  
+  <div class="image">
+    <img src="/images/truth_or_lie@3x.png" alt="letterを受け取りました" width="926px" height="454px">
+  </div>
+  
+  <div class="iphoneimagae">
+    <img src="/images/truthorlie@3x.png" alt="letterを受け取りました" width="344px" height="267px">
+  </div>
+  
+ 
+<% else %>
+
+<%= form_for(@updataletter) do |f| %>
+<% if @updataletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @updataletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<div class="letterarea">
+  <div class="form-group">
+    <%= f.text_area :text, class: 'form-control', rows: 5 , readonly: true %>
+    <!--パラメーター名がtextでパラメータ値が記入した文章になる-->
+    <%= f.hidden_field :which %>
+    <%= f.hidden_field :user_id %>
+    <%= f.hidden_field :check, :value => "true" %>
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+</div>
+
+ <%= image_submit_tag("recievebutton@3x.png", class: 'sendookami')%>
+  <!--受け取りボタンを押した瞬間にタイマーのtodayから１日後の時刻を渡す-->
+  
+<% end %>
+
+
+<% end %>
+
+
+

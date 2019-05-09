@@ -1,0 +1,32 @@
+<div class="usercreate-title">
+  <img src="/images/accountlogin@2x.png" alt="簡単ログイン" width="211px" height="55px">
+</div>
+
+<div class="logincreate">
+  
+
+    <%= form_for(:session, url: login_path) do |f| %>
+    
+     <div class="form-group">
+        <%= f.label :name, 'ニックネーム' %>
+        <%= f.text_field :name, class: 'form-control-name' %>
+      </div>
+      
+      
+      <div class="form-group">
+        <%= f.label :password, 'パスワード' %>
+        <%= f.password_field :password, class: 'form-control-password' %>
+      </div>
+
+      <%= image_submit_tag("/images/userlogin@3x.png", class: 'loginbutton')%>
+      
+    <% end %>
+    
+
+</div>
+
+<div class="account">
+  <%= link_to signup_path(id: @userlogin) ,class: 'createbutton' do %>
+    <%= image_tag "/images/accountnew@2x.png",:size =>"193x74" %>
+  <% end %>
+</div>

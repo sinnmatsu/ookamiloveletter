@@ -1,0 +1,2 @@
+module OokamiproductionHelper
+end
