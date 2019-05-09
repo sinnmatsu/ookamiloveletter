@@ -44,7 +44,7 @@
 </div>
 
 <div class="login">
-  <%= link_to login_path(id: @userlogin) ,class: 'loginbutton' do %>
+  <%= link_to loginsession_path(@userlogin) ,class: 'loginbutton' do %>
     <%= image_tag "/images/alreadycreate@3x.png",:size =>"193x53" %>
   <% end %>
 </div>

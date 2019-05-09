@@ -25,6 +25,10 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
   
+  get 'users/:id/new', to: 'users#new', as: 'sign'
+  get 'sessions/:id/new', to: 'sessions#new', as: 'loginsession'
+  
+  
   
   resources :choice, only: [:index, :show]
   resources :lies, only: [:index, :show]
