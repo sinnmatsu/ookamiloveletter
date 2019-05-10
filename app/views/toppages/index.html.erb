@@ -17,22 +17,9 @@
   </div>
   
   <div class="URLcreate">
-    <input class="myid" id="copyTarget" type="text" value=<%= user_url(@myuser) %> readonly >
-    <button class="text-center" onclick="copyToClipboard()">
-      <img src="images/URLbutton@3x.png" alt="URLボタン" width="145px" height="35px">
-    </button>
-    <script>
-        function copyToClipboard() {
-            // コピー対象をJavaScript上で変数として定義する
-            var copyTarget = document.getElementById("copyTarget");
-            // コピー対象のテキストを選択する
-            copyTarget.select();
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-            // コピーをお知らせする
-            alert("コピーできました！ : " + copyTarget.value);
-        }
-    </script>
+    <div class="IDarea">
+      <p><%= user_url(@myuser) %></p>
+    </div>
   </div>
   
             
