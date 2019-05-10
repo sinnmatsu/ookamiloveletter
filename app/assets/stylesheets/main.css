@@ -76,7 +76,7 @@ html {
     width: 350px;
     height: 40px;
     text-align: center;
-    font-size: 9px; }
+    font-size: 11px; }
   .toppages .index .nextto {
     margin-top: 20px; }
     .toppages .index .nextto .takeletter {
@@ -687,6 +687,12 @@ html {
   margin-right: auto;
   margin-left: auto;
   text-align: center; }
+  .gaides .index .usebutton .usesend {
+    width: 152px;
+    height: 85px; }
+  .gaides .index .usebutton .usertake {
+    width: 152px;
+    height: 85px; }
 .gaides .index .sendgaide {
   width: 357px;
   height: 1334px;

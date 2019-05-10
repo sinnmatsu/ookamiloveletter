@@ -10,11 +10,6 @@ class UsersController < ApplicationController
     #友達のアカウントにログインしたのと同時にtouserカラムにその友達のアカウントを設置する
     @user=User.find(params[:id])
     
-    if current_user.id == @user.id
-      redirect_to root_url
-    else
-      
-    end
     
   end
 
