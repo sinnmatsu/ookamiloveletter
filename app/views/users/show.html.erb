@@ -1,4 +1,12 @@
 <% if logged_in? %>
+  
+  <div class="accountview">
+    <%= link_to root_path ,class: 'myaccountbutton' do %>
+      <%= image_tag "/images/accountview@2x.png",:size =>"232x42" %>
+    <% end %>
+  </div>
+  
+  
 <!--ログインしていた場合-->
   <div class="log-title">
     <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
