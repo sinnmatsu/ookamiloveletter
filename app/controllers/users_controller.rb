@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     
     #友達のアカウントにログインしたのと同時にtouserカラムにその友達のアカウントを設置する
     @user=User.find(params[:id])
-    
+    @myuser=current_user
     
   end
 
@@ -30,11 +30,11 @@ class UsersController < ApplicationController
       #登録完了と同時にユーザーをsessionの中に代入して、ログイン状態を維持する
       
       if @user.loginshow_id == 1
-        #0だった場合はトップページへ
-        redirect_to root_url
+        redirect_to sendgaide_path(@user.loginshow_id)
+        #アカウント作成したら必ずsendgaideに飛ぶ
       else
-        #0以外の場合はその人のページへと飛ぶ
-        redirect_to user_path(@user.loginshow_id)
+        redirect_to sendgaide_path(@user.loginshow_id)
+        #アカウント作成したら必ずsendgaideに飛ぶ
       end
 
 

@@ -4,6 +4,14 @@ Rails.application.routes.draw do
 
   
 
+  get 'sendgaide/index'
+
+  get 'sendgaide/show'
+
+  get 'takegaide/index'
+
+  get 'takegaide/show'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
   
@@ -37,6 +45,9 @@ Rails.application.routes.draw do
   resources :ookamiletter, only: [:show]
   resources :ookamiproduction, only: [:show]
   resources :trueproduction, only: [:show]
+  resources :sendgaide, only:[:index, :show]
+  resources :takegaide, only:[:index, :show]
+  
   
   
   get 'gaide', to: 'gaides#index'

@@ -1,0 +1,24 @@
+<div class="takegaide">
+  <!--画像を差し替える-->
+</div>
+
+
+
+<div class="PRimage">
+  <!--画像を差し替える-->
+</div>
+
+
+<% if @userlogin.id == 1 %>
+<!--toppageへ飛ぶ-->
+  <%= link_to root_path ,class: 'gaideend' do %>
+    <%= image_tag "/images/gaidendbutton@2x.png",:size =>"190x75" %>
+  <% end %>
+
+<% else %>
+<!--そのuser.idのアカウントページへと飛ぶ-->
+  <%= link_to user_path(@userlogin) ,class: 'gaideend' do %>
+    <%= image_tag "/images/gaidendbutton@2x.png",:size =>"190x75" %>
+  <% end %>
+
+<% end %>

@@ -1,42 +1,83 @@
 <% if logged_in? %>
+
+  <% if current_user.id == @user.id %>
+  <!--アクセスしたuserが自分だった場合-->
   
-  <div class="accountview">
-    <%= link_to root_path ,class: 'myaccountbutton' do %>
-      <%= image_tag "/images/accountview@2x.png",:size =>"232x42" %>
-    <% end %>
-  </div>
+    <div class="log-title-show">
+      <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
+    </div>
+    <div class="ookamilogo">
+      <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
+    </div>
+  
+    <div class="black-box">
+      <div class="text-alines">
+        <p><%= @myuser.name %></p>       
+      </div>
+    </div>
+  
+    <div class="URLcreate">
+      <div class="IDarea">
+        <p><%= user_url(@myuser) %></p>
+      </div>
+    </div>
+  
+    <div class="nextto-show">
+      <div class="takeletter">
+        <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/images/takeletter@3x.png",:size =>"89x90" %>
+        <% end %>
+      </div>
+      <div class="gaidebutton">
+        <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
+          <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
+        <% end %>
+      </div>
+    </div>
+
+    
+  <% else %>
+  
+    <!--自分ではない場合-->
+    <div class="accountview">
+      <%= link_to root_path ,class: 'myaccountbutton' do %>
+        <%= image_tag "/images/accountview@2x.png",:size =>"232x42" %>
+      <% end %>
+    </div>
   
   
-<!--ログインしていた場合-->
-  <div class="log-title">
-    <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
-  </div>
-  <div class="ookamilogo">
-    <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
-  </div>
+    <!--ログインしていた場合-->
+    <div class="log-title">
+      <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
+    </div>
+    <div class="ookamilogo">
+      <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
+    </div>
   
 
   
             
-  <div class="black-box">
-    <div class="text-alines">
-      <p><%= @user.name %></p>       
+    <div class="black-box">
+      <div class="text-alines">
+        <p><%= @user.name %></p>       
+      </div>
     </div>
-  </div>
   
-  <div class="nextto">
-    <div class="takeletter">
-      <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
-        <%= image_tag "/images/sendletter@3x.png",:size =>"97x111" %>
-        <!-- パラメーターに@userが渡される-->
-      <% end %>
+    <div class="nextto">
+      <div class="takeletter">
+        <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/images/sendletter@3x.png",:size =>"97x111" %>
+          <!-- パラメーターに@userが渡される-->
+        <% end %>
+      </div>
+      <div class="gaidebutton">
+        <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
+          <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
+        <% end %>
+      </div>
     </div>
-    <div class="gaidebutton">
-      <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
-        <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
-      <% end %>
-    </div>
-  </div>
+    
+  <% end %>
 
 <% else %>
 

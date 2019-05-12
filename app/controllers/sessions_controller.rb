@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   def new
      @userlogin=User.find(params[:id])
+     #最初にクリックしたuserのアカウントが代入される
   end
 
   def create

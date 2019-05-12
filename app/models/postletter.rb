@@ -4,5 +4,6 @@ class Postletter < ApplicationRecord
   #fromuserはUserモデルを参照するという指定
   
   validates :text, presence: true
-  #textの空白を許さないバリデーション
+  validates :account, presence: true
+  #textとaccountの空白を許さないバリデーション
 end

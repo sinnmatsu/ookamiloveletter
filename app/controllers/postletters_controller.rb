@@ -15,7 +15,14 @@ class PostlettersController < ApplicationController
       
     else
       
-      render 'lies/index'
+      
+      if @postletter.which == "truths"
+        flash[:danger] = '空白になっている箇所があります'
+        redirect_to truth_path(@postletter.user_id)
+      elsif @postletter.which == "lies"
+        flash[:danger] = '空白になっている箇所があります'
+        redirect_to ly_path(@postletter.user_id)
+      end
       
     end
   end
