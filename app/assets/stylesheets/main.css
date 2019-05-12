@@ -1355,6 +1355,10 @@ html {
   margin-right: auto;
   margin-left: auto;
   text-align: center; }
+  .gaides .index .usebutton .usesend {
+    height: 88px; }
+  .gaides .index .usebutton .usertake {
+    height: 88px; }
 .gaides .index .sendgaide {
   width: 357px;
   height: 1334px;
