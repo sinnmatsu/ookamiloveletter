@@ -17,6 +17,8 @@ class UsersController < ApplicationController
     @user=User.new
     #userモデルのインスタンスを組み立てる
     
+   @userlogin=User.find(params[:id])
+     #idが0の場合はトップページへと移動させる
   end
 
   #userのcreateメソッドで登録とログインを同時に完了する
@@ -26,7 +28,15 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       #登録完了と同時にユーザーをsessionの中に代入して、ログイン状態を維持する
-      redirect_to root_url
+      
+      if @user.loginshow_id == 1
+        redirect_to sendgaide_path(@user.loginshow_id)
+        #アカウント作成したら必ずsendgaideに飛ぶ
+      else
+        redirect_to sendgaide_path(@user.loginshow_id)
+        #アカウント作成したら
+      end
+
 
     else
       render :new
