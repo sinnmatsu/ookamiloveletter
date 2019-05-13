@@ -472,7 +472,8 @@ html {
     height: 70px; }
     .postletters .edit .timerstartbuttonback .timerstartbutton {
       display: inline-block;
-      height: 70px; }
+      height: 70px;
+      width: 145px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
@@ -801,7 +802,8 @@ html {
     height: 70px; }
     .postletters .edit .timerstartbuttonback .timerstartbutton {
       display: inline-block;
-      height: 70px; }
+      height: 70px;
+      width: 145px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
@@ -1089,7 +1091,8 @@ html {
     height: 70px; }
     .postletters .edit .timerstartbuttonback .timerstartbutton {
       display: inline-block;
-      height: 70px; }
+      height: 70px;
+      width: 145px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
