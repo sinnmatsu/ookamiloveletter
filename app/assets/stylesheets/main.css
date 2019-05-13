@@ -464,13 +464,15 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .postletters .edit .timerstartbutton {
+  .postletters .edit .timerstartbuttonback {
     margin-top: -70px;
-    display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     height: 70px; }
+    .postletters .edit .timerstartbuttonback .timerstartbutton {
+      display: inline-block;
+      height: 70px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
@@ -791,13 +793,15 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .postletters .edit .timerstartbutton {
+  .postletters .edit .timerstartbuttonback {
     margin-top: -70px;
-    display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     height: 70px; }
+    .postletters .edit .timerstartbuttonback .timerstartbutton {
+      display: inline-block;
+      height: 70px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
@@ -1077,13 +1081,15 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .postletters .edit .timerstartbutton {
+  .postletters .edit .timerstartbuttonback {
     margin-top: -70px;
-    display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     height: 70px; }
+    .postletters .edit .timerstartbuttonback .timerstartbutton {
+      display: inline-block;
+      height: 70px; }
   .postletters .edit .timerarea {
     display: block;
     margin-top: 50px;
@@ -1356,9 +1362,13 @@ html {
   margin-left: auto;
   text-align: center; }
   .gaides .index .usebutton .usesend {
-    height: 88px; }
+    width: 152px;
+    height: 88px;
+    display: inline-block; }
   .gaides .index .usebutton .usertake {
-    height: 88px; }
+    width: 152px;
+    height: 88px;
+    display: inline-block; }
 .gaides .index .sendgaide {
   width: 357px;
   height: 1334px;

@@ -629,14 +629,17 @@ html{ font-size: 62.5%; }
         margin-left:auto;
         text-align:center;
       }
+     .timerstartbuttonback{
+        margin-top:-70px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        height:70px;
       .timerstartbutton{
-          margin-top:-70px;
-          display:block;
-          margin-right:auto;
-          margin-left:auto;
-          text-align: center;
+          display:inline-block;
           height:70px;
        }
+      }
        
       .timerarea{
         display:block;
@@ -1061,14 +1064,18 @@ html{ font-size: 62.5%; }
         margin-left:auto;
         text-align:center;
       }
+      
+      .timerstartbuttonback{
+        margin-top:-70px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        height:70px;
       .timerstartbutton{
-          margin-top:-70px;
-          display:block;
-          margin-right:auto;
-          margin-left:auto;
-          text-align: center;
+          display:inline-block;
           height:70px;
        }
+      }
        
       .timerarea{
         display:block;
@@ -1435,14 +1442,18 @@ html{ font-size: 62.5%; }
         margin-left:auto;
         text-align:center;
       }
+      
+      .timerstartbuttonback{
+        margin-top:-70px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        height:70px;
       .timerstartbutton{
-          margin-top:-70px;
-          display:block;
-          margin-right:auto;
-          margin-left:auto;
-          text-align: center;
+          display:inline-block;
           height:70px;
        }
+      }
        
       .timerarea{
         display:block;
@@ -1798,10 +1809,14 @@ html{ font-size: 62.5%; }
        margin-left:auto;
        text-align:center;
        .usesend{
-         height:88px;
+        width: 152px;
+        height: 88px;
+        display:inline-block;
        }
        .usertake{
-         height:88px;
+        width: 152px;
+        height: 88px;
+        display:inline-block;
        }
      }
      

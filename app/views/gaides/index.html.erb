@@ -11,12 +11,8 @@ $(document).ready(function(){
 
 
 <div class="usebutton">
-  <button class="usesend" onclick="send()">
-    <img src="images/senduser@2x.png" alt="送り方" width="152px" height="85px">
-  </button>
-  <button class="usertake" onclick="take()">
-    <img src="images/takeuser@2x.png" alt="受け取り方" width="152px" height="85px">
-  </button>
+  <%= image_submit_tag("senduser@2x.png", class: 'usesend', onclick: "send()" )%>
+  <%= image_submit_tag("takeuser@2x.png", class: 'usertake', onclick: "take()" )%>
 </div>
 
 
