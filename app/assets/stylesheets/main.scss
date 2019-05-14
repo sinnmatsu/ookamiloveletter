@@ -1692,6 +1692,12 @@ html{ font-size: 62.5%; }
     background-size:100%;
     .show{
       
+      .gaidebutton{
+        margin-top:-530px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
       .logo{
         display:block;
         margin-right:auto;
@@ -1733,6 +1739,13 @@ html{ font-size: 62.5%; }
     background-image: url(/images/trueletterbacks@3x.png); 
     background-size:100%;
     .show{
+      
+      .gaidebutton{
+        margin-top:-580px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
       .logo{
         display:block;
         margin-right:auto;
@@ -1860,6 +1873,41 @@ html{ font-size: 62.5%; }
  }
  /*利用ガイドのCSS*/
  
+ .ookamigaide{
+   .show{
+      background-image: url(/images/gaidebackookamis.png); 
+     .ookamilogo{
+       margin-top:20px;
+       margin-right:0px;
+       text-align:right;
+     }
+     .ookamigaide{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       margin-bottom:50px;
+     }
+   }
+ }
+ 
+ .truegaide{
+   .show{
+     background-image: url(/images/gaidebacktrue@2x.png); 
+     .truelogo{
+       margin-top:20px;
+       margin-right:0px;
+       text-align:right;
+     }
+     .truegaide{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       margin-bottom:50px;
+     }
+   }
+ }
  
 
 @media (min-width: 1024px){

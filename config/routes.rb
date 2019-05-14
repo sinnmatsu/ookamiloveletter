@@ -47,6 +47,8 @@ Rails.application.routes.draw do
   resources :trueproduction, only: [:show]
   resources :sendgaide, only:[:index, :show]
   resources :takegaide, only:[:index, :show]
+  resources :ookamigaide, only:[:index, :show]
+  resources :truegaide, only:[:index, :show]
   
   
   

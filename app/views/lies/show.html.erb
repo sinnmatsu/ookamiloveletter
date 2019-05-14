@@ -29,3 +29,9 @@
   <!--javascriptで画面遷移を設定する-->
 <% end %>
 <!--textという名称のパラメータ値がpostletterのインスタンスに送られる-->
+
+<div class="gaidebutton">
+  <%= link_to ookamigaide_path(@user2) ,class: 'gaidebuttonhidden' do %>
+    <%= image_tag "/images/ookamibuttons@2x.png",:size =>"60x72" %>
+  <% end %>
+</div>

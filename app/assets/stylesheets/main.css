@@ -1269,6 +1269,10 @@ html {
 .lies {
   background-image: url(/images/ookamisendback@2x.png);
   background-size: 100%; }
+  .lies .show .gaidebutton {
+    margin-top: -530px;
+    text-align: left;
+    margin-left: 5px; }
   .lies .show .logo {
     display: block;
     margin-right: auto;
@@ -1302,6 +1306,10 @@ html {
 .truths {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: 100%; }
+  .truths .show .gaidebutton {
+    margin-top: -580px;
+    text-align: left;
+    margin-left: 5px; }
   .truths .show .logo {
     display: block;
     margin-right: auto;
@@ -1398,6 +1406,32 @@ html {
   margin-top: 50px; }
 
 /*利用ガイドのCSS*/
+.ookamigaide .show {
+  background-image: url(/images/gaidebackookamis.png); }
+  .ookamigaide .show .ookamilogo {
+    margin-top: 20px;
+    margin-right: 0px;
+    text-align: right; }
+  .ookamigaide .show .ookamigaide {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 50px; }
+
+.truegaide .show {
+  background-image: url(/images/gaidebacktrue@2x.png); }
+  .truegaide .show .truelogo {
+    margin-top: 20px;
+    margin-right: 0px;
+    text-align: right; }
+  .truegaide .show .truegaide {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 50px; }
+
 @media (min-width: 1024px) {
   .toppages {
     background-image: url(/images/background@3x.png);

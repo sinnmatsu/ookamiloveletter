@@ -1,4 +1,7 @@
 
+
+
+
   <div class="logo">
     <img src="/images/trueloveletter@3x.png" alt="真実のloveletter" width="186px" height="20px">
   </div>
@@ -19,6 +22,7 @@
   <div class="form-group">
     <%= f.text_area :text, class: 'form-control', rows: 5 %>
     <!--パラメーター名がtextでパラメータ値が記入した文章になる-->
+    
     <div class="instagram">
       <img src="/images/instas@3x.png" alt="インスタのアカウント名" width="297px" height="22px">
     </div>
@@ -34,3 +38,9 @@
   <!--javascriptで画面遷移を設定する-->
 <% end %>
 <!--textという名称のパラメータ値がpostletterのインスタンスに送られる-->
+
+<div class="gaidebutton">
+  <%= link_to truegaide_path(@user2) ,class: 'gaidebuttonhidden' do %>
+    <%= image_tag "/images/truebuttons@2x.png",:size =>"54x72" %>
+  <% end %>
+</div>
