@@ -1403,7 +1403,8 @@ html {
   background-image: url(/images/PRimage@2x.png);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 /*利用ガイドのCSS*/
 .ookamigaide .show {
