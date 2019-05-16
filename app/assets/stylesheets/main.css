@@ -109,7 +109,7 @@ html {
       margin-top: 30px;
       margin-right: auto;
       margin-left: auto;
-      background-image: url(/images/openingletter@2x.png);
+      background-image: url(/images/openingletters@2x.png);
       background-size: cover;
       width: 325px;
       height: 439px; }
@@ -287,7 +287,7 @@ html {
       margin-top: 30px;
       margin-right: auto;
       margin-left: auto;
-      background-image: url(/images/openingletter@2x.png);
+      background-image: url(/images/openingletters@2x.png);
       background-size: cover;
       width: 325px;
       height: 439px; }
@@ -442,7 +442,7 @@ html {
   width: 100%;
   height: 335px;
   display: block;
-  background-image: url(/images/trueletter@3x.png);
+  background-image: url(/images/trueselects@2x.png);
   background-size: cover; }
 
 /*choiceの時のcss*/
@@ -737,8 +737,8 @@ html {
 /*真実のloveletterのCSS*/
 .sendgaide .show .sendgaide {
   width: 357px;
-  height: 1580px;
-  background-image: url(/images/sendstady@2x.png);
+  height: 1325px;
+  background-image: url(/images/sendstadys@2x.png);
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
@@ -1154,7 +1154,7 @@ html {
 
 /*postletterのedit画面*/
 .trueproduction {
-  background-image: url(/images/trueletterbackground@3x.png);
+  background-image: url(/images/trueletterbackgrounds@3x.png);
   background-size: 100%; }
   .trueproduction .show .production {
     display: block;
@@ -1383,7 +1383,7 @@ html {
 .gaides .index .sendgaide {
   width: 357px;
   height: 1334px;
-  background-image: url(/images/sendstady@2x.png);
+  background-image: url(/images/sendstadys@2x.png);
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
@@ -2169,7 +2169,7 @@ html {
       margin-top: 685px; }
 
   .trueproduction {
-    background-image: url(/images/truepro@3x.png); }
+    background-image: url(/images/truepros@3x.png); }
     .trueproduction .show .production {
       margin-top: 685px; }
 
@@ -2201,7 +2201,7 @@ html {
   .choice .show .truthbutton {
     height: 408px;
     display: block;
-    background-image: url(/images/trueselectX@2x.png);
+    background-image: url(/images/trueselectXs@2x.png);
     background-size: cover; }
 
   /*choiceの時のcss*/
