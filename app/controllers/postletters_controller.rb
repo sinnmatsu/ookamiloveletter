@@ -1,13 +1,20 @@
 class PostlettersController < ApplicationController
   
-  before_action :require_user_logged_in
   before_action :correct_user, only: [:destroy, :update]
   
   
   #letterを送るボタンを押した時に反応する
   def create
     
-    @postletter=current_user.postletters.new(postletter_params)
+    if logged_in?
+      #ログインしている場合
+      @postletter=current_user.postletters.new(postletter_params)
+    else
+      #ログインしていない場合
+      @Nouser=User.find(1)
+      @postletter=@Nouser.postletters.new(postletter_params)
+    end
+    
     #自分が作成したletterのインスタンス
     if @postletter.save
       
@@ -97,6 +104,13 @@ class PostlettersController < ApplicationController
     params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :account) #truthの場合のみアカウント名が渡される
     #postletterのパラメーターが送られてくる
   end
+  
+  def nouser_postletter_params
+    params.require(:postletter).permit(:user_id, :text, :which, :account) #truthの場合のみアカウント名が渡される
+    #postletterのパラメーターが送られてくる
+  end
+  
+  
   
   def updata_postletter_params
     params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :check, :account, :disclosure_at)

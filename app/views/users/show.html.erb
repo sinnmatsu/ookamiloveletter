@@ -80,15 +80,40 @@
   <% end %>
 
 <% else %>
+<!--showの場合はログインしていない状態でも相手のプロフィール画面に来ることができる-->
 
-  <div class="openingletter">
-    <!--letterのbackgorungを差し込む-->
-  </div>
+
   
-  <!--user#showのアカウント情報をnewアクションに送る-->
-  <%= link_to sign_path(@user) ,class: 'nameloginbutton' do %>
-    <%= image_tag "/images/nameloginbutton@3x.png",:size =>"210x64" %>
-  <% end %>
+  
+    <div class="log-title">
+      <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
+    </div>
+    <div class="ookamilogo">
+      <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
+    </div>
+  
+  
+    <div class="black-box">
+      <div class="text-alines">
+        <p><%= @user.name %></p>       
+      </div>
+    </div>
+  
+    <div class="nextto">
+      <div class="takeletter">
+        <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/images/sendletter@3x.png",:size =>"97x111" %>
+          <!-- パラメーターに@userが渡される-->
+        <% end %>
+      </div>
+      <div class="gaidebutton">
+        <%= link_to sendgaideletter_path ,class: 'gaidebuttonhidden' do %>
+          <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
+        <% end %>
+      </div>
+    </div>
+
+  
 
 <% end %>
 

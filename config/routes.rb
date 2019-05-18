@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   
 
+  get 'sendgaideletter/index'
+
+  get 'sendgaideletter/show'
+
   get 'sendgaide/index'
 
   get 'sendgaide/show'
@@ -49,7 +53,7 @@ Rails.application.routes.draw do
   resources :takegaide, only:[:index, :show]
   resources :ookamigaide, only:[:index, :show]
   resources :truegaide, only:[:index, :show]
-  
+  resources :sendgaideletter,only:[:index, :show]
   
   
   get 'gaide', to: 'gaides#index'

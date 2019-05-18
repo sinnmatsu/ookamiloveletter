@@ -1,4 +1,5 @@
 class Postletter < ApplicationRecord
+  
   belongs_to :user
   belongs_to :fromuser, class_name: 'User'
   #fromuserはUserモデルを参照するという指定

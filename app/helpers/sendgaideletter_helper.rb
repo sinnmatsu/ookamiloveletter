@@ -1,0 +1,2 @@
+module SendgaideletterHelper
+end

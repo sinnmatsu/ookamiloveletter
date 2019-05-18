@@ -1,15 +1,21 @@
 class LiesController < ApplicationController
   
-  before_action :require_user_logged_in
-  #ログインしていない場合はトップページへ
-  
+ 
   def index
     
   end
   
   def show
-    @postletter=current_user.postletters.build
-    #postlettersメソッドはformuserと中間テーブルが関連ずけされている。
+    
+    if logged_in?
+      #ログインしていた場合
+      @postletter=current_user.postletters.build
+    else
+      #ログインしていなかった場合
+      @postletter=Postletter.new
+    end
+    
     @user2=User.find(params[:id])
+    
   end
 end

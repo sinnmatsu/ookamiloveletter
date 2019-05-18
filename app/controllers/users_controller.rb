@@ -9,7 +9,13 @@ class UsersController < ApplicationController
     
     #友達のアカウントにログインしたのと同時にtouserカラムにその友達のアカウントを設置する
     @user=User.find(params[:id])
-    @myuser=current_user
+    
+    if logged_in?
+      @myuser=current_user
+    else
+      #特になにもなし
+    end
+    
     
   end
 
