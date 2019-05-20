@@ -2,19 +2,6 @@ Rails.application.routes.draw do
 
 
 
-  
-
-  get 'sendgaideletter/index'
-
-  get 'sendgaideletter/show'
-
-  get 'sendgaide/index'
-
-  get 'sendgaide/show'
-
-  get 'takegaide/index'
-
-  get 'takegaide/show'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'

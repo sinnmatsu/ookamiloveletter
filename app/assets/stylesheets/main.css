@@ -339,78 +339,83 @@ html {
           height: 95px; }
 
 /*users#showのcss*/
-.users .loginbackground .usercreate-title {
-  display: block;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 100%;
-  font-weight: bolder; }
-.users .loginbackground .report {
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center; }
-.users .loginbackground .usercreate {
-  margin-top: 20px;
-  font-size: 100%;
-  font-weight: bold; }
-  .users .loginbackground .usercreate .form-control-name {
-    background-color: rgba(33, 39, 98, 0.5);
-    border: none;
+.users .loginbackground .background {
+  padding-top: 30px;
+  background-image: url(/images/iphoneback2X@3x.png);
+  background-size: cover;
+  height: 812px; }
+  .users .loginbackground .background .usercreate-title {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 100%;
+    font-weight: bolder; }
+  .users .loginbackground .background .report {
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
-    display: block;
-    width: 328px;
-    height: 63px;
-    background-image: url(/images/accountfield@3x.png);
-    background-size: cover;
-    line-height: 200%;
     text-align: center; }
-  .users .loginbackground .usercreate .form-control-password {
-    background-color: rgba(33, 39, 98, 0.5);
-    border: none;
+  .users .loginbackground .background .usercreate {
+    margin-top: 20px;
     font-size: 100%;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    width: 328px;
-    height: 63px;
-    background-image: url(/images/accountfield@3x.png);
-    background-size: cover;
-    line-height: 200%;
-    text-align: center; }
-  .users .loginbackground .usercreate .form-control-confirmation {
-    background-color: rgba(33, 39, 98, 0.5);
-    border: none;
-    font-size: 100%;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    width: 328px;
-    height: 63px;
-    background-image: url(/images/accountfield@3x.png);
-    background-size: cover;
-    line-height: 200%;
-    text-align: center; }
-  .users .loginbackground .usercreate .createbutton {
+    font-weight: bold; }
+    .users .loginbackground .background .usercreate .form-control-name {
+      background-color: rgba(33, 39, 98, 0.5);
+      border: none;
+      font-size: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 328px;
+      height: 63px;
+      background-image: url(/images/accountfield@3x.png);
+      background-size: cover;
+      line-height: 200%;
+      text-align: center; }
+    .users .loginbackground .background .usercreate .form-control-password {
+      background-color: rgba(33, 39, 98, 0.5);
+      border: none;
+      font-size: 100%;
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 328px;
+      height: 63px;
+      background-image: url(/images/accountfield@3x.png);
+      background-size: cover;
+      line-height: 200%;
+      text-align: center; }
+    .users .loginbackground .background .usercreate .form-control-confirmation {
+      background-color: rgba(33, 39, 98, 0.5);
+      border: none;
+      font-size: 100%;
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 328px;
+      height: 63px;
+      background-image: url(/images/accountfield@3x.png);
+      background-size: cover;
+      line-height: 200%;
+      text-align: center; }
+    .users .loginbackground .background .usercreate .createbutton {
+      margin-top: 30px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      width: 100px;
+      height: 108px; }
+  .users .loginbackground .background .login {
     margin-top: 30px;
-    display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 100px;
-    height: 108px; }
-.users .loginbackground .login {
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  margin-bottom: 10px; }
+    margin-bottom: 10px; }
 
 /*user#newのcss*/
 .sessions .loginbackground {
@@ -948,15 +953,20 @@ html {
   height: 80px; }
 
 /*takegaideのcss*/
-.takegaide .show .takegaide {
+.takegaide .loginbackground .title {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
+.takegaide .loginbackground .takegaide {
   width: 357px;
-  height: 969px;
-  background-image: url(/images/takestadys@2x.png);
+  height: 2022px;
+  background-image: url(/images/takestadyssss@2x.png);
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px; }
-.takegaide .show .PRimage {
+.takegaide .loginbackground .PRimage {
   width: 358px;
   height: 616px;
   background-size: cover;
@@ -964,7 +974,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px; }
-.takegaide .show .gaideend {
+.takegaide .loginbackground .gaideend {
   display: block;
   margin-top: 30px;
   margin-right: auto;
@@ -1564,8 +1574,8 @@ html {
   margin-top: 30px; }
 .gaides .index .takegaide {
   width: 357px;
-  height: 969px;
-  background-image: url(/images/takestadys@2x.png);
+  height: 2022px;
+  background-image: url(/images/takestadyssss@2x.png);
   background-size: cover;
   margin-right: auto;
   margin-left: auto;

@@ -47,11 +47,14 @@
     <!--letterのbackgorungを差し込む-->
   </div>
   
-  <!--toppageがログインする場合はidに１を-->
   
-  <%= link_to sign_path(id: 1) ,class: 'nameloginbutton' do %>
-    <%= image_tag "/images/nameloginbutton@3x.png",:size =>"210x65" %>
+  
+  <%= link_to takegaide_index_path , class: 'nameloginbutton' do %>
+    <%= image_tag "/images/namenewbuttons@3x.png",:size =>"210x65" %>
   <% end %>
+  
+  <!--takegaideのページへと飛ぶ-->
+
   
   
 <% end %>
