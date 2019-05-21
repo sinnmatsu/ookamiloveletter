@@ -280,6 +280,27 @@ html {
             display: block;
             width: 60px;
             height: 75px; }
+  .users .loginbackground .sendgaideletter .skip {
+    margin-top: 20px;
+    text-align: right;
+    display: block; }
+    .users .loginbackground .sendgaideletter .skip .usesend {
+      width: 94px;
+      height: 57px; }
+  .users .loginbackground .sendgaideletter .gaideimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .users .loginbackground .sendgaideletter .endbutton {
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    .users .loginbackground .sendgaideletter .endbutton .send {
+      width: 152px;
+      height: 75px; }
   .users .loginbackground .accountview {
     margin-top: 20px;
     margin-right: auto;

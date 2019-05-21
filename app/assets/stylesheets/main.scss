@@ -374,6 +374,39 @@ html{ font-size: 62.5%; }
     /*userの中のコード*/
     
         .loginbackground{
+         
+         .sendgaideletter{
+           .skip{
+             margin-top:20px;
+             text-align:right;
+             display:block;
+             .usesend{
+               width:94px;
+               height:57px;
+             }
+             
+           }
+           .gaideimage{
+             margin-top:10px;
+             margin-right:auto;
+             margin-left:auto;
+             text-align:center;
+           }
+           .endbutton{
+             display:block;
+             margin-top:30px;
+             margin-right:auto;
+             margin-left:auto;
+             text-align:center;
+             .send{
+               width:152px;
+               height:75px;
+             }
+             
+           }
+         }
+          
+        
           
          .accountview{
            margin-top:20px;

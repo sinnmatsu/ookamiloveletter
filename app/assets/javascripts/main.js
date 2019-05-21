@@ -56,6 +56,16 @@ function reset4(){
   console.log("リセット")
 }
 
+function gaidereset(){
+  $(".user-show").hide();
+  $(".sendgaideletter").show();
+  console.log("リセット")
+}
+
+function gaidereset2(){
+  $(".user-show").show();
+  $(".sendgaideletter").hide();
+}
 
 
 
