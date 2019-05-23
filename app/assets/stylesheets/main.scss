@@ -48,7 +48,7 @@ html{ font-size: 62.5%; }
     margin-right: auto;
     text-align: center;
     /*text-align: centerを設定することでlog-titleの中の要素がセンターに寄せることができる*/
-    margin-top: 85px;
+    margin-top: 55px;
   }
   .ookamilogo{
     margin-top: 50px;
@@ -100,15 +100,29 @@ html{ font-size: 62.5%; }
   
  .nextto{
       margin-top:20px;
-      .takeletter{
-        margin-top:40px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-        margin-bottom:10px;
-        img{
-          width:95px;
-          height:100px;
+      .button{
+          margin-top:40px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        .takeletter{
+          text-align:center;
+          display:inline-block;
+          img{
+            width:95px;
+            height:100px;
+          }
+        }
+        .secretbutton{
+          display:inline-block;
+          text-align:right;
+          padding-left:70px;
+          padding-bottom:10px;
+          img{
+              width:97px;
+              height:107px;
+
+          }
         }
       }
       
@@ -128,6 +142,36 @@ html{ font-size: 62.5%; }
           height:75px;
         }
       }
+      }
+    }
+    
+    .secretgaide{
+      .skip{
+        margin-top:20px;
+        text-align:right;
+        display:block;
+        .secretskip{
+          width:94px;
+          height:55px;
+        }
+      }
+      .gaideimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .endbutton{
+        display:block;
+        margin-top:30px;
+        margin-bottom:40px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        .secrettoppage{
+          width:256px;
+          height:75px;
+        }
       }
     }
   }//ログインしていた場合のCSS
@@ -230,6 +274,143 @@ html{ font-size: 62.5%; }
     background-image: url(/images/iphoneback@3x.png); 
     background-size:cover;
     .show{
+      
+    .toppage{
+    .log-title-show{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*text-align: centerを設定することでlog-titleの中の要素がセンターに寄せることができる*/
+    margin-top: 55px;
+   }
+  .ookamilogo{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   }
+  
+  .black-box{
+    background-color:black;
+    margin-right:auto;
+    margin-left:auto;
+    width:180px;
+    height:50px;
+    margin-top:20px;
+    padding:0px;
+    border-color:gray;
+    border-style:solid;
+    border-width:2px;
+    .text-alines{
+        color: fuchsia;
+        line-height: 200% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 150% ;
+        text-align:center;
+      }
+  }
+  
+
+  
+  .URLcreate{
+    .IDarea{
+      padding-left:5px;
+      padding-right:5px;
+      padding-top:10px;
+      background-image: url(/images/URLbox@3x.png); 
+      background-size: cover;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 30px;
+      width: 350px;
+      height: 40px;
+      text-align:center;
+      font-size:11px;
+    }
+  }
+  
+ .nextto-show{
+      margin-top:20px;
+      .button{
+          margin-top:40px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        .takeletter{
+          text-align:center;
+          display:inline-block;
+          img{
+            width:95px;
+            height:100px;
+          }
+        }
+        .secretbutton{
+          display:inline-block;
+          text-align:right;
+          padding-left:70px;
+          padding-bottom:10px;
+          img{
+              width:97px;
+              height:107px;
+
+          }
+        }
+      }
+      
+      .gaidebutton{
+        margin-left:300px;
+        margin-top:-290px;
+        height:144px;
+        padding-right:20px;
+        text-align:right;
+        .gaidebuttonhidden{
+          text-align:right;
+          display:block;
+        img{
+          margin-right:60px;
+          display:block;
+          width:60px;
+          height:75px;
+        }
+      }
+      }
+    }
+    
+ 
+  }
+  
+     .secretgaide{
+      .skip{
+        margin-top:20px;
+        text-align:right;
+        display:block;
+        .secretskip{
+          width:94px;
+          height:55px;
+        }
+      }
+      .gaideimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .endbutton{
+        display:block;
+        margin-top:30px;
+        margin-bottom:40px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        .secrettoppage{
+          width:256px;
+          height:75px;
+        }
+      }
+    }
+      
       .accountview{
         margin-top:20px;
         margin-right:auto;
@@ -239,13 +420,7 @@ html{ font-size: 62.5%; }
       
       /*userが自分だった場合のみのcss*/
       
-      .log-title-show{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        /*text-align: centerを設定することでlog-titleの中の要素がセンターに寄せることができる*/
-        margin-top: 85px;
-      }
+ 
       
       .log-title{
         margin-left: auto;
@@ -301,47 +476,12 @@ html{ font-size: 62.5%; }
         }
       }
       
-      
-      /*userが自分のアカウントだった場合のみのcss*/
-      .nextto-show{
-        margin-top:20px;
-        .takeletter{
-          margin-top:40px;
-          margin-right:auto;
-          margin-left:auto;
-          text-align:center;
-          margin-bottom:10px;
-          img{
-            width:95px;
-            height:100px;
-          }
-        }
-      
-      .gaidebutton{
-        margin-left:300px;
-        margin-top:-290px;
-        height:144px;
-        padding-right:20px;
-        text-align:right;
-        .gaidebuttonhidden{
-          text-align:right;
-          display:block;
-        img{
-          margin-right:60px;
-          display:block;
-          width:60px;
-          height:75px;
-        }
-      }
-      }
-    }
-       
-      
+  
       
       .nextto{
         margin-top:20px;
         .takeletter{
-          margin-top:70px;
+          margin-top:40px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
@@ -367,6 +507,16 @@ html{ font-size: 62.5%; }
           }
         }
       }
+      }
+      
+      
+      
+      .know{
+         margin-top:10px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:40px;
       }
       
     }
@@ -483,12 +633,253 @@ html{ font-size: 62.5%; }
       }
       }
       
+      .know{
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:40px;
+      }
+      
+      
+      
 
   }
   }
    
    /*users#showのcss*/
    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+   .users{
+     .loginbackground{
+       .background{
+        padding-top:30px;
+        background-image: url(/images/iphoneback2X@3x.png); 
+        background-size:cover;
+        height:812px;
+       
+       .usercreate-title{
+         display:block;
+         margin-top: 50px;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         font-size:100%;
+         font-weight:bolder;
+       }
+       
+        .report{
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+       .usercreate{
+         margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+         .form-control-confirmation{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+         .createbutton{
+           margin-top:30px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:100px;
+           height:108px;
+          }
+       }
+       
+       .login{
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:10px;
+        }
+       }
+     }
+   }
+   
+   /*user#newのcss*/
+   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .sessions{
+    .loginbackground{
+    background-image: url(/images/iphoneback2X@3x.png); 
+    height:812px;
+    .usercreate-title{
+      display:block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size:100%;
+      font-weight:bolder;
+    }
+    
+    .logincreate{
+      
+       margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+           .loginbutton{
+           margin-top:70px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:105px;
+           height:108px;
+          }
+      }
+      
+       .account{
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:150px;
+          
+        }
+      
+    } 
+   }
+  
+  
+  /*sessionのcss*/
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .choice{
+    
+    .show{
+        .ookamibutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/ookamiletter@3x.png); 
+          background-size:cover;
+        }
+      
+        .truthbutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/trueselects@2x.png); 
+          background-size:cover;
+        }
+      
+    }
+    
+    /*ログインしていない場合*/
+      .loginbackground{
+        .ookamibutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/ookamiletter@3x.png); 
+          background-size:cover;
+        }
+      
+        .truthbutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/trueselects@2x.png); 
+          background-size:cover;
+        }
+      
+    }
+  }
+  /*choiceの時のcss*/
+  
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
    .users{
@@ -834,6 +1225,376 @@ html{ font-size: 62.5%; }
   ////////////////////////////////////////////////////////////////////////////////////////////////////////
   
  
+
+ 
+  
+   
+   /*users#showのcss*/
+   
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+   .users{
+     .loginbackground{
+       .background{
+        padding-top:30px;
+        background-image: url(/images/iphoneback2X@3x.png); 
+        background-size:cover;
+        height:812px;
+       
+       .usercreate-title{
+         display:block;
+         margin-top: 50px;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         font-size:100%;
+         font-weight:bolder;
+       }
+       
+        .report{
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+       .usercreate{
+         margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+         .form-control-confirmation{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+         .createbutton{
+           margin-top:30px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:100px;
+           height:108px;
+          }
+       }
+       
+       .login{
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:10px;
+        }
+       }
+     }
+   }
+   
+   /*user#newのcss*/
+   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .sessions{
+    .loginbackground{
+    background-image: url(/images/iphoneback2X@3x.png); 
+    height:812px;
+    .usercreate-title{
+      display:block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size:100%;
+      font-weight:bolder;
+    }
+    
+    .logincreate{
+      
+       margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+           .loginbutton{
+           margin-top:70px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:105px;
+           height:108px;
+          }
+      }
+      
+       .account{
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:150px;
+          
+        }
+      
+    } 
+   }
+  
+  
+  /*sessionのcss*/
+  
+
+
+ 
+   .users{
+     .loginbackground{
+       
+       .usercreate-title{
+         display:block;
+         margin-top: 50px;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         font-size:100%;
+         font-weight:bolder;
+       }
+       
+        .report{
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+       .usercreate{
+         margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+         .form-control-confirmation{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+         .createbutton{
+           margin-top:30px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:100px;
+           height:108px;
+          }
+       }
+       
+       .login{
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:10px;
+        }
+       
+     }
+   }
+   
+   /*user#newのcss*/
+   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .sessions{
+    .loginbackground{
+    background-image: url(/images/iphoneback2X@3x.png); 
+    height:812px;
+    .usercreate-title{
+      display:block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size:100%;
+      font-weight:bolder;
+    }
+    
+    .logincreate{
+      
+       margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+           .loginbutton{
+           margin-top:70px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:105px;
+           height:108px;
+          }
+      }
+      
+       .account{
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:150px;
+          
+        }
+      
+    } 
+   }
+  
+  
+  /*sessionのcss*/
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
  
   
@@ -1612,6 +2373,371 @@ html{ font-size: 62.5%; }
 
   
   ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+ .postletters{
+    background-image: url(/images/truthorlieback@3x.png); 
+    background-size:cover;
+    .edit{
+      
+       .takeedbutton{
+        display:block;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        img{
+           width:156px;
+           height:100px;
+        }
+      }
+      .timerstartback{
+        display:block;
+        margin-top: 10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .timerstartbuttonback{
+        margin-top:-70px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        height:70px;
+      .timerstartbutton{
+          display:inline-block;
+          height:70px;
+          width:145px;
+       }
+      }
+      
+       
+      .timerarea{
+        display:block;
+        margin-top:50px;
+        margin-right:auto;
+        margin-left:auto;
+        .timeimage{
+          text-align: center;
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+        }
+        .countdowns{
+          margin-top:50px;
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          font-size: 6.5rem;
+          line-height: 1.6;
+          letter-spacing: 0.1em;
+          font-weight: bold;
+          color: red;
+          font-family: 'Just Another Hand', cursive;
+        }
+      }
+      
+      .checkbutton{
+          margin-top:50px;
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align: center;
+          width:156px;
+          height:156px;
+        }
+        
+        .image{
+        display:none; //iphone表示の場合はこの画像を非表示にする
+       }
+      .iphoneimagae{
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      //checkにまだtrueが代入されていない場合
+       .form-control{
+        padding: 20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:100px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 100% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 152px;
+        height: 113px;
+        display: block;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  /*postletterのedit画面*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+ 
+
+ /////////////////////////////////////////////////////////////////////////////
+ 
+
+   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .sessions{
+    .loginbackground{
+    background-image: url(/images/iphoneback2X@3x.png); 
+    height:812px;
+    .usercreate-title{
+      display:block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size:100%;
+      font-weight:bolder;
+    }
+    
+    .logincreate{
+      
+       margin-top:20px;
+         font-size:100%;
+         font-weight:bold;
+         
+         .form-control-name{
+          background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+           
+          }
+          
+         .form-control-password{
+            background-color: rgba(33, 39, 98, 0.5);
+           border:none;
+           font-size:100%;
+           margin-top:10px;
+           margin-right:auto;
+           margin-left:auto;
+           display:block;
+           width:328px;
+           height:63px;
+           background-image: url(/images/accountfield@3x.png); 
+           background-size:cover;
+           line-height: 200% ;
+           text-align:center;
+          }
+          
+           .loginbutton{
+           margin-top:70px;
+           display:block;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           width:105px;
+           height:108px;
+          }
+      }
+      
+       .account{
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-bottom:150px;
+          
+        }
+      
+    } 
+   }
+  
+  
+  /*sessionのcss*/
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .choice{
+    
+    .show{
+        .ookamibutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/ookamiletter@3x.png); 
+          background-size:cover;
+        }
+      
+        .truthbutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/trueselects@2x.png); 
+          background-size:cover;
+        }
+      
+    }
+    
+    /*ログインしていない場合*/
+      .loginbackground{
+        .ookamibutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/ookamiletter@3x.png); 
+          background-size:cover;
+        }
+      
+        .truthbutton{
+          width: 100%;
+          height: 335px;
+          display:block;
+          background-image: url(/images/trueselects@2x.png); 
+          background-size:cover;
+        }
+      
+    }
+  }
+  /*choiceの時のcss*/
+  
+
+
+
+
+ .postletters{
+    background-image: url(/images/truthorlieback@3x.png); 
+    background-size:cover;
+    .edit{
+      
+       .takeedbutton{
+        display:block;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        img{
+           width:156px;
+           height:100px;
+        }
+      }
+      .timerstartback{
+        display:block;
+        margin-top: 10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .timerstartbuttonback{
+        margin-top:-70px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        height:70px;
+      .timerstartbutton{
+          display:inline-block;
+          height:70px;
+          width:145px;
+       }
+      }
+      
+       
+      .timerarea{
+        display:block;
+        margin-top:50px;
+        margin-right:auto;
+        margin-left:auto;
+        .timeimage{
+          text-align: center;
+          margin-top:50px;
+          margin-right:auto;
+          margin-left:auto;
+        }
+        .countdowns{
+          margin-top:50px;
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          font-size: 6.5rem;
+          line-height: 1.6;
+          letter-spacing: 0.1em;
+          font-weight: bold;
+          color: red;
+          font-family: 'Just Another Hand', cursive;
+        }
+      }
+      
+      .checkbutton{
+          margin-top:50px;
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align: center;
+          width:156px;
+          height:156px;
+        }
+        
+        .image{
+        display:none; //iphone表示の場合はこの画像を非表示にする
+       }
+      .iphoneimagae{
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      //checkにまだtrueが代入されていない場合
+       .form-control{
+        padding: 20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:100px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 100% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 152px;
+        height: 113px;
+        display: block;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  /*postletterのedit画面*/
+
+ 
+
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   
   .trueletter{
     background-image: url(/images/trueletterbacks@3x.png); 
@@ -1681,6 +2807,375 @@ html{ font-size: 62.5%; }
  
  
  /////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ .sendgaide{
+   .show{
+     .sendgaide{
+       width:357px;
+       height:1325px;
+       background-image: url(/images/sendstadys@2x.png);
+       background-size:cover;
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:30px;
+     }
+     .nextbutton{
+       display:block;
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       height:80px;
+     }
+   }
+ }
+ /*takegaideのcss*/
+ 
+ .takegaide{
+   .loginbackground{
+     .title{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .takegaide{
+       width:357px;
+       height:2022px;
+       background-image: url(/images/takestadyssss@2x.png);
+       background-size:cover;
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:30px;
+     }
+     .PRimage{
+       width:358px;
+       height:616px;
+       background-size:cover;
+       background-image: url(/images/PRimage@2x.png);
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:20px;
+     }
+     .gaideend{
+       display:block;
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       height:80px;
+     }
+   }
+ }
+ 
+
+
+
+
+
+ 
+
+
+ /////////////////////////////////////////////////////////////////////////////
+ 
+ 
+  .ookamiletter{
+    background-image: url(/images/iphoneookamiback@3x.png); 
+    background-size: cover;
+    .show{
+      .ookami-title{
+        
+        margin-top:30px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        img{
+          width: 240px;
+          height: 65px;
+        }
+      }
+      
+      .form-control-ookmai{
+          border:none;
+          padding: 20px;
+          display:block;
+          background-image: url(/images/ookamiwrite@2x.png);
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          width:243px;
+          height:341px;
+          line-height: 150% ;
+          color: white;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+        }
+        .ookamitoppagebutton{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:20px;
+          img{
+            width:173px;
+            height:140px;
+          }
+        }
+    }
+  }
+  
+  /*ookamiletterのcss*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .trueletter{
+    background-image: url(/images/trueletterbacks@3x.png); 
+    background-size: cover;
+    .show{
+      .truth-title{
+        margin-top:30px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        img{
+          width:240px;
+          height:65px;
+        }
+      }
+      
+      .form-control-true{
+          border:none;
+          padding:20px;
+          display:block;
+          background-image: url(/images/truewrite@2x.png);
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          width:243px;
+          height:341px;
+          line-height: 150% ;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+        }
+        .truetoppagebutton{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:25px;
+          img{
+            width:277px;
+            height:42px;
+          }
+        }
+        
+        .form-account{
+          padding-right:20px;
+          padding-left:20px;
+          border:none;
+          display:block;
+          background-color: #ffffff;
+          background-image: url(/images/sendaccount@3x.png);
+          background-size: cover;
+          margin-top: 25px;
+          margin-right: auto;
+          margin-left: auto;
+          width:326px;
+          height:56px;
+          line-height: 400% ;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+          text-align:center;
+        }
+    }
+  }
+  /* trueletterのCSS*/
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+  .lies{
+    background-image: url(/images/ookamisendback@2x.png); 
+    background-size:100%;
+    .show{
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      .form-control{
+        padding:20px;
+        background-image: url(/images/ookamiwrite@2x.png);
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 116px;
+        height: 98px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  /* オオカミloveletter送信画面のCSS*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .truths{
+    background-image: url(/images/trueletterbacks@3x.png); 
+    background-size:100%;
+    .show{
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:35px;
+      }
+      .form-control{
+        border:none;
+        padding:20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      
+      .instagram{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:15px;
+        text-align: center;
+      }
+      .form-account{
+        
+        padding-right:20px;
+        padding-left:20px;
+        border:none;
+        display: block;
+        background-image: url(/images/accountwrite@3x.png);
+        background-size: cover;
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        width:318px;
+        height:40px;
+        line-height: 300% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        
+      }
+      .sendtruth{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:20px;
+        width: 116px;
+        height: 93px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+ 
+ /*真実のloveletterのCSS*/
+ 
+
+ 
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ .sendgaide{
+   .show{
+     .sendgaide{
+       width:357px;
+       height:1325px;
+       background-image: url(/images/sendstadys@2x.png);
+       background-size:cover;
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:30px;
+     }
+     .nextbutton{
+       display:block;
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       height:80px;
+     }
+   }
+ }
+ /*takegaideのcss*/
+ 
+ .takegaide{
+   .loginbackground{
+     .title{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .takegaide{
+       width:357px;
+       height:2022px;
+       background-image: url(/images/takestadyssss@2x.png);
+       background-size:cover;
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:30px;
+     }
+     .PRimage{
+       width:358px;
+       height:616px;
+       background-size:cover;
+       background-image: url(/images/PRimage@2x.png);
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:20px;
+     }
+     .gaideend{
+       display:block;
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       height:80px;
+     }
+   }
+ }
+ 
+
+
+
+
  
  .sendgaide{
    .show{
@@ -2488,6 +3983,332 @@ html{ font-size: 62.5%; }
   
   /*ookamiletterのcss*/
   
+ 
+ /////////////////////////////////////////////////////////////////////////////
+ 
+ 
+  .ookamiletter{
+    background-image: url(/images/iphoneookamiback@3x.png); 
+    background-size: cover;
+    .show{
+      .ookami-title{
+        
+        margin-top:30px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        img{
+          width: 240px;
+          height: 65px;
+        }
+      }
+      
+      .form-control-ookmai{
+          border:none;
+          padding: 20px;
+          display:block;
+          background-image: url(/images/ookamiwrite@2x.png);
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          width:243px;
+          height:341px;
+          line-height: 150% ;
+          color: white;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+        }
+        .ookamitoppagebutton{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:20px;
+          img{
+            width:173px;
+            height:140px;
+          }
+        }
+    }
+  }
+  
+  /*ookamiletterのcss*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .trueletter{
+    background-image: url(/images/trueletterbacks@3x.png); 
+    background-size: cover;
+    .show{
+      .truth-title{
+        margin-top:30px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        img{
+          width:240px;
+          height:65px;
+        }
+      }
+      
+      .form-control-true{
+          border:none;
+          padding:20px;
+          display:block;
+          background-image: url(/images/truewrite@2x.png);
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          width:243px;
+          height:341px;
+          line-height: 150% ;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+        }
+        .truetoppagebutton{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:25px;
+          img{
+            width:277px;
+            height:42px;
+          }
+        }
+        
+        .form-account{
+          padding-right:20px;
+          padding-left:20px;
+          border:none;
+          display:block;
+          background-color: #ffffff;
+          background-image: url(/images/sendaccount@3x.png);
+          background-size: cover;
+          margin-top: 25px;
+          margin-right: auto;
+          margin-left: auto;
+          width:326px;
+          height:56px;
+          line-height: 400% ;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+          text-align:center;
+        }
+    }
+  }
+  /* trueletterのCSS*/
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+  .lies{
+    background-image: url(/images/ookamisendback@2x.png); 
+    background-size:100%;
+    .show{
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      .form-control{
+        padding:20px;
+        background-image: url(/images/ookamiwrite@2x.png);
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 116px;
+        height: 98px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  /* オオカミloveletter送信画面のCSS*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .truths{
+    background-image: url(/images/trueletterbacks@3x.png); 
+    background-size:100%;
+    .show{
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:35px;
+      }
+      .form-control{
+        border:none;
+        padding:20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      
+      .instagram{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:15px;
+        text-align: center;
+      }
+      .form-account{
+        
+        padding-right:20px;
+        padding-left:20px;
+        border:none;
+        display: block;
+        background-image: url(/images/accountwrite@3x.png);
+        background-size: cover;
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        width:318px;
+        height:40px;
+        line-height: 300% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        
+      }
+      .sendtruth{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:20px;
+        width: 116px;
+        height: 93px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+ 
+ /*真実のloveletterのCSS*/
+ 
+
+  
+
+
+
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+  
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .trueproduction{
+    background-image: url(/images/trueletterbackgrounds@3x.png); 
+    background-size:100%;
+    .show{
+      .production{
+        display:block;
+        margin-top:520px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+    }
+  }
+  
+  .ookamiproduction{
+    background-image: url(/images/ookamiletterbackground@3x.png); 
+    background-size:100%;
+    .show{
+      .production{
+        display:block;
+        margin-top:520px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+    }
+  }
+
+
+ /////////////////////////////////////////////////////////////////////////////
+ 
+ 
+  .ookamiletter{
+    background-image: url(/images/iphoneookamiback@3x.png); 
+    background-size: cover;
+    .show{
+      .ookami-title{
+        
+        margin-top:30px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        img{
+          width: 240px;
+          height: 65px;
+        }
+      }
+      
+      .form-control-ookmai{
+          border:none;
+          padding: 20px;
+          display:block;
+          background-image: url(/images/ookamiwrite@2x.png);
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          width:243px;
+          height:341px;
+          line-height: 150% ;
+          color: white;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+        }
+        .ookamitoppagebutton{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:20px;
+          img{
+            width:173px;
+            height:140px;
+          }
+        }
+    }
+  }
+  
+  /*ookamiletterのcss*/
+  
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   
   .trueletter{
@@ -2790,38 +4611,6 @@ html{ font-size: 62.5%; }
  
   
   ////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
-  .trueproduction{
-    background-image: url(/images/trueletterbackgrounds@3x.png); 
-    background-size:100%;
-    .show{
-      .production{
-        display:block;
-        margin-top:520px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-      }
-      
-    }
-  }
-  
-  .ookamiproduction{
-    background-image: url(/images/ookamiletterbackground@3x.png); 
-    background-size:100%;
-    .show{
-      .production{
-        display:block;
-        margin-top:520px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-      }
-    }
-  }
-
-
- /////////////////////////////////////////////////////////////////////////////
  
  
   .ookamiletter{
@@ -2943,6 +4732,238 @@ html{ font-size: 62.5%; }
   
   //////////////////////////////////////////////////////////////////////////////////////////////////////
  
+  .lies{
+    background-image: url(/images/ookamisendback@2x.png); 
+    background-size:100%;
+    .show{
+      
+      .gaidebutton{
+        margin-top:-530px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      .form-control{
+        padding:20px;
+        background-image: url(/images/ookamiwrite@2x.png);
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 116px;
+        height: 98px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    .loginbackground{
+      
+      .gaidebutton{
+        margin-top:-530px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      .form-control{
+        padding:20px;
+        background-image: url(/images/ookamiwrite@2x.png);
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 116px;
+        height: 98px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  /* オオカミloveletter送信画面のCSS*/
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  .truths{
+    background-image: url(/images/trueletterbacks@3x.png); 
+    background-size:100%;
+    .show{
+      
+      .gaidebutton{
+        margin-top:-580px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:35px;
+      }
+      .form-control{
+        border:none;
+        padding:20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      
+      .instagram{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:15px;
+        text-align: center;
+      }
+      .form-account{
+        
+        padding-right:20px;
+        padding-left:20px;
+        border:none;
+        display: block;
+        background-image: url(/images/accountwrite@3x.png);
+        background-size: cover;
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        width:318px;
+        height:40px;
+        line-height: 300% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        
+      }
+      .sendtruth{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:20px;
+        width: 116px;
+        height: 93px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+     .loginbackground{
+      
+      .gaidebutton{
+        margin-top:-580px;
+        text-align:left;
+        margin-left:5px;
+      }
+      
+      .logo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:35px;
+      }
+      .form-control{
+        border:none;
+        padding:20px;
+        background-image: url(/images/truewrite@2x.png);
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        width:243px;
+        height:341px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+      }
+      
+      .instagram{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:15px;
+        text-align: center;
+      }
+      .form-account{
+        
+        padding-right:20px;
+        padding-left:20px;
+        border:none;
+        display: block;
+        background-image: url(/images/accountwrite@3x.png);
+        background-size: cover;
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        width:318px;
+        height:40px;
+        line-height: 300% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        
+      }
+      .sendtruth{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:20px;
+        width: 116px;
+        height: 93px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+ 
+ /*真実のloveletterのCSS*/
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////
+
   .lies{
     background-image: url(/images/ookamisendback@2x.png); 
     background-size:100%;
@@ -3372,8 +5393,8 @@ html{ font-size: 62.5%; }
      .sendgaides{
        
        width:357px;
-       height:1206px;
-       background-image: url(/images/sendgaidess@2x.png);
+       height:1449px;
+       background-image: url(/images/sendgaidessss@2x.png);
        background-size:cover;
        margin-right:auto;
        margin-left:auto;
@@ -3384,10 +5405,314 @@ html{ font-size: 62.5%; }
    }
  }
  
+ .secret{
+   .index{
+       background-image: url(/images/secretback@2x.png);
+       background-size:cover;
+       
+     .secretback{
+     .secretbox{
+       margin-top:60px;
+       display:block;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       background-image: url(/images/secretbox@2x.png);
+       background-size:cover;
+       width:280px;
+       height:320px;
+       
+       .username{
+         padding-top:20px;
+         text-align:center;
+         margin-top:30px;
+         display:block;
+         margin-right:auto;
+         margin-left:auto;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 130% ;
+       }
+     
+     .secretarea{
+       margin-top:110px;
+       .form-control{
+         display:block;
+         background-color:transparent;
+         border:none;
+         padding:20px;
+         background-image: url(/images/secrettext@2x.png);
+         background-size:cover;
+         margin-top:20px;
+         margin-right:auto;
+         margin-left:auto;
+         width:206px;
+         height:138px;
+         line-height: 150% ;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 100% ;
+       }
+     }
+      
+       }
+       .secretbutton{
+      margin-top:50px;
+      text-align:center;
+      margin-right:auto;
+      margin-left:auto;
+      .savebutton{
+        width:121px;
+        height:77px;
+       }
+      .updatabutton{
+        width:121px;
+        height:77px;
+      }
+       }
+     }
+ 
+     .secretgaide{
+       margin-top:140px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   }
+ }
+ 
+  .secrets{
+   .edit{
+       background-image: url(/images/secretback@2x.png);
+       background-size:cover;
+       
+     .secretback{
+     .secretbox{
+       margin-top:60px;
+       display:block;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       background-image: url(/images/secretbox@2x.png);
+       background-size:cover;
+       width:280px;
+       height:320px;
+       
+       .username{
+         padding-top:20px;
+         text-align:center;
+         margin-top:30px;
+         display:block;
+         margin-right:auto;
+         margin-left:auto;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 130% ;
+       }
+     
+     .secretarea{
+       margin-top:110px;
+       .form-control{
+         display:block;
+         background-color:transparent;
+         border:none;
+         padding:20px;
+         background-image: url(/images/secrettext@2x.png);
+         background-size:cover;
+         margin-top:20px;
+         margin-right:auto;
+         margin-left:auto;
+         width:206px;
+         height:138px;
+         line-height: 150% ;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 100% ;
+       }
+     }
+      
+       }
+       .secretbutton{
+      margin-top:50px;
+      text-align:center;
+      margin-right:auto;
+      margin-left:auto;
+      .savebutton{
+        width:121px;
+        height:77px;
+       }
+      .updatabutton{
+        width:121px;
+        height:77px;
+      }
+       }
+     }
+ 
+     .secretgaide{
+       margin-top:140px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   }
+ }
+ /*secret画面*/
+ 
+ 
+ .looksecret{
+   .show{
+     background-image: url(/images/redback.png);
+     background-size:cover;
+     height:812px;
+     .secrettitle{
+       margin-top:50px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .Nosecret{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .secretbox{
+       margin-top:60px;
+       display:block;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       background-image: url(/images/secretbox@2x.png);
+       background-size:cover;
+       width:280px;
+       height:320px;
+       
+       .username{
+         padding-top:20px;
+         text-align:center;
+         margin-top:30px;
+         display:block;
+         margin-right:auto;
+         margin-left:auto;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 130% ;
+       }
+     
+       .secretarea{
+         margin-top:110px;
+         .form-control{
+         display:block;
+         background-color:transparent;
+         border:none;
+         padding:20px;
+         background-image: url(/images/secrettext@2x.png);
+         background-size:cover;
+         margin-top:20px;
+         margin-right:auto;
+         margin-left:auto;
+         width:206px;
+         height:138px;
+         line-height: 150% ;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 100% ;
+         }
+       }
+       }
+     
+     .toppage{
+       margin-top:40px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     
+   }
+      
+      
+    .loginbackground{
+     background-image: url(/images/redback.png);
+     background-size:cover;
+     height:812px;
+     .secrettitle{
+       margin-top:50px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+      .Nosecret{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .secretbox{
+       margin-top:60px;
+       display:block;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       background-image: url(/images/secretbox@2x.png);
+       background-size:cover;
+       width:280px;
+       height:320px;
+       
+       .username{
+         padding-top:20px;
+         text-align:center;
+         margin-top:30px;
+         display:block;
+         margin-right:auto;
+         margin-left:auto;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 130% ;
+       }
+     
+       .secretarea{
+         margin-top:110px;
+         .form-control{
+         display:block;
+         background-color:transparent;
+         border:none;
+         padding:20px;
+         background-image: url(/images/secrettext@2x.png);
+         background-size:cover;
+         margin-top:20px;
+         margin-right:auto;
+         margin-left:auto;
+         width:206px;
+         height:138px;
+         line-height: 150% ;
+         font-weight: bolder;
+         font-family: 'Hiragino Sans';
+         font-size: 100% ;
+         }
+       }
+       }
+     
+     .toppage{
+       margin-top:40px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     
+   }
+ }
+ 
  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  //2296
 
- 
+
 
 @media (min-width: 1024px){
   .toppages{
@@ -3839,7 +6164,6 @@ html{ font-size: 62.5%; }
 
   
 }
-
 
 
 

@@ -12,6 +12,8 @@ class UsersController < ApplicationController
     
     if logged_in?
       @myuser=current_user
+      @mysecret=Secret.where(user_id: current_user.id).first
+      #ログインしている人の秘密
     else
       #特になにもなし
     end

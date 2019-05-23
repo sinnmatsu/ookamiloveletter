@@ -3,37 +3,100 @@
   <% if current_user.id == @user.id %>
   <!--アクセスしたuserが自分だった場合-->
   
-    <div class="log-title-show">
-      <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
-    </div>
-    <div class="ookamilogo">
-      <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
-    </div>
+    <% unless @mysecret %>
   
-    <div class="black-box">
+      <script>
+        $(document).ready(function(){
+         secretgaide2();
+         /*@mysecretがnilの場合はガイドを表示*/
+        });
+      </script>
+    
+    <% else %>
+  
+      <script>
+        $(document).ready(function(){
+         secretgaide();
+         /*@mysecretがある場合はガイドを非表示にする*/
+        });
+      </script>
+  
+    <% end %>
+
+<div class="toppage">
+  <div class="log-title-show">
+      <img src="/images/desktop.png" alt="オオカミloveletter" width="60%">
+  </div>
+  <div class="ookamilogo">
+      <img src="/images/ookamiicon@3x.png" alt="オオカミloveletter" width="82px" height="82px">
+  </div>
+  
+  <div class="black-box">
       <div class="text-alines">
         <p><%= @myuser.name %></p>       
       </div>
-    </div>
+  </div>
   
-    <div class="URLcreate">
+  <div class="URLcreate">
       <div class="IDarea">
         <p><%= user_url(@myuser) %></p>
       </div>
-    </div>
+  </div>
   
-    <div class="nextto-show">
+  <div class="nextto-show">
+    <div class="button">
+      
+      <!--letterを受け取るボタン-->
       <div class="takeletter">
         <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
           <%= image_tag "/images/takeletter@3x.png",:size =>"89x90" %>
         <% end %>
       </div>
-      <div class="gaidebutton">
+    
+    
+      <% unless @mysecret %>
+        <!--秘密がない場合-->
+        <div class="secretbutton">
+          <%= link_to secret_index_path ,class: 'secretbuttonhidden' do %>
+            <%= image_tag "/images/secretbutton@2x.png",:size =>"71x84" %>
+          <% end %>
+        </div>
+      <% else %>
+        <!--秘密がある場合-->
+        <div class="secretbutton">
+          <%= link_to edit_secret_path(@mysecret) ,class: 'secretbuttonhidden' do %>
+            <%= image_tag "/images/secretbutton@2x.png",:size =>"71x84" %>
+          <% end %>
+        </div>
+      
+      <% end %>
+      
+      
+    </div>
+    <div class="gaidebutton">
         <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
           <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
         <% end %>
-      </div>
     </div>
+  </div>
+  
+</div>
+    
+<div class="secretgaide">
+  
+  <div class="skip">
+    <%= image_submit_tag("sercretskip@2x.png", class: 'secretskip', onclick: "secretgaide()" )%>
+  </div>
+  
+  <div class="gaideimage">
+    <img src="/images/secretgaide@2x.png" alt="secretガイド" width="362px" height="3940px">
+  </div>
+  
+  <div class="endbutton">
+    <%= image_submit_tag("secrettoppage@2x.png", class: 'secrettoppage', onclick: "secretgaide()" )%>
+  </div>
+  
+</div>
 
     
   <% else %>
@@ -77,6 +140,10 @@
       </div>
     </div>
     
+    <div class="know">
+      <img src="/images/secretknow@2x.png" alt="オオカミloveletter" width="320px" height="133px">
+    </div>
+    
   <% end %>
 
 <% else %>
@@ -97,7 +164,7 @@
         <!--ボタンを押すとuser-showへといく-->
       </div>
       <div class="gaideimage">
-        <img src="/images/sendgaidesss@2x.png" alt="オオカミloveletter" width="357px" height="1321px">
+        <img src="/images/sendgaidessss@2x.png" alt="オオカミloveletter" width="357px" height="1449px">
       </div>
       <div class="endbutton">
         <%= image_submit_tag("sendgaidebuttonss@2x.png", class: 'send', onclick: "gaidereset2()" )%>
@@ -134,6 +201,10 @@
           <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
         <% end %>
       </div>
+    </div>
+    
+    <div class="know">
+      <img src="/images/secretknow@2x.png" alt="オオカミloveletter" width="320px" height="133px">
     </div>
     
   </div>

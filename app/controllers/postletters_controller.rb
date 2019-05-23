@@ -18,7 +18,8 @@ class PostlettersController < ApplicationController
     #自分が作成したletterのインスタンス
     if @postletter.save
       
-      redirect_to root_url
+      redirect_to looksecret_path(@postletter.user)
+      #送り主のuserを渡す
       
     else
       

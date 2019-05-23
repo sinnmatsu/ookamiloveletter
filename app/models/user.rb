@@ -22,5 +22,15 @@ class User < ApplicationRecord
   #letterの受け取り主のtextを取得する
   has_many :takewhich, through: :reverses_of_postletters, source: :which
   #受け取り主として自分のアカウントが入っている中間モデルのwhichを取得するメソッド
+  
+  
+  has_many :secrets ,class_name: 'Secret',foreign_key: 'user_id'
+  #userから見た中間テーブル
+  has_many :lookusers ,class_name: 'Secret' ,foreign_key: 'lookusers_id'
+  #lookuserから見た中間テーブル
+  has_many :likesecret ,class_name: 'Secret' ,foreign_key: 'likeuser_id'
+  #likeuser（いいねを押した人）から見た中間テーブル
+  
+  
                     
 end

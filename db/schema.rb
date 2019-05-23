@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190509081726) do
+ActiveRecord::Schema.define(version: 20190522151451) do
+
+  create_table "favos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "secret_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["secret_id"], name: "index_favos_on_secret_id", using: :btree
+    t.index ["user_id"], name: "index_favos_on_user_id", using: :btree
+  end
+
+  create_table "looks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "secret_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["secret_id"], name: "index_looks_on_secret_id", using: :btree
+    t.index ["user_id"], name: "index_looks_on_user_id", using: :btree
+  end
 
   create_table "postletters", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -28,6 +46,18 @@ ActiveRecord::Schema.define(version: 20190509081726) do
     t.index ["user_id"], name: "index_postletters_on_user_id", using: :btree
   end
 
+  create_table "secrets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "lookuser_id"
+    t.integer  "likeuser_id"
+    t.string   "secrettext"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["likeuser_id"], name: "index_secrets_on_likeuser_id", using: :btree
+    t.index ["lookuser_id"], name: "index_secrets_on_lookuser_id", using: :btree
+    t.index ["user_id"], name: "index_secrets_on_user_id", using: :btree
+  end
+
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "email"
@@ -40,7 +70,14 @@ ActiveRecord::Schema.define(version: 20190509081726) do
     t.index ["loginuser_id"], name: "index_users_on_loginuser_id", using: :btree
   end
 
+  add_foreign_key "favos", "secrets"
+  add_foreign_key "favos", "users"
+  add_foreign_key "looks", "secrets"
+  add_foreign_key "looks", "users"
   add_foreign_key "postletters", "users"
   add_foreign_key "postletters", "users", column: "fromuser_id"
+  add_foreign_key "secrets", "users"
+  add_foreign_key "secrets", "users", column: "likeuser_id"
+  add_foreign_key "secrets", "users", column: "lookuser_id"
   add_foreign_key "users", "users", column: "loginshow_id"
 end

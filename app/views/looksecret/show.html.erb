@@ -1,0 +1,58 @@
+
+<% unless @user %>
+<P>エラー起きてます</P>
+<% else %>
+<div class="secrettitle">
+    <img src="/images/secrettitle@3x.png" alt="秘密タイトル" width="307px" height="75px">
+</div>
+
+  
+  <% unless @secret %>
+  
+    <div class="Nosecret">
+      <img src="/images/Nosecrets@2x.png" alt="秘密設定中…" width="268px" height="335px">
+    </div>
+    
+  <% else %>
+    <div class="secretbox">
+      <div class="username">
+        <P><%= @user.name %>さんの秘密</P>
+      </div>
+    
+      <%= form_for(@secret) do |f| %>
+        <% if @secret.errors.any? %>
+          <div id="error_explanation">
+          <ul>
+            <% @secret.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+           </div>
+        <% end %>
+  
+  
+        <div class="secretarea">
+          <div class="form-group">
+            <%= f.text_area :secrettext, class: 'form-control', rows: 10 ,readonly: true%>
+         </div>
+        </div>
+  
+  
+ 
+     <% end %>
+
+    </div>
+  <% end %>
+  
+  
+  
+  <div class="toppage">
+    <%= link_to root_path ,class: 'toppagebutton' do %>
+      <%= image_tag "/images/toppagebutton@2x.png",:size =>"253x68" %>
+    <% end %>
+  </div>
+  
+<% end %>
+
+
+  

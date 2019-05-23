@@ -67,6 +67,16 @@ function gaidereset2(){
   $(".sendgaideletter").hide();
 }
 
+function secretgaide(){
+  $(".toppage").show();
+  $(".secretgaide").hide();
+}
+
+function secretgaide2(){
+  $(".toppage").hide();
+  $(".secretgaide").show();
+}
+
 
 
 //10秒カウントダウン

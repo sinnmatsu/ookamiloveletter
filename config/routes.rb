@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 
 
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
   
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
   end
   
   resources :postletters, only: [:create, :destroy, :update, :edit]
+  resources :secrets, only: [:create, :destroy, :update, :edit]
   
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
@@ -41,6 +43,8 @@ Rails.application.routes.draw do
   resources :ookamigaide, only:[:index, :show]
   resources :truegaide, only:[:index, :show]
   resources :sendgaideletter,only:[:index, :show]
+  resources :secret, only:[:index, :show]
+  resources :looksecret, only:[:index, :show]
   
   
   get 'gaide', to: 'gaides#index'

@@ -2,6 +2,27 @@
 
 <% if logged_in? %>
 
+  <!--秘密機能の宣伝-->
+  <% unless @mysecret %>
+  
+    <script>
+      $(document).ready(function(){
+       secretgaide2();
+       /*@mysecretがnilの場合はガイドを表示*/
+      });
+    </script>
+    
+  <% else %>
+  
+    <script>
+      $(document).ready(function(){
+       secretgaide();
+       /*@mysecretがある場合はガイドを非表示にする*/
+      });
+    </script>
+  
+  <% end %>
+
 <div class="toppage">
   <div class="log-title">
     <img src="images/desktop.png" alt="オオカミloveletter" width="60%">
@@ -26,11 +47,39 @@
 
   
   <div class="nextto">
-    <div class="takeletter">
-      <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
-        <%= image_tag "/images/takeletter@3x.png",:size =>"89x90" %>
+    
+    
+    <div class="button">
+      
+      <!--letterを受け取るボタン-->
+      <div class="takeletter">
+        <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/images/takeletter@3x.png",:size =>"89x90" %>
+        <% end %>
+      </div>
+    
+    
+      <% unless @mysecret %>
+        <!--秘密がない場合-->
+        <div class="secretbutton">
+          <%= link_to secret_index_path ,class: 'secretbuttonhidden' do %>
+            <%= image_tag "/images/secretbutton@2x.png",:size =>"71x84" %>
+          <% end %>
+        </div>
+      <% else %>
+        <!--秘密がある場合-->
+        <div class="secretbutton">
+          <%= link_to edit_secret_path(@mysecret) ,class: 'secretbuttonhidden' do %>
+            <%= image_tag "/images/secretbutton@2x.png",:size =>"71x84" %>
+          <% end %>
+        </div>
+      
       <% end %>
+      
+      
     </div>
+    
+    
     <div class="gaidebutton">
       <%= link_to gaide_path ,class: 'gaidebuttonhidden' do %>
         <%= image_tag "/images/gaidebutton@3x.png",:size =>"97x111" %>
@@ -38,7 +87,21 @@
     </div>
   </div>
 </div>
+
+
+<div class="secretgaide">
+  <div class="skip">
+    <%= image_submit_tag("sercretskip@2x.png", class: 'secretskip', onclick: "secretgaide()" )%>
+  </div>
+  <div class="gaideimage">
+    <img src="/images/secretgaide@2x.png" alt="secretガイド" width="362px" height="3940px">
+  </div>
+  <div class="endbutton">
+    <%= image_submit_tag("secrettoppage@2x.png", class: 'secrettoppage', onclick: "secretgaide()" )%>
+  </div>
+</div>
   
+ 
   
 <% else %>
 
