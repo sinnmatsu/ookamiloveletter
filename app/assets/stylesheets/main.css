@@ -466,6 +466,7 @@ html {
           width: 80px;
           height: 95px; }
   .users .loginbackground .know {
+    margin-top: -15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
