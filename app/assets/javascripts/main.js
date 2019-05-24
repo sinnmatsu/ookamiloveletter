@@ -85,7 +85,7 @@ function countdown(){
   var tencount = setTimeout(function(){
     
     todaytime = new Date(); //今の時間を表示
-    tentime = todaytime.setSeconds(todaytime.getSeconds() + 9); //10秒後
+    tentime = todaytime.setSeconds(todaytime.getSeconds() + 2); //10秒後
     
   },1000);
   

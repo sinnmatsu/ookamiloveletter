@@ -2084,44 +2084,6 @@ html {
   text-align: center;
   height: 80px; }
 
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
 .trueletter {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: cover; }
@@ -2357,44 +2319,6 @@ html {
   text-align: center;
   height: 80px; }
 
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
 .trueletter {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: cover; }
@@ -2672,44 +2596,6 @@ html {
     margin-bottom: 50px; }
 
 /*postletterのedit画面*/
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
 .trueletter {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: cover; }
@@ -2873,82 +2759,6 @@ html {
     margin-left: auto;
     text-align: center; }
 
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
 .trueletter {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: cover; }
@@ -3112,44 +2922,6 @@ html {
     margin-left: auto;
     text-align: center; }
 
-.ookamiletter {
-  background-image: url(/images/iphoneookamiback@3x.png);
-  background-size: cover; }
-  .ookamiletter .show .ookami-title {
-    margin-top: 30px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .ookamiletter .show .ookami-title img {
-      width: 240px;
-      height: 65px; }
-  .ookamiletter .show .form-control-ookmai {
-    border: none;
-    padding: 20px;
-    display: block;
-    background-image: url(/images/ookamiwrite@2x.png);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 243px;
-    height: 341px;
-    line-height: 150%;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .ookamiletter .show .ookamitoppagebutton {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
-    .ookamiletter .show .ookamitoppagebutton img {
-      width: 173px;
-      height: 140px; }
-
-/*ookamiletterのcss*/
 .trueletter {
   background-image: url(/images/trueletterbacks@3x.png);
   background-size: cover; }
@@ -3418,8 +3190,7 @@ html {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    margin-top: 20px; }
+    text-align: center; }
     .ookamiletter .show .ookamitoppagebutton img {
       width: 173px;
       height: 140px; }
@@ -3864,8 +3635,8 @@ html {
     display: inline-block; }
 .gaides .index .sendgaide {
   width: 357px;
-  height: 1334px;
-  background-image: url(/images/sendstadys@2x.png);
+  height: 1677px;
+  background-image: url(/images/sendstady0@2x.png);
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
@@ -4044,10 +3815,16 @@ html {
       width: 121px;
       height: 77px; }
   .secret .index .secretgaide {
-    margin-top: 140px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
+  .secret .index .secretgaides {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 50px; }
 
 .secrets .edit {
   background-image: url(/images/secretback@2x.png);
@@ -4102,16 +3879,21 @@ html {
       width: 121px;
       height: 77px; }
   .secrets .edit .secretgaide {
-    margin-top: 140px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
+  .secrets .edit .secretgaides {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 50px; }
 
 /*secret画面*/
 .looksecret .show {
-  background-image: url(/images/redback.png);
-  background-size: cover;
-  height: 812px; }
+  background-image: url(/images/redbacks@2x.png);
+  height: 1400px; }
   .looksecret .show .secrettitle {
     margin-top: 50px;
     margin-right: auto;
@@ -4160,15 +3942,20 @@ html {
         font-weight: bolder;
         font-family: 'Hiragino Sans';
         font-size: 100%; }
+  .looksecret .show .camerasecret {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
   .looksecret .show .toppage {
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 40px; }
 .looksecret .loginbackground {
-  background-image: url(/images/redback.png);
-  background-size: cover;
-  height: 812px; }
+  background-image: url(/images/redbacks@2x.png);
+  height: 1400px; }
   .looksecret .loginbackground .secrettitle {
     margin-top: 50px;
     margin-right: auto;
@@ -4217,11 +4004,17 @@ html {
         font-weight: bolder;
         font-family: 'Hiragino Sans';
         font-size: 100%; }
+  .looksecret .loginbackground .camerasecret {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
   .looksecret .loginbackground .toppage {
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 40px; }
 
 @media (min-width: 1024px) {
   .toppages {
@@ -4629,8 +4422,6 @@ html {
     .ookamiletter .show .ookami-title {
       margin-top: 60px; }
     .ookamiletter .show .form-control-ookmai {
-      margin-top: 50px; }
-    .ookamiletter .show .ookamitoppagebutton {
       margin-top: 50px; }
 
   .trueletter {
