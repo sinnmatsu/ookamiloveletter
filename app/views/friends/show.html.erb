@@ -1,0 +1,58 @@
+<% if current_user == @friend.user %>
+<!--ログインしているユーザーと一致したら-->
+<div class="backbutton">
+  <%= link_to :back ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<% else %>
+
+<div class="backbutton">
+  <%= link_to lookfriend_path(@friend.user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<% end %>
+
+
+
+<div class="friend-title">
+  <img src="/newimages/personimae@2x.png" alt="友達紹介" width="338px" height="111px" class="friend-logo">
+</div>
+
+
+
+<%= form_for(@friend) do |f| %>
+   <% if @friend.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @friend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="letterarea">
+    <div class="form-group">
+        
+    <%= f.text_area :person, class: 'form-person', rows: 5, readonly: true %>
+    <div class="letter-line">
+      <img src="/newimages/personline@2x.png" alt="友達紹介" width="198px" height="3px" class="friend-logo">
+    </div>
+    <div class="textback">
+      <%= f.text_area :sentence, class: 'form-control', rows: 5, readonly: true %>
+    </div>
+    
+    
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+</div>
+
+<% end %>
+
+<div class="friendbaton">
+  <img src="/newimages/friendbaton@2x.png" alt="友達紹介リレー" width="320px" height="135px" class="friend-logo">
+</div>

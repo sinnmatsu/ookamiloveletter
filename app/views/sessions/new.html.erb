@@ -1,32 +1,43 @@
-<div class="usercreate-title">
-  <img src="/images/accountlogin@2x.png" alt="簡単ログイン" width="211px" height="55px">
-</div>
 
-<div class="logincreate">
+  <div class="pigg">
+    <img src="/newimages/pigimage@2x.png" alt="ピグ" width="76px" height="91px">
+  </div>
+
+  <div class="usercreate">
   
 
     <%= form_for(:session, url: login_path) do |f| %>
     
-     <div class="form-group">
-        <%= f.label :name, 'ニックネーム' %>
+      <div class="name">
+        <img src="/newimages/name@2x.png" alt="ニックネーム" width="136px" height="36px">
+      </div>
+      <div class="form-group">
         <%= f.text_field :name, class: 'form-control-name' %>
       </div>
       
-      
+      <div class="password">
+        <img src="/newimages/password@2x.png" alt="パスワード" width="237px" height="34px">
+      </div>
       <div class="form-group">
-        <%= f.label :password, 'パスワード' %>
-        <%= f.password_field :password, class: 'form-control-password' %>
+        <%= f.number_field :password, class: 'form-control-password' %>
       </div>
 
-      <%= image_submit_tag("/images/userlogin@3x.png", class: 'loginbutton')%>
+      <%= image_submit_tag("/newimages/loginbutton@2x.png", class: 'loginbutton')%>
       
     <% end %>
-    
 
-</div>
+  </div>
 
-<div class="account">
-  <%= link_to sign_path(@userlogin) ,class: 'createbutton' do %>
-    <%= image_tag "/images/accountnew@2x.png",:size =>"193x74" %>
-  <% end %>
-</div>
+  <div class="password">
+    <%= link_to passwordlogin_path ,class: 'takebuttonhidden' do %>
+    <!--userfragをここで渡す-->
+      <%= image_tag "/newimages/passwordsetting@2x.png",:size =>"210x63" %>
+    <% end %>
+  </div>
+
+  <div class="newacount">
+    <%= link_to signup_path ,class: 'createbutton' do %>
+      <%= image_tag "/newimages/newacountss@2x.png",:size =>"256x63" %>
+    <% end %>
+  </div>
+

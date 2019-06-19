@@ -1,0 +1,2 @@
+module FriendcreateHelper
+end

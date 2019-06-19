@@ -1,10 +1,17 @@
-<% if @answerletter.timercheck =="true" %>
+<% if @answerletter.check =="true" %>
 
-  <div class="truth-title">
-    <img src="/images/trueansers@3x.png" alt="真実のloveletter" width="240px" height="65px">
-  </div>
+<div class="backbutton">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="truth-title">
+  <img src="/newimages/trueletter-title-from@2x.png" alt="真実のloveletter" width="220px" height="80px">
+</div>
 
 <%= form_for(@answerletter) do |f| %>
+
       <% if @answerletter.errors.any? %>
         <div id="error_explanation">
           <ul>
@@ -20,13 +27,19 @@
           
           <%= f.text_area :text, class: 'form-control-true', rows: 5 , readonly: true %>
           
-          <%= link_to root_path ,class: 'truetoppagebutton' do %>
-            <%= image_tag "/images/truetoppagebutton@3x.png",:size =>"429x65" %>
-          <% end %>
-          <!--toppageのボタン-->
+          <div class="from">
+            <img src="/newimages/trueletter-from@2x.png" alt="真実のloveletter" width="99px" height="31px">
+          </div>
           
           <%= f.text_area :account, class: 'form-account', readonly: true %>
           <!--インスタグラムのアカウント-->
+          
+          
+          <%= link_to takeletters_path ,class: 'truetoppagebutton' do %>
+            <%= image_tag "/newimages/go-toppage@2x.png",:size =>"206x60" %>
+          <% end %>
+          <!--toppageのボタン-->
+          
         </div>
       </div>
 

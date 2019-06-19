@@ -1,0 +1,38 @@
+
+
+<div class="log-title">
+  <img src="/newimages/take-recom-titles@2x.png" alt="〇〇のことどう思う？" width="269px" height="67px">
+</div>
+
+<%= form_for(@updataletter) do |f| %>
+<% if @updataletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @updataletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= image_submit_tag("/newimages/backbutton@2x.png", class: 'sendookami')%>
+  
+  <div class="image">
+    <img src="/newimages/take-recom-image@2x.png" alt="オススメ画像？" width="311px" height="390px">
+  </div>
+  
+  <div class="post">
+    <div class="form-group">
+      <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
+    </div>
+  
+    <div class="form-reason">
+      <%= f.text_area :reason, class: 'form-reason', rows: 5 ,placeholder: "理由"%>
+    </div>
+  </div>
+  
+  <%= image_submit_tag("/newimages/go-back@2x.png", class: 'sendookami-button')%>
+  
+  
+<% end %>
+

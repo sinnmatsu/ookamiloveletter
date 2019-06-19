@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190522151451) do
+ActiveRecord::Schema.define(version: 20190616080555) do
 
   create_table "favos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20190522151451) do
     t.datetime "updated_at", null: false
     t.index ["secret_id"], name: "index_favos_on_secret_id", using: :btree
     t.index ["user_id"], name: "index_favos_on_user_id", using: :btree
+  end
+
+  create_table "friends", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "sentence"
+    t.string   "person"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_friends_on_user_id", using: :btree
   end
 
   create_table "looks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -42,8 +51,21 @@ ActiveRecord::Schema.define(version: 20190522151451) do
     t.string   "timercheck"
     t.string   "howtimer"
     t.string   "account"
+    t.string   "person"
+    t.string   "reason"
     t.index ["fromuser_id"], name: "index_postletters_on_fromuser_id", using: :btree
     t.index ["user_id"], name: "index_postletters_on_user_id", using: :btree
+  end
+
+  create_table "recoms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "fromuser_id"
+    t.string   "person"
+    t.string   "reason"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["fromuser_id"], name: "index_recoms_on_fromuser_id", using: :btree
+    t.index ["user_id"], name: "index_recoms_on_user_id", using: :btree
   end
 
   create_table "secrets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -56,6 +78,16 @@ ActiveRecord::Schema.define(version: 20190522151451) do
     t.index ["likeuser_id"], name: "index_secrets_on_likeuser_id", using: :btree
     t.index ["lookuser_id"], name: "index_secrets_on_lookuser_id", using: :btree
     t.index ["user_id"], name: "index_secrets_on_user_id", using: :btree
+  end
+
+  create_table "thinks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "fromuser_id"
+    t.string   "person"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["fromuser_id"], name: "index_thinks_on_fromuser_id", using: :btree
+    t.index ["user_id"], name: "index_thinks_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -72,12 +104,17 @@ ActiveRecord::Schema.define(version: 20190522151451) do
 
   add_foreign_key "favos", "secrets"
   add_foreign_key "favos", "users"
+  add_foreign_key "friends", "users"
   add_foreign_key "looks", "secrets"
   add_foreign_key "looks", "users"
   add_foreign_key "postletters", "users"
   add_foreign_key "postletters", "users", column: "fromuser_id"
+  add_foreign_key "recoms", "users"
+  add_foreign_key "recoms", "users", column: "fromuser_id"
   add_foreign_key "secrets", "users"
   add_foreign_key "secrets", "users", column: "likeuser_id"
   add_foreign_key "secrets", "users", column: "lookuser_id"
+  add_foreign_key "thinks", "users"
+  add_foreign_key "thinks", "users", column: "fromuser_id"
   add_foreign_key "users", "users", column: "loginshow_id"
 end

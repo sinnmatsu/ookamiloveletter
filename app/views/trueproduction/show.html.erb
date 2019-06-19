@@ -1,10 +1,10 @@
 <!--真実のloveletterだった場合の演出-->
 
-<% if @answerletter.timercheck =="true" %>
+<% if @answerletter.check =="true" %>
  
  
  <%= link_to trueletter_path ,class: 'production' do %>
-    <%= image_tag "/images/truebutton@2x.png",:size =>"218x85" %>
+    <%= image_tag "/newimages/letter-check@2x.png",:size =>"218x85" %>
   <% end %>
   
   

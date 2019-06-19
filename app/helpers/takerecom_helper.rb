@@ -1,0 +1,2 @@
+module TakerecomHelper
+end

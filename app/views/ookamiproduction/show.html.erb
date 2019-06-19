@@ -1,9 +1,9 @@
 <!--オオカミのloveltterの演出-->
 
-<% if @answerletter.timercheck =="true" %>
+<% if @answerletter.check =="true" %>
 
   <%= link_to ookamiletter_path ,class: 'production' do %>
-    <%= image_tag "/images/ookamibutton@2x.png",:size =>"218x85" %>
+    <%= image_tag "/newimages/letter-check@2x.png",:size =>"218x85" %>
   <% end %>
 
 <% end %>

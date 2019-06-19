@@ -1,0 +1,39 @@
+<div class="backbutton">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="log-title">
+  <img src="/newimages/takethink-title@2x.png" alt="〇〇のことどう思う？" width="350px" height="123px">
+</div>
+
+<%= form_for(@think) do |f| %>
+<% if @think.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @think.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+ 
+  
+  <div class="image">
+    <img src="/newimages/take-think-image@2x.png" alt="〇〇にことどう思う？" width="311px" height="553px">
+  </div>
+  
+   <div class="form-group">
+    <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
+  </div>
+  
+<% end %>
+
+
+<div class="homeback">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/returnbutton@2x.png",:size =>"206x58" %>
+  <% end %>
+</div>

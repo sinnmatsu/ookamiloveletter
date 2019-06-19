@@ -1,8 +1,6 @@
-<div class="background">
-  
 
-<div class="usercreate-title">
-  <img src="/images/accountcreate@3x.png" alt="簡単アカウント作成" width="211px" height="55px">
+<div class="pigg">
+  <img src="newimages/pigimage@2x.png" alt="ピグ" width="76px" height="91px">
 </div>
 
 <div class="usercreate">
@@ -10,49 +8,36 @@
   
     <%= form_for(@user) do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
-      <!--バリデーションに引っ掛かった時にメッセージが反応する-->
-    
-    <div class="report">
-      <img src="/images/report@2x.png" alt="注意書き" width="351px" height="13px">
-    </div>
-    
-    
+     
+      <div class="name">
+        <img src="newimages/name@2x.png" alt="ニックネーム" width="136px" height="36px">
+      </div>
+      
       <div class="form-group">
-        <%= f.label :name, 'ニックネーム' %>
         <%= f.text_field :name, class: 'form-control-name' %>
       </div>
       
-      <!--emailでのログインは廃止する-->
-      
-      <div class="form-group">
-        <%= f.label :password, 'パスワード' %>
-        <%= f.password_field :password, class: 'form-control-password' %>
+      <div class="password">
+        <img src="newimages/password@2x.png" alt="パスワード" width="237px" height="34px">
       </div>
       
       <div class="form-group">
-        <%= f.label :password_confirmation, 'パスワード確認' %>
-        <%= f.password_field :password_confirmation, class: 'form-control-confirmation' %>
+        <%= f.number_field :password, class: 'form-control-password' %>
       </div>
-      
-      <%= f.hidden_field :loginshow_id, :value => @userlogin.id %>
-      <!--ログインした-->
-      
       
       <!--userloginのidを渡す-->
       
-      <%= image_submit_tag("/images/usercreate@3x.png", class: 'createbutton')%>
+      <%= image_submit_tag("/newimages/acountcreate@2x.png", class: 'createbutton')%>
       
     <% end %>
     
-
 </div>
 
 
-<div class="login">
-  <%= link_to loginsession_path(@userlogin) ,class: 'loginbutton' do %>
-    <%= image_tag "/images/alreadycreate@3x.png",:size =>"193x53" %>
+<div class="alwayslogin">
+  <%= link_to login_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/alwayslogin@2x.png",:size =>"256x68" %>
   <% end %>
 </div>
 
-
-</div>
+<!--ログイン画面に飛ぶボタンは削る-->

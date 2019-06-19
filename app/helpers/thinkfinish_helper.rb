@@ -1,0 +1,2 @@
+module ThinkfinishHelper
+end

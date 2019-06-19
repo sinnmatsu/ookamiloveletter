@@ -1,6 +1,12 @@
+<div class="backbutton">
+  <%= link_to choice_path(@user2) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
 
 <div class="logo">
-  <img src="/images/ookamiloveletter@3x.png" alt="オオカミloveletter" width="204px" height="18px">
+  <img src="/newimages/ookami-title@2x.png" alt="オオカミloveletter" width="237px" height="79px">
 </div>
 <!-- @postletterのリンク先のみを生成する-->
 <%= form_for(@postletter) do |f| %>
@@ -21,20 +27,13 @@
     <%= f.hidden_field :which, :value => "lies" %>
     <%= f.hidden_field :user_id, :value => @user2.id %>
     <%= f.hidden_field :account, :value => "匿名希望" %>
-    
-  
-    
+    <%= f.hidden_field :person, :value => "なし" %>
+    <%= f.hidden_field :reason, :value => "なし" %>
     <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
   </div>
 </div>
 
-  <%= image_submit_tag("sendookamiletter@3x.png", class: 'sendookami')%>
+  <%= image_submit_tag("/newimages/letter-send@2x.png", class: 'sendookami')%>
   <!--javascriptで画面遷移を設定する-->
 <% end %>
 <!--textという名称のパラメータ値がpostletterのインスタンスに送られる-->
-
-<div class="gaidebutton">
-  <%= link_to ookamigaide_path(@user2) ,class: 'gaidebuttonhidden' do %>
-    <%= image_tag "/images/ookamibuttons@2x.png",:size =>"60x72" %>
-  <% end %>
-</div>

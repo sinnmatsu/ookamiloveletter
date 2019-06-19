@@ -1,0 +1,34 @@
+<div class="backbutton">
+  <%= link_to user_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="letter-log">
+  <img src="/newimages/friendtitle@2x.png" alt="友達紹介" width="235px" height="66px" class="friend-logo">
+</div>
+
+<div class="whitebox col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+  <ul class="media-list">
+    <% @friends.each do |friend| %>
+      
+       <li class="friend">
+          <div class="media-main">
+              
+              <div class="name">
+                <%= link_to friend_path(friend) ,class: 'takebuttonhidden', :style=>"color:black;" do %>
+                  <p class="nametext"><%= friend.person %></p>
+                <% end %>
+              </div>
+              
+              <%= link_to ' ', friend_path(friend) ,class: 'friendtext' %>
+              
+          </div>
+      </li>
+      
+    <% end %>
+    
+  </ul>
+</div>
+
+

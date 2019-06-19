@@ -1,0 +1,2 @@
+module TakedrecomHelper
+end

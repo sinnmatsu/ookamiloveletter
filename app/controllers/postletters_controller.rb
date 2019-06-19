@@ -3,33 +3,52 @@ class PostlettersController < ApplicationController
   before_action :correct_user, only: [:destroy, :update]
   
   
-  #letterを送るボタンを押した時に反応する
   def create
     
     if logged_in?
-      #ログインしている場合
       @postletter=current_user.postletters.new(postletter_params)
     else
-      #ログインしていない場合
       @Nouser=User.find(1)
       @postletter=@Nouser.postletters.new(postletter_params)
     end
     
-    #自分が作成したletterのインスタンス
+    
     if @postletter.save
+      #成功したら
       
-      redirect_to looksecret_path(@postletter.user)
-      #送り主のuserを渡す
+      if @postletter.which == "recom"
+        redirect_to recomfinish_path(@postletter.user_id)
+      elsif @postletter.which == "think"
+        redirect_to thinkfinish_path(@postletter.user_id)
+      elsif @postletter.which == "truths"
+        redirect_to letterfinish_path(@postletter.user_id)
+      elsif @postletter.which == "lies"
+        redirect_to ookamifinish_path(@postletter.user_id)
+      end
       
     else
       
       
       if @postletter.which == "truths"
+        
         flash[:danger] = '18文字以上のletterを送ってください'
         redirect_to truth_path(@postletter.user_id)
+        
       elsif @postletter.which == "lies"
+      
         flash[:danger] = '18文字以上のletterを送ってください'
         redirect_to ly_path(@postletter.user_id)
+        
+      elsif @postletter.which == "recom"
+      
+        flash[:danger] = '人物名は10文字以内、理由は80文字以内です'
+        redirect_to recom_path(@postletter.user_id)
+        
+      elsif @postletter.which == "think"
+      
+        flash[:danger] = '人物名は10文字以内です'
+      redirect_to fromthink_path(@postletter.user_id)
+      
       end
       
     end
@@ -42,59 +61,47 @@ class PostlettersController < ApplicationController
   def edit
     
     @updataletter = Postletter.find(params[:id])
-    #クリックした通知のインスタンス
-    
-    if @updataletter.check =="true"
-    #受け取るボタンを押した時に反応する
-      
-      
-      @time = @updataletter.disclosure_at
-      gon.settimer = @time.to_s(:number)
-      #時刻を文字列の数字に変換する
-      
-    end
+    #letterかookamiどっちかの通知
     
   end
   
   def update
     
-    #パラメーター値に更新する値を代入している
     @receiveletter = Postletter.find(params[:id])
     
-    if @receiveletter.check != nil
-      #checkがnilでなければ
+      #アップデート前のletterも受け取れるようにするための処理
+      unless @receiveletter.person
+        @receiveletter.person = "なし"
+      else
+        #特になし
+      end
       
-      @receiveletter.timercheck = "true"
-      if @receiveletter.update(updata_timer_postletter_params)
-        
+      
+      unless @receiveletter.reason
+        @receiveletter.reason = "なし"
+      else
+        #特になし
+      end
+      
+    
+      @receiveletter.check = "true"
+      
+      if @receiveletter.update(updata_postletter_params)
         
         if @receiveletter.which == "truths"
           redirect_to trueproduction_path(@receiveletter)
         elsif @receiveletter.which == "lies"
           redirect_to ookamiproduction_path(@receiveletter)
+        elsif @receiveletter.which == "recom"
+          redirect_to takeletters_path
+        elsif @receiveletter.which == "think"
+          redirect_to takeletters_path
         end
-        
+          
       else
         
-        render controller: 'postletters/edit'
       end
-      
-    else
-      
-      @receiveletter.check = "true"
-      @receiveletter.disclosure_at = Time.now.in_time_zone('Tokyo')
-      #disclosure_atに現在時刻を叩きこむ
-      
-      if @receiveletter.update(updata_postletter_params)
-        
-        redirect_to edit_postletter_path(@receiveletter)
-        #もう一度postlettersのeditが反応する、この時にJSのタイマーが発動する
-      
-      else
-        #フラッシュメッセージはCSSが崩れるので表示しない
-        render 'takeletters/index'
-      end
-    end
+    
     
 
   end
@@ -102,9 +109,9 @@ class PostlettersController < ApplicationController
   private
   
   def postletter_params
-    params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :account) #truthの場合のみアカウント名が渡される
-    #postletterのパラメーターが送られてくる
+    params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :account, :person, :reason) 
   end
+  
   
   def nouser_postletter_params
     params.require(:postletter).permit(:user_id, :text, :which, :account) #truthの場合のみアカウント名が渡される
@@ -114,12 +121,9 @@ class PostlettersController < ApplicationController
   
   
   def updata_postletter_params
-    params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :check, :account, :disclosure_at)
+    params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :check, :account, :person, :reason)
   end
   
-  def updata_timer_postletter_params
-    params.require(:postletter).permit(:user_id, :fromuser, :text, :which, :check, :account, :timercheck)
-  end
   
   
   def correct_user

@@ -1,0 +1,45 @@
+<div class="backbutton">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="log-title">
+  <img src="/newimages/take-recom-titles@2x.png" alt="〇〇のことどう思う？" width="269px" height="67px">
+</div>
+
+<%= form_for(@recom) do |f| %>
+<% if @recom.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @recom.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="image">
+    <img src="/newimages/take-recom-image@2x.png" alt="オススメ画像？" width="311px" height="390px">
+  </div>
+  
+  <div class="post">
+    <div class="form-group">
+      <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
+    </div>
+  
+    <div class="form-reason">
+      <%= f.text_area :reason, class: 'form-reason', rows: 5 ,placeholder: "理由"%>
+    </div>
+  </div>
+  
+  
+<% end %>
+
+
+
+<div class="homeback">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/returnbutton@2x.png",:size =>"206x58" %>
+  <% end %>
+</div>

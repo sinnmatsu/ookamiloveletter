@@ -1,21 +1,16 @@
 class SessionsController < ApplicationController
   def new
-     @userlogin=User.find(params[:id])
-     #最初にクリックしたuserのアカウントが代入される
   end
 
   def create
+    
     name = params[:session][:name]
     password = params[:session][:password]
     if login(name, password)
-      
       redirect_to root_url
-      #ログインに成功したらトップページへ飛ぶ
-      
     else
-      #フラッシュメッセージを表示させない
-      render 'new'
-      
+      flash.now[:danger] = 'ログインに失敗しました。'
+      redirect_to login_path
     end
   end
 
@@ -34,7 +29,6 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       return true
     else
-      # ログイン失敗
       return false
     end
   end

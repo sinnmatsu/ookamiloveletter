@@ -1,0 +1,36 @@
+<div class="backbutton">
+  <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="log-title">
+  <img src="/newimages/recom-title@2x.png" alt="〇〇にオススメの異性" width="283px" height="64px">
+</div>
+
+<!-- @postletterのリンク先のみを生成する-->
+<%= form_for(@postletter) do |f| %>
+<% if @postletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @postletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form-group">
+    <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
+    <%= f.text_area :reason, class: 'form-reason', rows: 5 ,placeholder: "理由"%>
+    
+    <%= f.hidden_field :account, :value => "匿名希望" %>
+    <%= f.hidden_field :which, :value => "recom" %>
+    <%= f.hidden_field :user_id, :value => @user.id %>
+    <%= f.hidden_field :text, :value => "これはthinkletterです。〇〇のことどう思う？" %>
+  </div>
+  
+  <%= image_submit_tag("/newimages/recom-send@2x.png", class: 'sendookami')%>
+  <!--javascriptで画面遷移を設定する-->
+<% end %>
+

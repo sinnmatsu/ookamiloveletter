@@ -1,0 +1,44 @@
+
+<div class="backbutton">
+  <%= link_to friends_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="pigg">
+  <img src="/newimages/pigimage@2x.png" alt="ピグ" width="70px" height="85px">
+</div>
+
+
+
+<%= form_for(@friend) do |f| %>
+<% if @friend.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @friend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<div class="letterarea">
+  <div class="form-group">
+    
+    <div class="person">
+      <img src="/newimages/person@2x.png" alt="今回紹介する人" width="144px" height="27px">
+    </div>
+    <%= f.text_area :person, class: 'form-account' %>
+    <div class="sentence">
+      <img src="/newimages/sentence@2x.png" alt="紹介文" width="175px" height="25px">
+    </div>
+    <%= f.text_area :sentence, class: 'form-control', rows: 5 %>
+    <!--@myuserがここに代入される-->
+    
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+</div>
+
+  <%= image_submit_tag("/newimages/finish@2x.png", class: 'finish')%>
+  
+<% end %>

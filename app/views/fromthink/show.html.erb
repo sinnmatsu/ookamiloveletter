@@ -1,0 +1,48 @@
+<div class="backbutton">
+  <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="log-title">
+  <img src="/newimages/think-title@2x.png" alt="〇〇のことどう思う？" width="260px" height="69px">
+</div>
+
+<!-- @postletterのリンク先のみを生成する-->
+<%= form_for(@postletter) do |f| %>
+<% if @postletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @postletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  
+  <div class="form-group">
+    <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
+    <!--パラメーター名がtextでパラメータ値が記入した文章になる-->
+    
+    <%= f.hidden_field :account, :value => "匿名希望" %>
+    <%= f.hidden_field :which, :value => "think" %>
+    <%= f.hidden_field :user_id, :value => @user.id %>
+    <%= f.hidden_field :text, :value => "これはthinkletterです。〇〇のことどう思う？" %>
+    <%= f.hidden_field :reason, :value => "なし" %>
+    
+    <div class="think-text">
+      <img src="/newimages/think-text@2x.png" alt="〇〇のことどう思う？" width="162px" height="23px">
+    </div>
+    
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+  
+  <%= image_submit_tag("/newimages/think-send@2x.png", class: 'sendookami')%>
+  <!--javascriptで画面遷移を設定する-->
+<% end %>
+
+
+
+
+

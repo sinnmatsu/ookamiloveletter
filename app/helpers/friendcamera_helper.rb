@@ -1,0 +1,2 @@
+module FriendcameraHelper
+end

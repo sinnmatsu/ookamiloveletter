@@ -1,0 +1,2 @@
+module TakethinkHelper
+end

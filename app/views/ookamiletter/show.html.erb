@@ -1,7 +1,13 @@
-<% if @answerletter.timercheck =="true" %>
+<% if @answerletter.check =="true" %>
+
+<div class="backbutton">
+  <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
 
   <div class="ookami-title">
-    <img src="/images/ookamianser@3x.png" alt="オオカミloveletter" width="240px" height="65px">
+    <img src="/newimages/ookami-title@2x.png" alt="オオカミloveletter" width="292px" height="93px">
   </div>
 
  <%= form_for(@answerletter) do |f| %>
@@ -24,8 +30,8 @@
         </div>
       </div>
 
-      <%= link_to root_path ,class: 'ookamitoppagebutton' do %>
-        <%= image_tag "/images/ookamitoppagebutton@3x.png",:size =>"243x197" %>
+      <%= link_to takeletters_path ,class: 'ookamitoppagebutton' do %>
+        <%= image_tag "/newimages/go-toppage@2x.png",:size =>"206x52" %>
       <% end %>
       
 <% end %>

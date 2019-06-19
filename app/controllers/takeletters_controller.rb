@@ -5,10 +5,8 @@ class TakelettersController < ApplicationController
   #ログインしていない場合はトップページへ
   
   
-  
   def index
     @receiveletters = Postletter.where(user_id: current_user.id).order(id: "DESC")
-    #　Touserに自分のuser.idが含まれている
   end
   
   def show

@@ -1,9 +1,13 @@
-
+<div class="backbutton">
+  <%= link_to choice_path(@user2) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
 
 
 
   <div class="logo">
-    <img src="/images/truess@2x.png" alt="真実のloveletter" width="130px" height="20px">
+    <img src="/newimages/trueletter-title@2x.png" alt="真実のloveletter" width="198px" height="62px">
   </div>
 
 <!-- @postletterのリンク先のみを生成する-->
@@ -24,23 +28,21 @@
     <!--パラメーター名がtextでパラメータ値が記入した文章になる-->
     
     <div class="instagram">
-      <img src="/images/sendowner@3x.png" alt="インスタのアカウント名" width="66px" height="11px">
+      <img src="/newimages/trueletter-from@2x.png" alt="インスタのアカウント名" width="99px" height="31px">
     </div>
     <%= f.text_area :account, class: 'form-account' %>
     <!--アカウント名がパラメーターに渡される-->
     <%= f.hidden_field :which, :value => "truths" %>
     <%= f.hidden_field :user_id, :value => @user2.id %>
+    <%= f.hidden_field :person, :value => "なし" %>
+    <%= f.hidden_field :reason, :value => "なし" %>
+    
     <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
   </div>
 </div>
 
-  <%= image_submit_tag("sendtruthletter@3x.png", class: 'sendtruth')%>
+  <%= image_submit_tag("/newimages/letter-send@2x.png", class: 'sendtruth')%>
   <!--javascriptで画面遷移を設定する-->
 <% end %>
 <!--textという名称のパラメータ値がpostletterのインスタンスに送られる-->
 
-<div class="gaidebutton">
-  <%= link_to truegaide_path(@user2) ,class: 'gaidebuttonhidden' do %>
-    <%= image_tag "/images/truebuttons@2x.png",:size =>"54x72" %>
-  <% end %>
-</div>

@@ -1,12 +1,11 @@
 <button class="nabbar">
-  <img src="/images/nabicon@3x.png" alt="ナビアイコン" width="37px" height="37px">
 </button>
 
 <% if logged_in? %>
 
     <dis class="logouts">
       <%= link_to logout_path, method: :delete, class: 'logout' do %>
-        <%= image_tag "/images/logout@3x.png",:size =>"78x26" %>
+        <%= image_tag "/newimages/nab-logout@2x.png",:size =>"83x34" %>
       <% end %>
     </dis>
      
@@ -14,8 +13,8 @@
    <% else %>
    
    <dis class="logins">
-     <%= link_to loginsession_path(id: 1),  class: 'login' do %>
-       <%= image_tag "/images/login@3x.png",:size =>"78x26" %>
+     <%= link_to login_path,  class: 'login' do %>
+       <%= image_tag "/newimages/nab-login@2x.png",:size =>"83x34" %>
      <% end %>
    </dis>
      

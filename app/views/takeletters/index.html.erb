@@ -1,13 +1,20 @@
+<div class="backbutton">
+  <%= link_to root_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
 <div class="letter-log">
-  <img src="images/takeletter2@3x.png" alt="オオカミloveletter" width="202px" height="221px" class="takeletterimage">
+  <img src="newimages/takeletterlogo@2x.png" alt="letterを受け取る" width="163px" height="87px" class="takeletterimage">
 </div>
 
 <div class="whitebox col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
   <ul class="media-list">
+    
     <% @receiveletters.each do |reciveletter| %>
+     
       <% if reciveletter.check? %>
-        <% if reciveletter.timercheck? %>
-          <!-- check,timercheck共にそこに値が入っていた場合answerページへと飛ぶ-->
+          <!-- checkで受け取ったかどうかだけ確認する>
           <% if reciveletter.which == "truths" %>
           <!--真実のloveletterを受け取っていた場合-->
             <li class="notification">
@@ -26,26 +33,33 @@
                 </div>
               </div>
             </li>
+          <% elsif reciveletter.which == "think" %>
+            <!--〇〇のことどう思う？-->
+            <li class="notification">
+              <div class="media-main">
+                <div>
+                  <%= link_to ' ', takethink_path(reciveletter) ,class: 'thinknotification' %>
+                </div>
+              </div>
+            </li>
+          
+          <% elsif reciveletter.which == "recom" %>
+            <!--オススメletter-->
+            <li class="notification">
+              <div class="media-main">
+                <div>
+                  <%= link_to ' ', takerecom_path(reciveletter) ,class: 'recomlienotification' %>
+                </div>
+              </div>
+            </li>
+          
           <% end %>
         
-        <% else %>
-        
-        <!-- checkがtrueでtimercheckがnilの場合-->
-        <!-- checkが入っている場合はdisclosureに値を代入する-->
-          <li class="notification">
-            <div class="media-main">
-              <div>
-                <%= link_to ' ', edit_postletter_path(reciveletter) ,class: 'alreadyread' %>
-                <!--checkが入っているのでタイマー画面が表示される-->
-              </div>
-            </div>
-          </li>
-        
-        <% end %>
-        
       <% else %>
+      <!--まだcheckが入っていない-->
       
-      <!--まだ受け取っていない新しく届いた手紙-->
+      <% if reciveletter.which == "truths" %>
+      
       <li class="notification">
         <div class="media-main">
           <div>
@@ -55,8 +69,45 @@
         </div>
       </li>
       
+      <% elsif reciveletter.which == "lies" %>
+      
+      <li class="notification">
+        <div class="media-main">
+          <div>
+            <%= link_to ' ', edit_postletter_path(reciveletter) ,class: 'newnotification' %>
+            <!-- checkが入っていないので、letter画面が表示される-->
+          </div>
+        </div>
+      </li>
+      
+      <% elsif reciveletter.which == "think" %>
+        <li class="notification">
+          <div class="media-main">
+            <div>
+              <%= link_to ' ', edit_takedthink_path(reciveletter) ,class: 'thinknotificationd' %>
+              <!-- checkが入っていないので、letter画面が表示される-->
+            </div>
+          </div>
+        </li>
+      <% elsif reciveletter.which == "recom" %>
+        <li class="notification">
+          <div class="media-main">
+            <div>
+              <%= link_to ' ', edit_takedrecom_path(reciveletter) ,class: 'recomnotificationd' %>
+              <!-- checkが入っていないので、letter画面が表示される-->
+            </div>
+          </div>
+        </li>
       <% end %>
       
+      <% end %>
+      <!--checkのendポイント-->
+      
     <% end %>
+    
   </ul>
+</div>
+
+<div class="takegaide">
+   <img src="newimages/takelettergaide@2x.png" alt="letterを受け取るガイド" width="309px" height="389px" class="takeletterimage">
 </div>

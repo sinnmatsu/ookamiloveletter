@@ -1,0 +1,41 @@
+<div class="letter-log">
+  <img src="/newimages/friendtitle@2x.png" alt="友達紹介" width="235px" height="66px" class="friend-logo">
+</div>
+
+<div class="camera">
+  <img src="/newimages/camera@2x.png" alt="スクショして" width="208px" height="115px" class="friend-logo">
+</div>
+
+
+<%= form_for(@createdfriend) do |f| %>
+   <% if @createdfriend.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @createdfriend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="letterarea">
+    <div class="form-group">
+   
+    <%= f.text_area :sentence, class: 'form-control', rows: 5, readonly: true %>
+    <!--@myuserがここに代入される-->
+    
+    <!--隠しフィールド内に値をセットする場合はvalueオプションを使用する必要がある-->
+  </div>
+</div>
+
+<% end %>
+
+<div class="friendstorie">
+  <img src="/newimages/friendstorie@2x.png" alt="スクショしてストーリー" width="326px" height="637px" class="friend-logo">
+</div>
+
+<div class="finish">
+  <%= link_to friends_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/camerafinish@2x.png",:size =>"224x57" %>
+  <% end %>
+</div>

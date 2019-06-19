@@ -5,7 +5,6 @@ class OokamiletterController < ApplicationController
   
   def show
     @answerletter = Postletter.find(params[:id])
-    #checkとtimercheckにtrueが入っているインスタンスになっている
   end
   
 end

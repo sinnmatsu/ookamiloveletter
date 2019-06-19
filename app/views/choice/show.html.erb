@@ -1,7 +1,69 @@
+<% if current_user == @user1 %>
 
+<div class="backbutton">
+  <%= link_to root_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<% else %>
+
+<div class="backbutton">
+  <%= link_to user_path(@user1) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+
+<% end %>
+
+
+<div class="letter-log">
+  <img src="/newimages/selectletter@2x.png" alt="letterを選択" width="250px" height="60px" class="friend-logo">
+</div>
+
+<div class="think">
+  <%= link_to fromthink_path(@user1), class:'ookamibutton' do %>
+    <%= image_tag "/newimages/thinkbutton@2x.png",:size =>"150x112" %>
+  <% end %>
+</div>
+
+
+<div class="selectimage">
+  <img src="/newimages/selectimage@2x.png" alt="画像" width="58px" height="74px" class="friend-logo">
+</div>
+
+<div class="recom">
+  <%= link_to recom_path(@user1) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/recombuttom@2x.png",:size =>"104x114" %>
+  <% end %>
+</div>
+
+<div class="recomgaide">
+  <img src="/newimages/recomgaide@2x.png" alt="画像" width="240px" height="21px" class="friend-logo">
+</div>
+
+
+<div class="selectimage2">
+  <img src="/newimages/selectimage2@2x.png" alt="画像" width="58px" height="74px" class="friend-logo">
+</div>
+
+<div class="letter">
+  <%= link_to truth_path(@user1), class:'truthbutton' do %>
+    <%= image_tag "/newimages/letter@2x.png",:size =>"100x115" %>
+  <% end %>
+</div>
+
+<div class="ookami">
+  <%= link_to ly_path(@user1), class:'ookamibutton' do %>
+    <%= image_tag "/newimages/ookamibuttons@2x.png",:size =>"150x112" %>
+  <% end %>
+</div>
+
+<div class="ookamigaide">
+  <img src="/newimages/ookamigaide@2x.png" alt="画像" width="311px" height="23px" class="friend-logo">
+</div>
   
 
-  <%= link_to ' ',truth_path(@user1), class:'truthbutton'%>
-  
-  <%= link_to ' ', ly_path(@user1), class:'ookamibutton' %>
+
 
