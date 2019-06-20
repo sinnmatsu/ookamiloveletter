@@ -1,8 +1,16 @@
+
+
 <% if current_user == @friend.user %>
 <!--ログインしているユーザーと一致したら-->
 <div class="backbutton">
   <%= link_to :back ,class: 'takebuttonhidden' do %>
     <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+  <!--自分のフレンドshowしか見れない-->
+<div class="deletebutton">
+  <%= link_to  @friend, method: :delete, data: { confirm: "紹介文を削除しますか?" }, class: 'deletes' do %>
+    <%= image_tag "/newimages/friend-deletes@2x.png",:size =>"33x33" %>
   <% end %>
 </div>
 

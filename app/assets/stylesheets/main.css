@@ -454,6 +454,11 @@ html {
       text-align: left; }
       .friends .show .backbutton .takebuttonhidden {
         display: block; }
+    .friends .show .deletebutton {
+      text-align: right;
+      margin-right: 10px;
+      margin-top: -30px;
+      display: block; }
     .friends .show .friend-title {
       margin-right: auto;
       margin-left: auto;
@@ -493,7 +498,8 @@ html {
       font-family: 'Hiragino Sans';
       font-size: 100%;
       background-color: transparent;
-      border: none; }
+      border: none;
+      height: 280px; }
     .friends .show .friendbaton {
       margin-top: -25px;
       margin-right: auto;
@@ -647,7 +653,8 @@ html {
       font-family: 'Hiragino Sans';
       font-size: 100%;
       background-color: transparent;
-      border: none; }
+      border: none;
+      height: 400px; }
   .friendcamera .show .friendstorie {
     margin-top: 25px;
     margin-left: 20px;

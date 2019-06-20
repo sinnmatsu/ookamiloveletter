@@ -19,6 +19,15 @@ class FriendsController < ApplicationController
   end
 
   def destroy
+    @friend = current_user.friends.find_by(id: params[:id])
+    
+    unless @friend
+      redirect_to root_path
+    end
+    
+    @friend.destroy
+    redirect_to friends_path
+    
   end
   
   def show
