@@ -70,7 +70,7 @@ html{ font-size: 62.5%; }
     .IDarea{
       padding-left:5px;
       padding-right:5px;
-      padding-top:5px;
+      padding-top:12px;
       background-image: url(/newimages/newURLboxs@2x.png); 
       background-size: cover;
       display: block;
@@ -100,7 +100,7 @@ html{ font-size: 62.5%; }
       text-align:center;
       display:inline-block;
       img{
-      width:105px;
+      width:125px;
       height:124px;
       }
     }
@@ -916,6 +916,14 @@ html{ font-size: 62.5%; }
         
         }
       }
+      
+      .friendNo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
     }
     .show{
       
@@ -968,6 +976,14 @@ html{ font-size: 62.5%; }
         }
       }
       
+       .friendNo{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      
     }
   }
   
@@ -1007,7 +1023,7 @@ html{ font-size: 62.5%; }
     .IDarea{
       padding-left:5px;
       padding-right:5px;
-      padding-top:5px;
+      padding-top:12px;
       background-image: url(/newimages/newURLboxs@2x.png); 
       background-size: cover;
       display: block;
@@ -1033,11 +1049,12 @@ html{ font-size: 62.5%; }
     margin-right:auto;
     margin-left:auto;
     text-align:center;
+    margin-bottom:80px;
     .takeletter{
       text-align:center;
       display:inline-block;
       img{
-      width:105px;
+      width:125px;
       height:130px;
       }
     }
@@ -1096,6 +1113,7 @@ html{ font-size: 62.5%; }
           margin-right:auto;
           margin-left:auto;
           text-align:center;
+          margin-bottom:80px;
           .takeletter{
             text-align:center;
             display:inline-block;
@@ -1157,6 +1175,7 @@ html{ font-size: 62.5%; }
           margin-right:auto;
           margin-left:auto;
           text-align:center;
+          margin-bottom:80px;
           .takeletter{
             text-align:center;
             display:inline-block;

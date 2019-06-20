@@ -56,7 +56,7 @@ html {
     .toppages .index .URLcreate .IDarea {
       padding-left: 5px;
       padding-right: 5px;
-      padding-top: 5px;
+      padding-top: 12px;
       background-image: url(/newimages/newURLboxs@2x.png);
       background-size: cover;
       display: block;
@@ -81,7 +81,7 @@ html {
       text-align: center;
       display: inline-block; }
       .toppages .index .button .takeletter img {
-        width: 105px;
+        width: 125px;
         height: 124px; }
     .toppages .index .button .friend {
       margin-left: 45px;
@@ -702,6 +702,12 @@ html {
         display: block;
         margin-right: auto;
         margin-left: auto; }
+  .lookfriend .loginbackground .friendNo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 40px; }
   .lookfriend .show .backbutton {
     display: block;
     margin-top: 30px;
@@ -742,6 +748,12 @@ html {
         display: block;
         margin-right: auto;
         margin-left: auto; }
+  .lookfriend .show .friendNo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 40px; }
 
 .users {
   font-size: 1.4rem;
@@ -772,7 +784,7 @@ html {
     .users .show .toppage .URLcreate .IDarea {
       padding-left: 5px;
       padding-right: 5px;
-      padding-top: 5px;
+      padding-top: 12px;
       background-image: url(/newimages/newURLboxs@2x.png);
       background-size: cover;
       display: block;
@@ -792,12 +804,13 @@ html {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 80px; }
     .users .show .toppage .button .takeletter {
       text-align: center;
       display: inline-block; }
       .users .show .toppage .button .takeletter img {
-        width: 105px;
+        width: 125px;
         height: 130px; }
     .users .show .toppage .button .friend {
       margin-left: 45px;
@@ -838,7 +851,8 @@ html {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 80px; }
     .users .show .button .takeletter {
       text-align: center;
       display: inline-block; }
@@ -879,7 +893,8 @@ html {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 80px; }
     .users .loginbackground .button .takeletter {
       text-align: center;
       display: inline-block; }

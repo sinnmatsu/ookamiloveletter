@@ -7,18 +7,9 @@ class UsersController < ApplicationController
 
   def show
     
-    #友達のアカウントにログインしたのと同時にtouserカラムにその友達のアカウントを設置する
+    #リンクが見当たらないエラーを防ぐ
     @user=User.find(params[:id])
-    
-    if logged_in?
-      @myuser=current_user
-      @mysecret=Secret.where(user_id: current_user.id).first
-      #ログインしている人の秘密
-    else
-      #特になにもなし
-    end
-    
-    
+
   end
 
   def new
