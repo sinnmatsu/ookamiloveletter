@@ -27,6 +27,12 @@ html {
   text-align: right;
   top: 200%; }
 
+.createbutton {
+  display: block;
+  margin-top: -38px;
+  text-align: left;
+  margin-left: 10px; }
+
 /*nabbar関係のcss*/
 .toppages {
   font-size: 1.4rem;
