@@ -38,7 +38,7 @@ html {
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back@2x.png);
   background-size: cover; }
   .toppages .index .log-title {
     margin-left: auto;
@@ -51,7 +51,7 @@ html {
   .toppages .index .text-alines {
     margin-right: auto;
     margin-left: auto;
-    color: white;
+    color: black;
     line-height: 200%;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -88,14 +88,14 @@ html {
       text-align: center;
       display: inline-block; }
       .toppages .index .button .takeletter img {
-        width: 125px;
-        height: 124px; }
+        width: 121px;
+        height: 110px; }
     .toppages .index .button .friend {
       margin-left: 45px;
       text-align: center;
       display: inline-block; }
       .toppages .index .button .friend img {
-        width: 101px;
+        width: 111px;
         height: 127px; }
   .toppages .loginbackground .log-title {
     display: block;
@@ -118,7 +118,7 @@ html {
 
 /*topapgeのcss*/
 .takeletters {
-  background-image: url(/newimages/takeback.png);
+  background-image: url(/newimages/new-back@2x.png);
   background-size: cover; }
   .takeletters .index .backbutton {
     display: block;
@@ -186,7 +186,8 @@ html {
     margin-left: auto;
     margin-top: 40px;
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 200px; }
 
 /*takeletterの時のcss*/
 .takedrecom {
@@ -773,8 +774,9 @@ html {
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back2@2x.png);
   background-size: cover;
+  height: 820px;
   /*userの中のコード*/ }
   .users .show .toppage .log-title {
     margin-left: auto;
@@ -787,7 +789,7 @@ html {
   .users .show .toppage .text-alines {
     margin-right: auto;
     margin-left: auto;
-    color: white;
+    color: black;
     line-height: 200%;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -824,8 +826,8 @@ html {
       text-align: center;
       display: inline-block; }
       .users .show .toppage .button .takeletter img {
-        width: 125px;
-        height: 130px; }
+        width: 121px;
+        height: 110px; }
     .users .show .toppage .button .friend {
       margin-left: 45px;
       text-align: center;
@@ -850,7 +852,7 @@ html {
   .users .show .text-alines {
     margin-right: auto;
     margin-left: auto;
-    color: white;
+    color: black;
     line-height: 200%;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -871,14 +873,14 @@ html {
       text-align: center;
       display: inline-block; }
       .users .show .button .takeletter img {
-        width: 105px;
+        width: 115px;
         height: 130px; }
     .users .show .button .friend {
       margin-left: 45px;
       text-align: center;
       display: inline-block; }
       .users .show .button .friend img {
-        width: 101px;
+        width: 111px;
         height: 127px; }
   .users .loginbackground .log-title {
     margin-left: auto;
@@ -892,7 +894,7 @@ html {
   .users .loginbackground .text-alines {
     margin-right: auto;
     margin-left: auto;
-    color: white;
+    color: black;
     line-height: 200%;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -924,9 +926,61 @@ html {
         height: 127px; }
 
 /*users#showのcss*/
-.ask {
-  background-image: url(/newimages/redback@2x.png);
-  background-size: cover; }
+.gaide1 .index {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .gaide1 .index .ask-title {
+    display: block;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .gaide1 .index .ask {
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.gaide2 .index {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .gaide2 .index .ask-title {
+    display: block;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .gaide2 .index .ask {
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.gaide3 .index {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .gaide3 .index .ask-title {
+    display: block;
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .gaide3 .index .ask {
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.ask .index {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
   .ask .index .ask-title {
     display: block;
     margin-top: 50px;
@@ -1020,7 +1074,7 @@ html {
 
 /*user#newのcss*/
 .passfinish {
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back2@2x.png);
   background-size: cover;
   height: 820px; }
   .passfinish .index .passwordfinish {
@@ -1036,7 +1090,7 @@ html {
     text-align: center; }
 
 .sessions .loginbackground {
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back2@2x.png);
   background-size: cover;
   height: 820px; }
   .sessions .loginbackground .pigg {
@@ -1096,14 +1150,13 @@ html {
     text-align: center; }
   .sessions .loginbackground .newacount {
     margin-top: 70px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 50px;
     text-align: center;
     margin-bottom: 40px; }
 
 /*sessionのcss*/
 .passwordlogin {
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back2@2x.png);
   background-size: cover;
   height: 820px; }
   .passwordlogin .loginbackground .backbutton {
@@ -1163,7 +1216,7 @@ html {
       height: 63px; }
 
 .choice {
-  background-image: url(/newimages/redback@2x.png);
+  background-image: url(/newimages/new-back@2x.png);
   background-size: cover;
   height: 820px;
   /*ログインしていない場合*/ }
@@ -1211,7 +1264,8 @@ html {
   .choice .show .ookamigaide {
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 100px; }
   .choice .loginbackground .backbutton {
     display: block;
     margin-top: 30px;
@@ -1258,7 +1312,8 @@ html {
     margin-top: -5px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 100px; }
 
 /*choiceの時のcss*/
 .letterfinish {
@@ -1829,7 +1884,6 @@ html {
     line-height: 200%;
     text-align: center; }
   .users .loginbackground .usercreate .password {
-    display: center;
     margin-left: 20px; }
   .users .loginbackground .usercreate .form-control-password {
     background-color: rgba(33, 39, 98, 0.5);
@@ -2345,6 +2399,482 @@ html {
     margin-bottom: 50px; }
 
 /*secret画面*/
+.lookletter {
+  background-image: url(/newimages/new-back@3x.png);
+  background-size: cover;
+  height: 820px; }
+  .lookletter .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .lookletter .show .log-title {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .lookletter .show .letterchange {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .lookletter .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    width: 281px;
+    height: 62px;
+    display: block;
+    margin-bottom: 20px; }
+  .lookletter .show .changeimage {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.toletter {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .toletter .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 40px; }
+  .toletter .show .form-control {
+    padding: 20px;
+    background-image: url(/newimages/new-letter-image@2x.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 265px;
+    height: 310px;
+    line-height: 150%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    background-color: transparent;
+    border: none; }
+  .toletter .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 237px;
+    height: 69px;
+    display: block;
+    margin-bottom: 20px; }
+  .toletter .show .changeimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.takesendgaide {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover; }
+  .takesendgaide .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .takesendgaide .show .gaide {
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .takesendgaide .show .gaidesbutton {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 200px; }
+  .takesendgaide .loginbackground .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .takesendgaide .loginbackground .gaide {
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .takesendgaide .loginbackground .gaidesbutton {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 200px; }
+
+.gaideaccount {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .gaideaccount .loginbackground .gaide {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .gaideaccount .loginbackground .gaide2 {
+    margin-top: 10px;
+    margin-right: 50px;
+    text-align: right; }
+  .gaideaccount .loginbackground .gaidesbutton {
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.lettergaide {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover; }
+  .lettergaide .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .lettergaide .show .gaide {
+    margin-top: -10px;
+    margin-left: 20px;
+    text-align: center; }
+  .lettergaide .show .gaidesbutton {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 200px; }
+
+.fromletter {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .fromletter .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 40px; }
+  .fromletter .show .form-control {
+    padding: 20px;
+    background-image: url(/newimages/new-letter-image@2x.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 265px;
+    height: 310px;
+    line-height: 150%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    background-color: transparent;
+    border: none; }
+  .fromletter .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 237px;
+    height: 69px;
+    display: block;
+    margin-bottom: 20px; }
+  .fromletter .show .changeimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.reply .show {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .reply .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 40px; }
+  .reply .show .form-control {
+    padding: 20px;
+    background-image: url(/newimages/new-letter-image@2x.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 265px;
+    height: 310px;
+    line-height: 150%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    background-color: transparent;
+    border: none; }
+  .reply .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 237px;
+    height: 69px;
+    display: block;
+    margin-bottom: 20px; }
+  .reply .show .changeimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.responses {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover; }
+  .responses .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .responses .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: -10px; }
+  .responses .show .gaideimage {
+    margin-top: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .responses .show .whitebox {
+    margin-top: 30px;
+    display: block;
+    padding: 0px; }
+    .responses .show .whitebox .takeletter {
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto; }
+      .responses .show .whitebox .takeletter .take {
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url(/newimages/new-takeletters@2x.png);
+        background-size: cover;
+        width: 368px;
+        height: 80px; }
+    .responses .show .whitebox .takesendletter {
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto; }
+      .responses .show .whitebox .takesendletter .takesend {
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url(/newimages/new-notice@2x.png);
+        background-size: cover;
+        width: 368px;
+        height: 80px; }
+
+.changeletters {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover; }
+  .changeletters .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .changeletters .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: -10px; }
+  .changeletters .show .person {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .changeletters .show .imagelog {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .changeletters .show .letterbutton {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .changeletters .show .whitebox {
+    margin-top: 30px;
+    display: block;
+    padding: 0px; }
+    .changeletters .show .whitebox .takesendnotification {
+      text-align: left;
+      margin-left: 10px; }
+      .changeletters .show .whitebox .takesendnotification .takesendbutton {
+        display: inline-block;
+        background-image: url(/newimages/new-take-image@2x.png);
+        background-size: cover;
+        height: 140px;
+        width: 167px; }
+    .changeletters .show .whitebox .takenotification {
+      text-align: left;
+      margin-left: 10px; }
+      .changeletters .show .whitebox .takenotification .takebutton {
+        display: inline-block;
+        background-image: url(/newimages/new-taked-image@2x.png);
+        background-size: cover;
+        height: 140px;
+        width: 167px; }
+    .changeletters .show .whitebox .notification {
+      text-align: right;
+      margin-right: 10px; }
+      .changeletters .show .whitebox .notification .button {
+        display: inline-block;
+        background-image: url(/newimages/new-send-letterimage@2x.png);
+        background-size: cover;
+        height: 140px;
+        width: 167px; }
+    .changeletters .show .whitebox .sendnotification {
+      text-align: right;
+      margin-right: 10px; }
+      .changeletters .show .whitebox .sendnotification .sendbutton {
+        display: inline-block;
+        background-image: url(/newimages/new-sended-image2@2x.png);
+        background-size: cover;
+        height: 140px;
+        width: 167px; }
+  .changeletters .edit .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .changeletters .edit .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: -10px; }
+  .changeletters .edit .form-control {
+    padding: 20px;
+    background-image: url(/newimages/new-letter-image@2x.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 265px;
+    height: 310px;
+    line-height: 150%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    background-color: transparent;
+    border: none; }
+  .changeletters .edit .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 237px;
+    height: 64px;
+    display: block;
+    margin-bottom: 20px; }
+  .changeletters .edit .changeimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 100px; }
+
+.newletter {
+  background-image: url(/newimages/new-back@2x.png);
+  background-size: cover; }
+  .newletter .show .backbutton {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left; }
+  .newletter .show .deletebutton {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -30px;
+    display: block; }
+  .newletter .show .log-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: -10px; }
+  .newletter .show .form-control {
+    padding: 20px;
+    background-image: url(/newimages/new-letter-image@2x.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 265px;
+    height: 310px;
+    line-height: 150%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    background-color: transparent;
+    border: none; }
+  .newletter .show .go-backbutton {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .newletter .show .changeimage {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.delete {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .delete .index .log-title {
+    padding-left: 40px;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .delete .index .log-image {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .delete .index .toppage {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
+.lettersended .show {
+  background-image: url(/newimages/new-back2@2x.png);
+  background-size: cover;
+  height: 820px; }
+  .lettersended .show .log-title {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .lettersended .show .log-image {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .lettersended .show .toppage {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+
 .looksecret .show {
   background-image: url(/images/redbacks@2x.png);
   height: 1400px; }

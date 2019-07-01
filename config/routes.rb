@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
 
 
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
   
@@ -65,5 +64,20 @@ Rails.application.routes.draw do
   resources :ookamifinish, only:[:index,:show]
   resources :takedthink, only:[:show,:edit]
   resources :takedrecom, only:[:show,:edit]
-  
+  resources :responses, only:[:index, :show, :create, :destroy, :update, :edit ]
+  resources :letsletter,only:[:index, :show]
+  resources :toletter,only:[:show, :index]
+  resources :changeletters, only:[:index, :show, :create, :destroy, :update, :edit ]
+  resources :lookletter, only:[:show]
+  resources :reply,only:[:show, :index]
+  resources :lettersended, only:[:show]
+  resources :newletter, only:[:show]
+  resources :fromletter, only:[:show]
+  resources :takesendgaide,only:[:show]
+  resources :gaideaccount, only:[:index]
+  resources :lettergaide,  only:[:show]
+  resources :gaide1, only:[:index]
+  resources :gaide2, only:[:index]
+  resources :gaide3, only:[:index]
+  resources :delete, only:[:index]
 end

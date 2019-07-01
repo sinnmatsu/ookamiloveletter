@@ -1,0 +1,2 @@
+module LetsletterHelper
+end

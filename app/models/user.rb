@@ -32,6 +32,13 @@ class User < ApplicationRecord
   has_many :secrets ,class_name: 'Secret',foreign_key: 'user_id'
   #user１人に対してsecretが生成される。
   
+  
+  has_many :responses ,class_name: 'Response',foreign_key: 'fromuser_id'
+  #fromuserから見たときのresponses
+  has_many :changeletters, foreign_key: 'fromuser_id'
+  #fromuserから見たときのchangeletter
+  
+  
   has_many :friends
   
                     

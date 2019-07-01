@@ -1,0 +1,2 @@
+module TakesendgaideHelper
+end

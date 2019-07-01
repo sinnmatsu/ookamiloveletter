@@ -46,7 +46,7 @@ html{ font-size: 62.5%; }
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-image: url(/newimages/redback@2x.png); 
+  background-image: url(/newimages/new-back@2x.png);
   background-size:cover;
   
   .index{
@@ -64,7 +64,7 @@ html{ font-size: 62.5%; }
   .text-alines{
     margin-right:auto;
     margin-left:auto;
-    color: white;
+    color: black;
     line-height: 200% ;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -108,8 +108,8 @@ html{ font-size: 62.5%; }
       text-align:center;
       display:inline-block;
       img{
-      width:125px;
-      height:124px;
+      width:121px;
+      height:110px;
       }
     }
     .friend{
@@ -117,7 +117,7 @@ html{ font-size: 62.5%; }
       text-align:center;
       display:inline-block;
       img{
-      width:101px;
+      width:111px;
       height:127px;
       }
     }
@@ -158,7 +158,7 @@ html{ font-size: 62.5%; }
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
   
   .takeletters{
-    background-image: url(/newimages/takeback.png); 
+    background-image: url(/newimages/new-back@2x.png); 
     background-size:cover;
     .index{
     .backbutton{
@@ -249,6 +249,7 @@ html{ font-size: 62.5%; }
       margin-top:40px;
       display:block;
       text-align:center;
+      margin-bottom:200px;
     }
     
    }
@@ -1009,8 +1010,9 @@ html{ font-size: 62.5%; }
     font-size: 1.4rem;
     line-height: 1.6;
     letter-spacing: 0.1em;
-    background-image: url(/newimages/redback@2x.png); 
+    background-image: url(/newimages/new-back2@2x.png); 
     background-size:cover;
+    height:820px;
     .show{
       
     .toppage{
@@ -1028,7 +1030,7 @@ html{ font-size: 62.5%; }
   .text-alines{
     margin-right:auto;
     margin-left:auto;
-    color: white;
+    color: black;
     line-height: 200% ;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
@@ -1072,8 +1074,8 @@ html{ font-size: 62.5%; }
       text-align:center;
       display:inline-block;
       img{
-      width:125px;
-      height:130px;
+      width:121px;
+      height:110px;
       }
     }
     .friend{
@@ -1109,9 +1111,9 @@ html{ font-size: 62.5%; }
   }
          
   .text-alines{
-     margin-right:auto;
-     margin-left:auto;
-     color: white;
+           margin-right:auto;
+           margin-left:auto;
+           color: black;
            line-height: 200% ;
            font-weight: bolder;
            font-family: 'Hiragino Sans';
@@ -1136,7 +1138,7 @@ html{ font-size: 62.5%; }
             text-align:center;
             display:inline-block;
             img{
-              width:105px;
+              width:115px;
               height:130px;
              }
            }
@@ -1145,7 +1147,7 @@ html{ font-size: 62.5%; }
             text-align:center;
             display:inline-block;
             img{
-              width:101px;
+              width:111px;
               height:127px;
             }
           }
@@ -1173,7 +1175,7 @@ html{ font-size: 62.5%; }
          .text-alines{
            margin-right:auto;
            margin-left:auto;
-           color: white;
+           color: black;
            line-height: 200% ;
            font-weight: bolder;
            font-family: 'Hiragino Sans';
@@ -1218,11 +1220,12 @@ html{ font-size: 62.5%; }
    /*users#showのcss*/
    
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-   .ask{
-     background-image: url(/newimages/redback@2x.png); 
-     background-size:cover;
 
+   .gaide1{
      .index{
+       background-image: url(/newimages/new-back2@2x.png); 
+       background-size:cover; 
+       height:820px;
        .ask-title{
          display:block;
          margin-top:50px;
@@ -1237,6 +1240,77 @@ html{ font-size: 62.5%; }
          margin-left:auto;
          text-align:center;
        }
+       
+     }
+   }
+   
+   .gaide2{
+     .index{
+       background-image: url(/newimages/new-back2@2x.png); 
+       background-size:cover; 
+       height:820px;
+       .ask-title{
+         display:block;
+         margin-top:50px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       .ask{
+         display:block;
+         margin-top:30px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       
+     }
+   }
+   
+   .gaide3{
+     .index{
+       background-image: url(/newimages/new-back2@2x.png); 
+       background-size:cover; 
+       height:820px;
+       .ask-title{
+         display:block;
+         margin-top:90px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       .ask{
+         display:block;
+         margin-top:30px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       
+     }
+   }
+   
+   
+   .ask{
+     .index{
+        background-image: url(/newimages/new-back2@2x.png); 
+     background-size:cover; 
+     height:820px;
+       .ask-title{
+         display:block;
+         margin-top:50px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       .ask{
+         display:block;
+         margin-top:30px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+       }
+       
      }
    }
    
@@ -1344,7 +1418,7 @@ html{ font-size: 62.5%; }
    /*user#newのcss*/
    
    .passfinish{
-     background-image: url(/newimages/redback@2x.png); 
+     background-image: url(/newimages/new-back2@2x.png); 
      background-size:cover;
      height:820px;
      .index{
@@ -1368,7 +1442,7 @@ html{ font-size: 62.5%; }
   
   .sessions{
     .loginbackground{
-      background-image: url(/newimages/redback@2x.png); 
+      background-image: url(/newimages/new-back2@2x.png); 
       background-size:cover;
       height:820px;
        .pigg{
@@ -1443,8 +1517,7 @@ html{ font-size: 62.5%; }
          }
          .newacount{
            margin-top:70px;
-           margin-right:auto;
-           margin-left:auto;
+           margin-left:50px;
            text-align:center;
            margin-bottom:40px;
          }
@@ -1455,7 +1528,7 @@ html{ font-size: 62.5%; }
   /*sessionのcss*/
   
   .passwordlogin{
-      background-image: url(/newimages/redback@2x.png); 
+      background-image: url(/newimages/new-back2@2x.png); 
       background-size:cover;
       height:820px;
     .loginbackground{
@@ -1536,7 +1609,7 @@ html{ font-size: 62.5%; }
   
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   .choice{
-    background-image: url(/newimages/redback@2x.png); 
+    background-image: url(/newimages/new-back@2x.png); 
     background-size:cover;
     height:820px;
     .show{
@@ -1603,6 +1676,7 @@ html{ font-size: 62.5%; }
           margin-right:auto;
           margin-left:auto;
           text-align:center;
+          margin-bottom:100px;
         }
         
       
@@ -1676,6 +1750,7 @@ html{ font-size: 62.5%; }
           margin-right:auto;
           margin-left:auto;
           text-align:center;
+          margin-bottom:100px;
         }
  
     }
@@ -2432,7 +2507,6 @@ html{ font-size: 62.5%; }
           }
           
          .password{
-           display:center;
            margin-left:20px;
          }
          
@@ -3110,6 +3184,647 @@ html{ font-size: 62.5%; }
    }
  }
  /*secret画面*/
+ 
+ .lookletter{
+   background-image: url(/newimages/new-back@3x.png);
+   background-size:cover;
+   height:820px;
+   .show{
+     
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+     .log-title{
+       margin-top:10px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .letterchange{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:80px;
+        width: 281px;
+        height: 62px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      
+     .changeimage{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   }
+   .loginbackground{
+     
+   }
+ }
+ 
+ .toletter{
+   background-image: url(/newimages/new-back@2x.png);
+   background-size:cover;
+   height:820px;
+   .show{
+     
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      
+      .form-control{
+        padding:20px;
+        background-image: url(/newimages/new-letter-image@2x.png);
+        background-size:cover;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:265px;
+        height:310px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        background-color:transparent;
+        border:none;
+        
+      }
+      
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 237px;
+        height: 69px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      
+      .changeimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+   }
+ }
+ 
+ 
+ .takesendgaide{
+   background-image: url(/newimages/new-back2@2x.png);
+   background-size:cover;
+   
+   .show{
+     
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+     .gaide{
+       margin-top:-10px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .gaidesbutton{
+       display:block;
+       margin-top:20px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       margin-bottom:200px;
+     }
+   }
+   
+   .loginbackground{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+     .gaide{
+       margin-top:-10px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .gaidesbutton{
+       display:block;
+       margin-top:20px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       margin-bottom:200px;
+     }
+   }
+ }
+ 
+ .gaideaccount{
+   background-image: url(/newimages/new-back2@2x.png);
+   background-size:cover;
+   height:820px;
+   .loginbackground{
+     .gaide{
+       margin-top:50px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .gaide2{
+       margin-top:10px;
+       margin-right:50px;
+       text-align:right;
+     }
+     .gaidesbutton{
+       display:block;
+       margin-top:10px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+   }
+ }
+ 
+ .lettergaide{
+   background-image: url(/newimages/new-back2@2x.png);
+   background-size:cover;
+   .show{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+     .gaide{
+       margin-top:-10px;
+       margin-left:20px;
+       text-align:center;
+     }
+     .gaidesbutton{
+       display:block;
+       margin-top:20px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+       margin-bottom:200px;
+     }
+   }
+ }
+ 
+  .fromletter{
+   background-image: url(/newimages/new-back@2x.png);
+   background-size:cover;
+   height:820px;
+   .show{
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      
+      .form-control{
+        padding:20px;
+        background-image: url(/newimages/new-letter-image@2x.png);
+        background-size:cover;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:265px;
+        height:310px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        background-color:transparent;
+        border:none;
+        
+      }
+      
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 237px;
+        height: 69px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      
+      .changeimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+   }
+ }
+ 
+ 
+ 
+ .reply{
+   .show{
+     background-image: url(/newimages/new-back@2x.png);
+     background-size:cover;
+     height:820px;
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:40px;
+      }
+      
+      .form-control{
+        padding:20px;
+        background-image: url(/newimages/new-letter-image@2x.png);
+        background-size:cover;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:265px;
+        height:310px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        background-color:transparent;
+        border:none;
+        
+      }
+      
+      .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 237px;
+        height: 69px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      
+      .changeimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+   }
+ }
+ 
+ .responses{
+   background-image: url(/newimages/new-back@2x.png);
+   background-size:cover;
+   .show{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+     
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:-10px;
+      }
+      
+      .gaideimage{
+        margin-top:50px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .whitebox{
+        margin-top:30px;
+        display:block;
+        padding:0px;
+        .takeletter{
+        text-align:center;
+        margin-right:auto;
+        margin-left:auto;
+        .take{
+          margin-top:20px;
+          display: inline-block;
+          background-image: url(/newimages/new-takeletters@2x.png);
+          background-size:cover;
+          width: 368px;
+          height: 80px;
+        }
+        }
+      .takesendletter{
+        text-align:center;
+        margin-right:auto;
+        margin-left:auto;
+        
+        .takesend{
+          margin-top:20px;
+          display: inline-block;
+          background-image: url(/newimages/new-notice@2x.png);
+          background-size:cover;
+          width: 368px;
+          height: 80px;
+        }
+      }
+      }
+   }
+ }
+ 
+ .changeletters{
+    background-image: url(/newimages/new-back@2x.png);
+    background-size:cover;
+   .show{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+      
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:-10px;
+      }
+      .person{
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+      .imagelog{
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      .letterbutton{
+        margin-top:20px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      
+      .whitebox{
+        margin-top:30px;
+        display:block;
+        padding:0px;
+      .takesendnotification{
+        text-align:left;
+        margin-left:10px;
+        .takesendbutton{
+          display: inline-block;
+          background-image: url(/newimages/new-take-image@2x.png);
+          background-size:cover;
+          height: 140px;
+          width: 167px;
+        }
+      }
+      
+      .takenotification{
+        text-align:left;
+        margin-left:10px;
+        .takebutton{
+          display: inline-block;
+          background-image: url(/newimages/new-taked-image@2x.png);
+          background-size:cover;
+          height: 140px;
+          width: 167px;
+        }
+      }
+      
+      .notification{
+        text-align:right;
+        margin-right:10px;
+        .button{
+          display: inline-block;
+          background-image: url(/newimages/new-send-letterimage@2x.png);
+          background-size:cover;
+          height: 140px;
+          width: 167px;
+        }
+      }
+      
+      .sendnotification{
+        text-align:right;
+        margin-right:10px;
+        .sendbutton{
+          display: inline-block;
+          background-image: url(/newimages/new-sended-image2@2x.png);
+          background-size:cover;
+          height: 140px;
+          width: 167px;
+        }
+      }
+      }
+     
+   }
+   .edit{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:-10px;
+      }
+      
+      .form-control{
+        padding:20px;
+        background-image: url(/newimages/new-letter-image@2x.png);
+        background-size:cover;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:265px;
+        height:310px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        background-color:transparent;
+        border:none;
+        
+      }
+      
+     .sendookami{
+       text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:30px;
+        width: 237px;
+        height: 64px;
+        display: block;
+        margin-bottom: 20px;
+     }
+      .changeimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-bottom:100px;
+      }
+   }
+ }
+ 
+ .newletter{
+   background-image: url(/newimages/new-back@2x.png);
+   background-size:cover;
+   .show{
+     .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+       .deletebutton{
+        text-align:right;
+        margin-right:10px;
+        margin-top:-30px;
+        display:block;
+      }
+      .log-title{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        margin-top:-10px;
+      }
+      
+      .form-control{
+        padding:20px;
+        background-image: url(/newimages/new-letter-image@2x.png);
+        background-size:cover;
+        margin-top:30px;
+        margin-right:auto;
+        margin-left:auto;
+        width:265px;
+        height:310px;
+        line-height: 150% ;
+        font-weight: bolder;
+        font-family: 'Hiragino Sans';
+        font-size: 100% ;
+        background-color:transparent;
+        border:none;
+        
+      }
+      
+     .go-backbutton{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+     }
+      .changeimage{
+        margin-top:10px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+   }
+ }
+ 
+ 
+ .delete{
+   background-image: url(/newimages/new-back2@2x.png);
+   background-size:cover;
+   height:820px;
+   .index{
+     
+      .log-title{
+       padding-left:40px;
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .log-image{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .toppage{
+       margin-top:20px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   }
+ }
+ 
+ .lettersended{
+   .show{
+     background-image: url(/newimages/new-back2@2x.png);
+     background-size:cover;
+     height:820px;
+     
+   
+      
+     .log-title{
+       margin-top:40px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .log-image{
+       margin-top:30px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     .toppage{
+       margin-top:20px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+   }
+ }
  
  
  .looksecret{

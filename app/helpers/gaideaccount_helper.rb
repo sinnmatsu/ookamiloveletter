@@ -1,0 +1,2 @@
+module GaideaccountHelper
+end

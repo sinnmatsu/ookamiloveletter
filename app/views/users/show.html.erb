@@ -5,13 +5,10 @@
     <div class="toppage">
     
     <div class="log-title">
-      <img src="/newimages/newlogo@2x.png" alt="オオカミloveletter" width="80%">
+      <img src="/newimages/new-title-kois@2x.png" alt="恋文" width="90%">
     </div>
     
-    <div class="herat">
-      <img src="/newimages/doubleherat@2x.png" alt="ハート" width="58px" height="30px">
-    </div>
-  
+    
     <div class="text-alines">
       <p><%= @user.name %></p>       
     </div>
@@ -23,22 +20,47 @@
     </div>
     
     <div class="setlog">
-      <img src="/newimages/setlog@2x.png" alt="アプリの機能" width="176px" height="26px">
+      <img src="/newimages/set-logss@2x.png" alt="アプリの機能" width="176px" height="26px">
     </div>
   
     <div class="button">
       <!--letterを受け取るボタン-->
-      <div class="takeletter">
-        <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/newletterbutton@2x.png",:size =>"105x110" %>
-        <% end %>
-      </div>
+      <% unless @postletterss %>
+      
+        <div class="takeletter">
+          <%= link_to lettergaide_path(@user) ,class: 'takebuttonhidden' do %>
+            <%= image_tag "/newimages/new-lettertake-button@2x.png",:size =>"121x110" %>
+          <% end %>
+        </div>
+        
+      <% else %>
+      
+        <div class="takeletter">
+          <%= link_to takeletters_path ,class: 'takebuttonhidden' do %>
+            <%= image_tag "/newimages/new-lettertake-button@2x.png",:size =>"121x110" %>
+          <% end %>
+        </div>
+      
+      <% end %>
     
-      <div class="friend">
-        <%= link_to friends_path ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/friendbutton@2x.png",:size =>"101x127" %>
-        <% end %>
-      </div>
+      <% unless @user.responses %>
+        <!--自分だった場合でなおかつレスポンスキーがなかった場合-->
+        <div class="friend">
+          <%= link_to takesendgaide_path(@user) ,class: 'takebuttonhidden' do %>
+            <%= image_tag "/newimages/new-letterchange@2x.png",:size =>"111x129" %>
+          <% end %>
+        </div>
+        
+      <% else %>
+        <!--レスポンスキーがない場合は毎回ガイドに飛ばす-->
+        <div class="friend">
+          <%= link_to response_path(@user) ,class: 'takebuttonhidden' do %>
+            <%= image_tag "/newimages/new-letterchange@2x.png",:size =>"111x129" %>
+          <% end %>
+        </div>
+      
+      <% end %>
+      
     </div>
     
 </div>
@@ -54,12 +76,10 @@
     </div>
     
      <div class="log-title">
-      <img src="/newimages/newlogo@2x.png" alt="オオカミloveletter" width="80%">
+      <img src="/newimages/new-title-kois@2x.png" alt="恋文" width="90%">
     </div>
     
-    <div class="herat">
-      <img src="/newimages/doubleherat@2x.png" alt="ハート" width="58px" height="30px">
-    </div>
+   
   
     <div class="text-alines">
       <p><%= @user.name %></p>       
@@ -67,20 +87,21 @@
   
     
     <div class="setlog">
-      <img src="/newimages/setlog@2x.png" alt="アプリの機能" width="176px" height="26px">
+      <img src="/newimages/set-logss@2x.png" alt="アプリの機能" width="176px" height="26px">
     </div>
   
     <div class="button">
       <!--letterを受け取るボタン-->
       <div class="takeletter">
         <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/newwrite@2x.png",:size =>"99x130" %>
+          <%= image_tag "/newimages/new-sendletter@2x.png",:size =>"99x130" %>
         <% end %>
       </div>
     
       <div class="friend">
-        <%= link_to lookfriend_path(@user) ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/friendbutton@2x.png",:size =>"101x127" %>
+        <!--文通画面に飛ばす-->
+        <%= link_to lookletter_path(@user) ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/newimages/new-letterchange@2x.png",:size =>"111x129" %>
         <% end %>
       </div>
     </div>
@@ -95,12 +116,9 @@
   <div class="user-show">
     
     <div class="log-title">
-      <img src="/newimages/newlogo@2x.png" alt="オオカミloveletter" width="80%">
+      <img src="/newimages/new-title-kois@2x.png" alt="恋文" width="90%">
     </div>
     
-    <div class="herat">
-      <img src="/newimages/doubleherat@2x.png" alt="ハート" width="58px" height="30px">
-    </div>
   
     <div class="text-alines">
       <p><%= @user.name %></p>       
@@ -108,20 +126,21 @@
   
     
     <div class="setlog">
-      <img src="/newimages/setlog@2x.png" alt="アプリの機能" width="176px" height="26px">
+      <img src="/newimages/set-logss@2x.png" alt="アプリの機能" width="176px" height="26px">
     </div>
   
     <div class="button">
       <!--letterを受け取るボタン-->
       <div class="takeletter">
         <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/newwrite@2x.png",:size =>"99x132" %>
+          <%= image_tag "/newimages/new-sendletter@2x.png",:size =>"99x130" %>
         <% end %>
       </div>
     
+      <!--ログインしていない場合はガイド画面に飛ばす-->
       <div class="friend">
-        <%= link_to lookfriend_path(@user) ,class: 'takebuttonhidden' do %>
-          <%= image_tag "/newimages/friendbutton@2x.png",:size =>"101x127" %>
+        <%= link_to takesendgaide_path(1) ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/newimages/new-letterchange@2x.png",:size =>"111x129" %>
         <% end %>
       </div>
     </div>

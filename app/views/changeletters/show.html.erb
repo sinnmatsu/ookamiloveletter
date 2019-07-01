@@ -1,0 +1,96 @@
+  <div class="backbutton">
+    <%= link_to response_path(current_user) ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+    <% end %>
+  
+    
+  </div>
+  
+  <div class="log-title">
+    <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="47px">
+  </div>
+  
+  <div class="person">
+    <img src="/newimages/new-person@2x.png" alt="私とあなたの匿名文通" width="229px" height="13px">
+  </div>
+
+  
+  <!--JS処理で削除する-->
+  <% if @response.fromuser_id == current_user.id %>
+  <!--自分からレスポンスキーを作成した場合-->
+  <div class="imagelog">
+    <img src="/newimages/new-sendtake-gaide2@2x.png" alt="私とあなたの匿名文通" width="320px" height="190px">
+  </div>
+  
+  <div class="letterbutton">
+    <%= link_to toletter_path(@response) ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/new-sendtake-gaidebutton@2x.png",:size =>"281x60" %>
+    <% end %>
+  </div>
+  
+  <% elsif  @response.user_id ==current_user.id %>
+  <!--相手からレスポンスキーを作成した場合-->
+  <div class="imagelog">
+    <img src="/newimages/new-sendtake-gaide@2x.png" alt="私とあなたの匿名文通" width="320px" height="190px">
+  </div>
+  
+  <div class="letterbutton">
+    <%= link_to fromletter_path(@response) ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/new-start@2x.png",:size =>"281x60" %>
+    <% end %>
+  </div>
+  <% end %>
+  <!--changeletterが作成されたJS処理で削除する-->
+
+
+
+<div class="whitebox">
+  <ul class="media-list">
+    
+    <% @changeletters.each do |changeletter| %>
+    
+    <script>
+      $(document).ready(function() {
+        hide();
+      });
+
+    </script>
+  
+    <% if changeletter.user_id == current_user.id %>
+    <!--自分宛-->
+      <% unless changeletter.check %>
+        <!--checkがnilだったら返信画面に飛ぶ-->
+        <li class="takesendnotification">
+          <%= link_to ' ', edit_changeletter_path(changeletter) ,class: 'takesendbutton' %>
+        </li>
+        
+      <% else %>
+        <!--checkが入っていたら普通にその人のletter画面-->
+          <li class="takenotification">
+            <%= link_to ' ', edit_changeletter_path(changeletter) ,class: 'takebutton' %>
+          </li>
+        
+      <% end %>
+      
+    <% elsif changeletter.fromuser_id == current_user.id %>
+    <!--自分が送ったやつ、まだ相手が既読をつけてない-->
+      <% unless changeletter.check %>
+        <!--そのletter画面、色付き通知-->
+        <li class="notification">
+          <%= link_to ' ', newletter_path(changeletter) ,class: 'button' %>
+        </li>
+        
+      <% else %>
+      　<!--そのletter画面、色なし通知-->
+      　<li class="sendnotification">
+          <%= link_to ' ', newletter_path(changeletter) ,class: 'sendbutton' %>
+        </li>
+        
+      <% end %>
+      <!--自分宛か、自分が送ったかのif文のend-->
+    <% end %>
+    
+    <% end %>
+
+  </ul>
+</div>

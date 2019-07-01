@@ -1,0 +1,36 @@
+<!--返信画面のview-->
+
+  
+<div class="log-title">
+  <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="49px">
+</div>
+
+
+<%= form_for(@changeletter) do |f| %>
+  <% if @changeletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @changeletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="letterarea">
+    <div class="form-group">
+      <%= f.text_area :text, class: 'form-control', rows: 5 %>
+      <%= f.hidden_field :responsekey, :value => @changeletterfrom.responsekey %>
+      <!--送られてきたchangeletterのレスポンスキーを挿入-->
+      <%= f.hidden_field :user_id, :value => @user.id %>
+      <!--送ってきた人のuser.id-->
+    </div>
+  </div>
+
+ <%= image_submit_tag("/newimages/new-send-image@2x.png", class: 'sendookami')%>
+  
+<% end %>
+
+<div class="changeimage">
+  <img src="/newimages/new-change-image@2x.png" alt="私とあなたの匿名文通" width="277px" height="93px">
+</div>

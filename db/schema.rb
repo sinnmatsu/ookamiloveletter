@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190616080555) do
+ActiveRecord::Schema.define(version: 20190628002857) do
+
+  create_table "changeletters", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "response_id"
+    t.integer  "user_id"
+    t.integer  "fromuser_id"
+    t.string   "text"
+    t.string   "check"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "responsekey"
+    t.index ["fromuser_id"], name: "index_changeletters_on_fromuser_id", using: :btree
+    t.index ["response_id"], name: "index_changeletters_on_response_id", using: :btree
+    t.index ["user_id"], name: "index_changeletters_on_user_id", using: :btree
+  end
 
   create_table "favos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -68,6 +82,17 @@ ActiveRecord::Schema.define(version: 20190616080555) do
     t.index ["user_id"], name: "index_recoms_on_user_id", using: :btree
   end
 
+  create_table "responses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "fromuser_id"
+    t.string   "text"
+    t.string   "check"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["fromuser_id"], name: "index_responses_on_fromuser_id", using: :btree
+    t.index ["user_id"], name: "index_responses_on_user_id", using: :btree
+  end
+
   create_table "secrets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
     t.integer  "lookuser_id"
@@ -102,6 +127,9 @@ ActiveRecord::Schema.define(version: 20190616080555) do
     t.index ["loginuser_id"], name: "index_users_on_loginuser_id", using: :btree
   end
 
+  add_foreign_key "changeletters", "responses"
+  add_foreign_key "changeletters", "users"
+  add_foreign_key "changeletters", "users", column: "fromuser_id"
   add_foreign_key "favos", "secrets"
   add_foreign_key "favos", "users"
   add_foreign_key "friends", "users"
@@ -111,6 +139,8 @@ ActiveRecord::Schema.define(version: 20190616080555) do
   add_foreign_key "postletters", "users", column: "fromuser_id"
   add_foreign_key "recoms", "users"
   add_foreign_key "recoms", "users", column: "fromuser_id"
+  add_foreign_key "responses", "users"
+  add_foreign_key "responses", "users", column: "fromuser_id"
   add_foreign_key "secrets", "users"
   add_foreign_key "secrets", "users", column: "likeuser_id"
   add_foreign_key "secrets", "users", column: "lookuser_id"

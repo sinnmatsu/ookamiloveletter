@@ -1,0 +1,2 @@
+module LookletterHelper
+end

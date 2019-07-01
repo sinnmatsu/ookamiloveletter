@@ -1,0 +1,42 @@
+<% if logged_in? %>
+
+<div class="backbutton">
+  <%= link_to root_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+
+<div class="gaide">
+  <img src="/newimages/new-bunntuu-gaide@2x.png" alt="パスワード変更" width="312px" height="519px">
+</div>
+
+<!--自分の文通画面に飛ばす-->
+<dis class="gaidesbutton">
+  <%= link_to response_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/new-buntuu-button@2x.png",:size =>"281x65" %>
+  <% end %>
+</dis>
+
+<% else %>
+
+<div class="backbutton">
+  <%= link_to user_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+
+<!--ログインしていない場合-->
+<div class="gaide">
+  <img src="/newimages/new-bunntuu-gaide3s@2x.png" alt="パスワード変更" width="312px" height="519px">
+</div>
+
+<!--ログインしていない場合はガイドアカウントへ飛ばす-->
+<dis class="gaidesbutton">
+  <%= link_to gaideaccount_index_path ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/new-buntuu-button@2x.png",:size =>"281x60" %>
+  <% end %>
+</dis>
+
+<% end %>

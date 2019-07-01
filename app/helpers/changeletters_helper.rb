@@ -1,0 +1,2 @@
+module ChangelettersHelper
+end

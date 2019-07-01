@@ -1,0 +1,49 @@
+<div class="backbutton">
+  <%= link_to changeletter_path(@changeletter.responsekey) ,class: 'takebuttonhidden' do %>
+  <!--レスポンスキーを渡して元の画面に戻る-->
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+  
+<!--自分が送った手紙を削除する-->
+<div class="deletebutton">
+  <%= link_to  @changeletter, method: :delete, data: { confirm: "この手紙を削除しますか?" }, class: 'deletes' do %>
+    <%= image_tag "/newimages/friend-deletes@2x.png",:size =>"33x33" %>
+  <% end %>
+  <!--勝手にdeleteされる-->
+</div>
+
+<div class="log-title">
+  <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="49px">
+</div>
+
+
+<%= form_for(@changeletter) do |f| %>
+  <% if @changeletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @changeletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="letterarea">
+    <div class="form-group">
+      <%= f.text_area :text, class: 'form-control', rows: 5 ,readonly: true%>
+    </div>
+  </div>
+
+<% end %>
+
+<div class="go-backbutton">
+  <%= link_to changeletter_path(@changeletter.responsekey) ,class: 'takebuttonhidden' do %>
+  <!--レスポンスキーを渡して-->
+    <%= image_tag "/newimages/new-goback-button@2x.png",:size =>"237x64" %>
+  <% end %>
+</div>
+
+<div class="changeimage">
+  <img src="/newimages/new-change-image@2x.png" alt="私とあなたの匿名文通" width="277px" height="93px">
+</div>

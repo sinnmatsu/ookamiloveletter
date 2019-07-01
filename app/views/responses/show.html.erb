@@ -1,0 +1,68 @@
+<% unless @responsess %>
+
+  <div class="backbutton">
+    <%= link_to root_path ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+    <% end %>
+  </div>
+  
+  <div class="log-title">
+    <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="47px">
+  </div>
+  <div class="gaideimage">
+    <img src="/newimages/new-gaideimages@2x.png" alt="私とあなたの匿名文通" width="320px" height="200px">
+  </div>
+
+<% else %>
+  
+  <div class="backbutton">
+    <%= link_to root_path ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+    <% end %>
+  </div>
+  
+  <div class="log-title">
+    <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="47px">
+  </div>
+  
+  <div class="whitebox">
+    <ul class="media-list">
+      
+      <% @responses.each do |responses| %>
+        <% unless Changeletter.where(responsekey: responses.id).first %>
+        <!--まだ文通が始まっていない場合-->
+          <li class="takesendletter">
+            <%= link_to ' ', changeletter_path(responses) ,class: 'takesend' %>
+          </li>
+        <% else %>
+        <!--文通が始まっている状態-->
+          <% changeletter = Changeletter.where(responsekey: responses.id).last %>
+          
+            <% unless changeletter.check %>
+            <!--まだ既読になっていない場合-->
+              <% if changeletter.user_id == current_user.id %>
+              <!--既読になっていなくて自分宛-->
+                <li class="takeletter">
+                  <%= link_to ' ', changeletter_path(responses) ,class: 'take' %>
+                </li>
+              <% elsif changeletter.fromuser_id == current_user.id %>
+              <!--既読になっていなくて相手宛-->
+                <li class="takesendletter">
+                  <%= link_to ' ', changeletter_path(responses) ,class: 'takesend' %>
+                </li>
+              <% end %>
+            <% else %>
+              <!--checkがあったら普通の通知-->
+              <li class="takesendletter">
+                <%= link_to ' ', changeletter_path(responses) ,class: 'takesend' %>
+              </li>
+              
+            <% end %>
+          
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+
+  
+<% end %>

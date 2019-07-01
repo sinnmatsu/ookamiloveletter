@@ -1,0 +1,77 @@
+<!--userとの文通状況画面-->
+
+<% unless @response %>
+  <!--このユーザーとのレスポンスキーがないので、このユーザーとのレスポンスキーを発行する-->
+  <div class="backbutton">
+    <%= link_to user_path(@user) ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+    <% end %>
+  </div>
+  
+  <div class="log-title">
+    <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="47px">
+  </div>
+
+
+  <%= form_for(@responses) do |f| %>
+  <% if @responses.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @responses.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="letterarea">
+    <div class="form-group">
+      <%= f.hidden_field :user_id, :value => @user.id %>
+    </div>
+  </div>
+
+ <%= image_submit_tag("/newimages/new-start@2x.png", class: 'sendookami')%>
+  
+  <% end %>
+
+
+  <div class="changeimage">
+    <img src="/newimages/new-change-image@2x.png" alt="私とあなたの匿名文通" width="277px" height="93px">
+  </div>
+
+<% else %>
+  
+  <div class="backbutton">
+    <%= link_to root_path ,class: 'takebuttonhidden' do %>
+      <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+    <% end %>
+  </div>
+  
+  <div class="log-title">
+    <img src="/newimages/new-title@2x.png" alt="私とあなたの匿名文通" width="265px" height="47px">
+  </div>
+  
+  <% @changeletters.each do |changeletter| %>
+  
+    <% if changeletters.user.id == current_user %>
+      <% unless changeletter.check %>
+      <!--自分宛でcheakがnilの場合-->
+      <div class="letterchange">
+        <%= link_to edit_changeletter_path(@response) ,class: 'takebuttonhidden' do %>
+          <%= image_tag "/newimages/new-takeletter@2x.png",:size =>"348x80" %>
+        <% end %>
+      </div>
+      <!--自分宛でcheckがnilの場合-->
+      <% end %>
+    <% end %>
+    
+  <% end %>
+  
+  <div class="letterchange">
+    <%= link_to changeletter_path(@response) ,class: 'takebuttonhidden' do %>
+    <!--文通やりとり画面にレスポンスキーを渡す-->
+      <%= image_tag "/newimages/new-notice@2x.png",:size =>"348x80" %>
+    <% end %>
+  </div>
+  
+<% end %>
