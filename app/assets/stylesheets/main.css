@@ -114,7 +114,8 @@ html {
     margin: auto;
     margin: auto;
     text-align: center;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 200px; }
 
 /*topapgeのcss*/
 .takeletters {
@@ -978,7 +979,7 @@ html {
     text-align: center; }
 
 .ask .index {
-  background-image: url(/newimages/new-back2@2x.png);
+  background-image: url(/newimages/new-back@2x.png);
   background-size: cover;
   height: 820px; }
   .ask .index .ask-title {

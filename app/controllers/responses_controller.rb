@@ -8,6 +8,7 @@ class ResponsesController < ApplicationController
     
     
     @responses = Response.where(user_id: current_user.id).order(id: "DESC")+Response.where(fromuser_id: current_user.id).order(id: "DESC")
+    @responses.sort!.reverse!
     #全体のレスポンスキーを取得
     @responses.each do |responses|
       @responsess = responses
