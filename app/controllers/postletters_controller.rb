@@ -89,9 +89,9 @@ class PostlettersController < ApplicationController
       if @receiveletter.update(updata_postletter_params)
         
         if @receiveletter.which == "truths"
-          redirect_to trueproduction_path(@receiveletter)
+          redirect_to takeletters_path
         elsif @receiveletter.which == "lies"
-          redirect_to ookamiproduction_path(@receiveletter)
+          redirect_to takeletters_path
         elsif @receiveletter.which == "recom"
           redirect_to takeletters_path
         elsif @receiveletter.which == "think"

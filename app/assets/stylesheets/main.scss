@@ -220,7 +220,7 @@ html{ font-size: 62.5%; }
       }
       .recomlienotification{
         display: block;
-        background-image: url(/newimages/recomnoticeds@2x.png);
+        background-image: url(/newimages/take-question@2x.png);
         background-size:cover;
         height: 67px;
         width: 100%;
@@ -235,7 +235,7 @@ html{ font-size: 62.5%; }
       }
       .recomnotificationd{
         display: block;
-        background-image: url(/newimages/recomnotice@2x.png);
+        background-image: url(/newimages/take-question-new@2x.png);
         background-size:cover;
         height: 67px;
         width: 100%;
@@ -270,56 +270,14 @@ html{ font-size: 62.5%; }
         margin-left:auto;
         text-align:center;
       }
-      .image{
-        margin-top:90px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-      }
-      .post{
-        margin-top:-405px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-        .form-control{
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          line-height: 200% ;
-          text-align:center;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 150% ;
-          background-color:transparent;
-        }
-        .form-reason{
-          
-          padding-right:20px;
-          padding-left:20px;
-          padding-top:20px;
-          margin-top:-70px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          line-height: 200% ;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 100% ;
-          background-color:transparent;
-
-        }
-      }
+      
       
        .sendookami{
         
         text-align: left;
         margin-right: auto;
         margin-left: 30px;
-        margin-top:-90px;
+        margin-top:30px;
         width: 19px;
         height: 33px;
         display: block;
@@ -330,14 +288,16 @@ html{ font-size: 62.5%; }
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        margin-top:120px;
+        margin-top:240px;
         width: 206px;
-        height: 66px;
+        height: 58px;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
         }
     }
   }
+  
+  
   .takerecom{
      background-image: url(/newimages/recom-back@2x.png); 
      background-size:cover;
@@ -352,54 +312,12 @@ html{ font-size: 62.5%; }
        }
        
       .log-title{
-        margin-top:-10px;
+        margin-top:60px;
         margin-right:auto;
         margin-left:auto;
         text-align:center;
       }
-      .image{
-        margin-top:20px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-      }
-      .post{
-        margin-top:-405px;
-        margin-right:auto;
-        margin-left:auto;
-        text-align:center;
-        .form-control{
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          line-height: 200% ;
-          text-align:center;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 150% ;
-          background-color:transparent;
-        }
-        .form-reason{
-          
-          padding-right:20px;
-          padding-left:20px;
-          padding-top:20px;
-          margin-top:-70px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          line-height: 200% ;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 100% ;
-          background-color:transparent;
-
-        }
-      }
+      
       
       .homeback{
         display:block;
@@ -1608,6 +1526,8 @@ html{ font-size: 62.5%; }
     }
   }
   
+  
+  
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   .choice{
     background-image: url(/newimages/new-back@2x.png); 
@@ -1629,55 +1549,32 @@ html{ font-size: 62.5%; }
         }
         
         .think{
-          margin-top:40px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
         }
         
-        .selectimage{
-          margin-top:-80px;
-          margin-left:10px;
-          text-align:left;
-        }
         
         .recom{
-          margin-top:30px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
         }
         
         .recomgaide{
+          margin-top:-10px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
-        }
-        
-        .selectimage2{
-          margin-right:10px;
-          text-align:right;
         }
         
         .letter{
-          margin-top:-50px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
-        }
-        
-        .ookami{
-          margin-top:30px;
-          margin-right:auto;
-          margin-left:auto;
-          text-align:center;
-        }
-        
-        .ookamigaide{
-          margin-right:auto;
-          margin-left:auto;
-          text-align:center;
-          margin-bottom:100px;
         }
         
       
@@ -1685,7 +1582,6 @@ html{ font-size: 62.5%; }
     
     /*ログインしていない場合*/
       .loginbackground{
-        
         .backbutton{
         display:block;
         margin-top:30px;
@@ -1693,7 +1589,7 @@ html{ font-size: 62.5%; }
         text-align: left;
       }
       
-         .letter-log{
+        .letter-log{
           margin-top:-10px;
           margin-right:auto;
           margin-left:auto;
@@ -1701,59 +1597,34 @@ html{ font-size: 62.5%; }
         }
         
         .think{
-          margin-top:40px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
         }
         
-        .selectimage{
-          margin-top:-80px;
-          margin-left:10px;
-          text-align:left;
-        }
         
         .recom{
-          margin-top:30px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
         }
         
         .recomgaide{
-          margin-top:-5px;
+          margin-top:-10px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
-        }
-        
-        .selectimage2{
-          margin-right:10px;
-          text-align:right;
         }
         
         .letter{
-          margin-top:-50px;
+          margin-top:15px;
           margin-right:auto;
           margin-left:auto;
           text-align:center;
         }
         
-        .ookami{
-          margin-top:30px;
-          margin-right:auto;
-          margin-left:auto;
-          text-align:center;
-        }
-        
-        .ookamigaide{
-          margin-top:-5px;
-          margin-right:auto;
-          margin-left:auto;
-          text-align:center;
-          margin-bottom:100px;
-        }
- 
     }
   }
   /*choiceの時のcss*/
@@ -1918,54 +1789,22 @@ html{ font-size: 62.5%; }
          margin-left:auto;
          text-align:center;
          }
-       
-       .form-control{
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          width:247px;
-          height:73px;
-          background-image: url(/newimages/recom-persons@2x.png); 
-          background-size:cover;
-          line-height: 200% ;
-          text-align:center;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 150% ;
-        }
-        
-        .form-reason{
-          padding-right:20px;
-          padding-left:20px;
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          width:247px;
-          height:185px;
-          background-image: url(/newimages/recom-reasons@2x.png); 
-          background-size:cover;
-          line-height: 200% ;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 100% ;
-        }
-        
-        .sendookami{
-          
-           margin-top:40px;
-           display:block;
+         
+         .notices{
+           margin-top:15px;
            margin-right:auto;
            margin-left:auto;
            text-align:center;
-           width:144px;
-           height:57px;
-        }
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+       
      }
      .show{
        
@@ -1981,55 +1820,25 @@ html{ font-size: 62.5%; }
          margin-left:auto;
          text-align:center;
          }
-       
-       .form-control{
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          width:247px;
-          height:73px;
-          background-image: url(/newimages/recom-persons@2x.png); 
-          background-size:cover;
-          line-height: 200% ;
-          text-align:center;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 150% ;
-        }
-        
-        .form-reason{
-          padding-right:20px;
-          padding-left:20px;
-          padding-top:20px;
-          margin-top:20px;
-          border:none;
-          margin-right:auto;
-          margin-left:auto;
-          display:block;
-          width:247px;
-          height:185px;
-          background-image: url(/newimages/recom-reasons@2x.png); 
-          background-size:cover;
-          line-height: 200% ;
-          font-weight: bolder;
-          font-family: 'Hiragino Sans';
-          font-size: 100% ;
-        }
-        
-        .sendookami{
-          
-           margin-top:40px;
-           display:block;
+         
+         .notices{
+           margin-top:15px;
            margin-right:auto;
            margin-left:auto;
            text-align:center;
-           width:144px;
-           height:57px;
-        }
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+       
+       
      }
+     
    }
 
    .fromthink{
@@ -2558,18 +2367,22 @@ html{ font-size: 62.5%; }
     background-size:cover;
     height:820px;
     .edit{
-       .backbutton{
-         display:block;
-         margin-top:30px;
-         margin-left:20px;
-         text-align: left;
-       }
       
-       .log-title{
+      .sendookamiback{
+        text-align: left;
+        margin-left: 15px;
+        margin-top:20px;
+        width: 19px;
+        height: 33px;
+        display: block;
+        margin-bottom: 50px;
+      }
+      
+       .truth-title{
          margin-right:auto;
          margin-left:auto;
          text-align:center;
-         margin-top:-20px;
+         margin-top:-70px;
        }
      
        .form-control{
@@ -2579,11 +2392,39 @@ html{ font-size: 62.5%; }
         margin-right:auto;
         margin-left:auto;
         width:243px;
-        height:309px;
+        height:282px;
         line-height: 100% ;
         font-weight: bolder;
         font-family: 'Hiragino Sans';
         font-size: 100% ;
+      }
+      
+      .from{
+          display:block;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+          margin-top:20px;
+        }
+      
+      .form-account{
+        padding-right:20px;
+          padding-left:20px;
+          border:none;
+          display:block;
+          background-color: #ffffff;
+          background-image: url(/newimages/trueletter-account@2x.png);
+          background-size: cover;
+          margin-top: 25px;
+          margin-right: auto;
+          margin-left: auto;
+          width:242px;
+          height:51px;
+          line-height: 400% ;
+          font-weight: bolder;
+          font-family: 'Hiragino Sans';
+          font-size: 100% ;
+          text-align:center;
       }
       
       .sendookami{
@@ -3989,6 +3830,592 @@ html{ font-size: 62.5%; }
      }
      
      
+   }
+ }
+ 
+ .notice1{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice2{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice3{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice4{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice5{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice6{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice7{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice8{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice9{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice10{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice11{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice12{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice13{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+     
+   }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
    }
  }
  

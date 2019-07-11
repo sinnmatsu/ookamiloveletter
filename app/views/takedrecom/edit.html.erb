@@ -1,8 +1,5 @@
 
 
-<div class="log-title">
-  <img src="/newimages/take-recom-titles@2x.png" alt="〇〇のことどう思う？" width="269px" height="67px">
-</div>
 
 <%= form_for(@updataletter) do |f| %>
 <% if @updataletter.errors.any? %>
@@ -17,20 +14,89 @@
   
   <%= image_submit_tag("/newimages/backbutton@2x.png", class: 'sendookami')%>
   
-  <div class="image">
-    <img src="/newimages/take-recom-image@2x.png" alt="オススメ画像？" width="311px" height="390px">
+<% if @updataletter.text == "あなたにとっての恋愛とは？" %>
+<div class="log-title">
+  <img src="/newimages/not-koi.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "食べたい悪魔の実は？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-food.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "もしも願いが1つ叶うなら？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-want.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "恋人に束縛されたい？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-sokubaku.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "1週間後に世界が終わります、何をしますか？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-over.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "片思いの相手にどう接しますか？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-kataomoi.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "あなたにとってのいい男の条件は？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-coolgay.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "初恋の思い出を語ってください" %>
+
+<div class="log-title">
+  <img src="/newimages/not-hatukoi.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "子どもの頃の夢は？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-dream.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "思わずドキってしてしまう異性の仕草は？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-doki.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "１番の自慢をしてください" %>
+
+  <div class="log-title">
+    <img src="/newimages/not-best.png" alt="送信する質問を選択してください" width="346px" height="156px">
   </div>
-  
-  <div class="post">
-    <div class="form-group">
-      <%= f.text_area :person, class: 'form-control', rows: 5 ,placeholder: "人物名"%>
-    </div>
-  
-    <div class="form-reason">
-      <%= f.text_area :reason, class: 'form-reason', rows: 5 ,placeholder: "理由"%>
-    </div>
-  </div>
-  
+
+<% elsif @updataletter.text == "人生において最も必要なものは？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-life.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% elsif @updataletter.text == "日常のささやかん幸せはどんなこと？" %>
+
+<div class="log-title">
+  <img src="/newimages/not-siawase.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<% end %>
+
+    <%= f.hidden_field :text %>
+    
+    <%= f.hidden_field :check, :value => "true" %>
+    
   <%= image_submit_tag("/newimages/go-back@2x.png", class: 'sendookami-button')%>
   
   

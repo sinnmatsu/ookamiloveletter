@@ -139,7 +139,7 @@
     
       <!--ログインしていない場合はガイド画面に飛ばす-->
       <div class="friend">
-        <%= link_to takesendgaide_path(1) ,class: 'takebuttonhidden' do %>
+        <%= link_to takesendgaide_path(@user) ,class: 'takebuttonhidden' do %>
           <%= image_tag "/newimages/new-letterchange@2x.png",:size =>"111x129" %>
         <% end %>
       </div>

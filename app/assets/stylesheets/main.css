@@ -166,7 +166,7 @@ html {
       width: 100%; }
     .takeletters .index .whitebox .recomlienotification {
       display: block;
-      background-image: url(/newimages/recomnoticeds@2x.png);
+      background-image: url(/newimages/take-question@2x.png);
       background-size: cover;
       height: 67px;
       width: 100%; }
@@ -178,7 +178,7 @@ html {
       width: 100%; }
     .takeletters .index .whitebox .recomnotificationd {
       display: block;
-      background-image: url(/newimages/recomnotice@2x.png);
+      background-image: url(/newimages/take-question-new@2x.png);
       background-size: cover;
       height: 67px;
       width: 100%; }
@@ -199,48 +199,11 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .takedrecom .edit .image {
-    margin-top: 90px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-  .takedrecom .edit .post {
-    margin-top: -405px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .takedrecom .edit .post .form-control {
-      padding-top: 20px;
-      margin-top: 20px;
-      border: none;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      line-height: 200%;
-      text-align: center;
-      font-weight: bolder;
-      font-family: 'Hiragino Sans';
-      font-size: 150%;
-      background-color: transparent; }
-    .takedrecom .edit .post .form-reason {
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-top: 20px;
-      margin-top: -70px;
-      border: none;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      line-height: 200%;
-      font-weight: bolder;
-      font-family: 'Hiragino Sans';
-      font-size: 100%;
-      background-color: transparent; }
   .takedrecom .edit .sendookami {
     text-align: left;
     margin-right: auto;
     margin-left: 30px;
-    margin-top: -90px;
+    margin-top: 30px;
     width: 19px;
     height: 33px;
     display: block;
@@ -249,11 +212,11 @@ html {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 120px;
+    margin-top: 240px;
     width: 206px;
-    height: 66px;
+    height: 58px;
     display: block;
-    margin-bottom: 50px; }
+    margin-bottom: 150px; }
 
 .takerecom {
   background-image: url(/newimages/recom-back@2x.png);
@@ -264,47 +227,10 @@ html {
     margin-left: 20px;
     text-align: left; }
   .takerecom .show .log-title {
-    margin-top: -10px;
+    margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .takerecom .show .image {
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-  .takerecom .show .post {
-    margin-top: -405px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-    .takerecom .show .post .form-control {
-      padding-top: 20px;
-      margin-top: 20px;
-      border: none;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      line-height: 200%;
-      text-align: center;
-      font-weight: bolder;
-      font-family: 'Hiragino Sans';
-      font-size: 150%;
-      background-color: transparent; }
-    .takerecom .show .post .form-reason {
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-top: 20px;
-      margin-top: -70px;
-      border: none;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      line-height: 200%;
-      font-weight: bolder;
-      font-family: 'Hiragino Sans';
-      font-size: 100%;
-      background-color: transparent; }
   .takerecom .show .homeback {
     display: block;
     margin-right: auto;
@@ -1232,41 +1158,25 @@ html {
     margin-left: auto;
     text-align: center; }
   .choice .show .think {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .show .selectimage {
-    margin-top: -80px;
-    margin-left: 10px;
-    text-align: left; }
   .choice .show .recom {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
   .choice .show .recomgaide {
+    margin-top: -10px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .show .selectimage2 {
-    margin-right: 10px;
-    text-align: right; }
   .choice .show .letter {
-    margin-top: -50px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .show .ookami {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-  .choice .show .ookamigaide {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-bottom: 100px; }
   .choice .loginbackground .backbutton {
     display: block;
     margin-top: 30px;
@@ -1278,43 +1188,25 @@ html {
     margin-left: auto;
     text-align: center; }
   .choice .loginbackground .think {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .loginbackground .selectimage {
-    margin-top: -80px;
-    margin-left: 10px;
-    text-align: left; }
   .choice .loginbackground .recom {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
   .choice .loginbackground .recomgaide {
-    margin-top: -5px;
+    margin-top: -10px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .loginbackground .selectimage2 {
-    margin-right: 10px;
-    text-align: right; }
   .choice .loginbackground .letter {
-    margin-top: -50px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .choice .loginbackground .ookami {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center; }
-  .choice .loginbackground .ookamigaide {
-    margin-top: -5px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-bottom: 100px; }
 
 /*choiceの時のcss*/
 .letterfinish {
@@ -1438,47 +1330,17 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .recoms .loginbackground .form-control {
-    padding-top: 20px;
-    margin-top: 20px;
-    border: none;
+  .recoms .loginbackground .notices {
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-    display: block;
-    width: 247px;
-    height: 73px;
-    background-image: url(/newimages/recom-persons@2x.png);
-    background-size: cover;
-    line-height: 200%;
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 150%; }
-  .recoms .loginbackground .form-reason {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
-    border: none;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    width: 247px;
-    height: 185px;
-    background-image: url(/newimages/recom-reasons@2x.png);
-    background-size: cover;
-    line-height: 200%;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .recoms .loginbackground .sendookami {
-    margin-top: 40px;
-    display: block;
+    text-align: center; }
+  .recoms .loginbackground .notices13 {
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 144px;
-    height: 57px; }
+    margin-bottom: 150px; }
   .recoms .show .backbutton {
     display: block;
     margin-top: 30px;
@@ -1489,47 +1351,17 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  .recoms .show .form-control {
-    padding-top: 20px;
-    margin-top: 20px;
-    border: none;
+  .recoms .show .notices {
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-    display: block;
-    width: 247px;
-    height: 73px;
-    background-image: url(/newimages/recom-persons@2x.png);
-    background-size: cover;
-    line-height: 200%;
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 150%; }
-  .recoms .show .form-reason {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
-    border: none;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    width: 247px;
-    height: 185px;
-    background-image: url(/newimages/recom-reasons@2x.png);
-    background-size: cover;
-    line-height: 200%;
-    font-weight: bolder;
-    font-family: 'Hiragino Sans';
-    font-size: 100%; }
-  .recoms .show .sendookami {
-    margin-top: 40px;
-    display: block;
+    text-align: center; }
+  .recoms .show .notices13 {
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 144px;
-    height: 57px; }
+    margin-bottom: 150px; }
 
 .fromthink {
   background-image: url(/newimages/think-back@2x.png);
@@ -1920,16 +1752,19 @@ html {
   background-image: url(/newimages/trueletter-back@2x.png);
   background-size: cover;
   height: 820px; }
-  .postletters .edit .backbutton {
+  .postletters .edit .sendookamiback {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 19px;
+    height: 33px;
     display: block;
-    margin-top: 30px;
-    margin-left: 20px;
-    text-align: left; }
-  .postletters .edit .log-title {
+    margin-bottom: 50px; }
+  .postletters .edit .truth-title {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    margin-top: -20px; }
+    margin-top: -70px; }
   .postletters .edit .form-control {
     padding: 20px;
     background-image: url(/newimages/trueletter-write@2x.png);
@@ -1937,11 +1772,35 @@ html {
     margin-right: auto;
     margin-left: auto;
     width: 243px;
-    height: 309px;
+    height: 282px;
     line-height: 100%;
     font-weight: bolder;
     font-family: 'Hiragino Sans';
     font-size: 100%; }
+  .postletters .edit .from {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 20px; }
+  .postletters .edit .form-account {
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    display: block;
+    background-color: #ffffff;
+    background-image: url(/newimages/trueletter-account@2x.png);
+    background-size: cover;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 242px;
+    height: 51px;
+    line-height: 400%;
+    font-weight: bolder;
+    font-family: 'Hiragino Sans';
+    font-size: 100%;
+    text-align: center; }
   .postletters .edit .sendookami {
     text-align: center;
     margin-right: auto;
@@ -3000,5 +2859,421 @@ html {
     margin-left: auto;
     text-align: center;
     margin-bottom: 40px; }
+
+.notice1 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice1 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice1 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice1 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice1 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice2 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice2 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice2 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice2 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice2 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice3 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice3 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice3 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice3 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice3 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice4 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice4 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice4 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice4 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice4 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice5 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice5 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice5 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice5 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice5 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice6 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice6 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice6 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice6 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice6 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice7 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice7 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice7 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice7 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice7 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice8 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice8 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice8 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice8 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice8 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice9 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice9 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice9 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice9 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice9 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice10 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice10 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice10 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice10 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice10 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice11 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice11 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice11 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice11 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice11 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice12 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice12 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice12 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice12 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice12 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+
+.notice13 {
+  background-image: url(/newimages/recom-back@2x.png);
+  background-size: cover; }
+  .notice13 .show .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice13 .show .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
+  .notice13 .loginbackground .log-title {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .notice13 .loginbackground .sendookami {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 144px;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
