@@ -1526,7 +1526,85 @@ html{ font-size: 62.5%; }
     }
   }
   
-  
+  .choicequestion{
+    background-image: url(/newimages/new-back@2x.png); 
+    background-size:cover;
+    height:820px;
+    .show{
+      
+      .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+        .log-title{
+          margin-top:-10px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .love{
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .laughs{
+          margin-top:20px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .life{
+          margin-top:20px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+      
+    }
+    .loginbackground{
+      .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+        .log-title{
+          margin-top:-10px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .love{
+          margin-top:30px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .laughs{
+          margin-top:20px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+        
+        .life{
+          margin-top:20px;
+          margin-right:auto;
+          margin-left:auto;
+          text-align:center;
+        }
+    }
+  }
   
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   .choice{
@@ -1769,6 +1847,138 @@ html{ font-size: 62.5%; }
          text-align:center;
        }
      }
+   }
+   
+   .laughquestion{
+     background-image: url(/newimages/recom-back@2x.png); 
+     background-size:cover;
+     .show{
+       .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+       .log-title{
+         margin-top:0px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+         }
+         
+         .notices{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+     }
+     .loginbackground{
+       .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+       .log-title{
+         margin-top:0px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+         }
+         
+         .notices{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+     }
+   }
+   
+   .lifequestion{
+     
+     background-image: url(/newimages/recom-back@2x.png); 
+     background-size:cover;
+     .show{
+       .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+       .log-title{
+         margin-top:0px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+         }
+         
+         .notices{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+     }
+     .loginbackground{
+       .backbutton{
+        display:block;
+        margin-top:30px;
+        margin-left:20px;
+        text-align: left;
+      }
+      
+       .log-title{
+         margin-top:0px;
+         margin-right:auto;
+         margin-left:auto;
+         text-align:center;
+         }
+         
+         .notices{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+         }
+         
+         .notices13{
+           margin-top:15px;
+           margin-right:auto;
+           margin-left:auto;
+           text-align:center;
+           margin-bottom:150px;
+         }
+     }
+     
    }
    
    .recoms{
@@ -4398,6 +4608,1176 @@ html{ font-size: 62.5%; }
       }
      
    }
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice14{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice15{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice16{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice17{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice18{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice19{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice20{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice21{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice22{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice23{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice24{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice25{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice26{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice27{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice28{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice29{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice30{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice31{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice32{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice33{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice34{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice35{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice36{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice37{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice38{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
+   .loginbackground{
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+ }
+ 
+ .notice39{
+   background-image: url(/newimages/recom-back@2x.png); 
+   background-size:cover;
+   .show{
+     
+     .log-title{
+       margin-top:70px;
+       margin-right:auto;
+       margin-left:auto;
+       text-align:center;
+     }
+     
+     .sendookami{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:40px;
+        width: 144px;
+        height: 55px;
+        display: block;
+        margin-bottom: 20px;
+      }
+   }
+   
    .loginbackground{
      .log-title{
        margin-top:70px;

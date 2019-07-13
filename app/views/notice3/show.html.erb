@@ -1,5 +1,5 @@
 <div class="log-title">
-  <img src="/newimages/not-want.png" alt="送信する質問を選択してください" width="346px" height="156px">
+  <img src="/newimages/not-doki.png" alt="送信する質問を選択してください" width="346px" height="156px">
 </div>
 
 <%= form_for(@postletter) do |f| %>
@@ -20,7 +20,7 @@
     <%= f.hidden_field :user_id, :value => @user.id %>
     <%= f.hidden_field :person, :value => "なし" %>
     <%= f.hidden_field :reason, :value => "なし" %>
-    <%= f.hidden_field :text, :value => "もしも願いが1つ叶うなら？" %>
+    <%= f.hidden_field :text, :value => "思わずドキってしてしまう異性の仕草は？" %>
     
   </div>
   

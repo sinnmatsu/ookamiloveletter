@@ -1,0 +1,29 @@
+<div class="log-title">
+  <img src="/newimages/not-karakon.png" alt="送信する質問を選択してください" width="346px" height="156px">
+</div>
+
+<%= form_for(@postletter) do |f| %>
+<% if @postletter.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @postletter.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form-group">
+    
+    <%= f.hidden_field :account, :value => "匿名希望" %>
+    <%= f.hidden_field :which, :value => "recom" %>
+    <%= f.hidden_field :user_id, :value => @user.id %>
+    <%= f.hidden_field :person, :value => "なし" %>
+    <%= f.hidden_field :reason, :value => "なし" %>
+    <%= f.hidden_field :text, :value => "使っているカラコンは？" %>
+    
+  </div>
+  
+  <%= image_submit_tag("/newimages/recom-send@2x.png", class: 'sendookami')%>
+  <!--javascriptで画面遷移を設定する-->
+<% end %>

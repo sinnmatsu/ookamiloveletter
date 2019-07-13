@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
 
 
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
   
@@ -95,5 +94,34 @@ Rails.application.routes.draw do
   resources :notice11, only:[:show]
   resources :notice12, only:[:show]
   resources :notice13, only:[:show]
+  resources :choicequestion, only:[:show]
+  resources :laughquestion, only:[:show]
+  resources :lifequestion, only:[:show]
+  resources :notice14, only:[:show]
+  resources :notice15, only:[:show]
+  resources :notice16, only:[:show]
+  resources :notice17, only:[:show]
+  resources :notice18, only:[:show]
+  resources :notice19, only:[:show]
+  resources :notice20, only:[:show]
+  resources :notice21, only:[:show]
+  resources :notice22, only:[:show]
+  resources :notice23, only:[:show]
+  resources :notice24, only:[:show]
+  resources :notice25, only:[:show]
+  resources :notice26, only:[:show]
+  resources :notice27, only:[:show]
+  resources :notice28, only:[:show]
+  resources :notice29, only:[:show]
+  resources :notice30, only:[:show]
+  resources :notice31, only:[:show]
+  resources :notice32, only:[:show]
+  resources :notice33, only:[:show]
+  resources :notice34, only:[:show]
+  resources :notice35, only:[:show]
+  resources :notice36, only:[:show]
+  resources :notice37, only:[:show]
+  resources :notice38, only:[:show]
+  resources :notice39, only:[:show]
   
 end

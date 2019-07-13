@@ -1,5 +1,5 @@
 <div class="log-title">
-  <img src="/newimages/not-food.png" alt="送信する質問を選択してください" width="346px" height="156px">
+  <img src="/newimages/not-aitomoney.png" alt="送信する質問を選択してください" width="346px" height="156px">
 </div>
 
 <%= form_for(@postletter) do |f| %>
@@ -20,7 +20,7 @@
     <%= f.hidden_field :user_id, :value => @user.id %>
     <%= f.hidden_field :person, :value => "なし" %>
     <%= f.hidden_field :reason, :value => "なし" %>
-    <%= f.hidden_field :text, :value => "食べたい悪魔の実は？" %>
+    <%= f.hidden_field :text, :value => "愛と金どちらを選ぶ？" %>
     
   </div>
   

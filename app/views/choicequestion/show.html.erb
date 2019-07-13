@@ -1,0 +1,27 @@
+<div class="backbutton">
+  <%= link_to choice_path(@user) ,class: 'takebuttonhidden' do %>
+    <%= image_tag "/newimages/backbutton@2x.png",:size =>"19x33" %>
+  <% end %>
+</div>
+
+<div class="log-title">
+  <img src="/newimages/new-questoin-title@2x.png" alt="送信する質問を選択してください" width="250px" height="56px">
+</div>
+
+<div class="love">
+  <%= link_to recom_path(@user), class:'truthbutton' do %>
+    <%= image_tag "/newimages/love-question@2x.png",:size =>"346x67" %>
+  <% end %>
+</div>
+
+<div class="laughs">
+  <%= link_to laughquestion_path(@user), class:'truthbutton' do %>
+    <%= image_tag "/newimages/laugh-question@2x.png",:size =>"346x67" %>
+  <% end %>
+</div>
+
+<div class="life">
+  <%= link_to lifequestion_path(@user), class:'truthbutton' do %>
+    <%= image_tag "/newimages/life-question@2x.png",:size =>"346x67" %>
+  <% end %>
+</div>

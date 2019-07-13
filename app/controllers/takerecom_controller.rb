@@ -3,7 +3,7 @@ class TakerecomController < ApplicationController
   end
 
   def show
-    @recom = Postletter.find(params[:id])
+    @updataletter = Postletter.find(params[:id])
     #選択したletter
   end
 end
