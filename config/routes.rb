@@ -2,6 +2,16 @@ Rails.application.routes.draw do
 
 
 
+  get 'enjoy5/index'
+
+  get 'enjoy4/index'
+
+  get 'enjoy3/index'
+
+  get 'enjoy2/index'
+
+  get 'enjoy/index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
   
