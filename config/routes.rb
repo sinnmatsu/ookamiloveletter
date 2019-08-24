@@ -2,15 +2,6 @@ Rails.application.routes.draw do
 
 
 
-  get 'enjoy5/index'
-
-  get 'enjoy4/index'
-
-  get 'enjoy3/index'
-
-  get 'enjoy2/index'
-
-  get 'enjoy/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'toppages#index'
@@ -41,6 +32,12 @@ Rails.application.routes.draw do
   get 'sessions/:id/new', to: 'sessions#new', as: 'loginsession'
   
   
+  resources :enjoy, only: [:index]
+  resources :enjoy2, only: [:index]
+  resources :enjoy3, only: [:index]
+  resources :enjoy4, only: [:index]
+  resources :enjoy5, only: [:index]
+  resources :enjoy6, only: [:index]
   
   resources :choice, only: [:index, :show]
   resources :lies, only: [:index, :show]
